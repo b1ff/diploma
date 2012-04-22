@@ -3,3 +3,8 @@ D:\универ\Диплом\Project\Gamification\src\Gamification\bin\Debug\Gam
 D:\универ\Диплом\Project\Gamification\src\Gamification\obj\Debug\ResolveAssemblyReference.cache
 D:\универ\Диплом\Project\Gamification\src\Gamification\obj\Debug\Gamification.Core.dll
 D:\универ\Диплом\Project\Gamification\src\Gamification\obj\Debug\Gamification.Core.pdb
+D:\Projects\diploma\Gamification\src\Gamification\bin\Debug\Gamification.Core.dll
+D:\Projects\diploma\Gamification\src\Gamification\bin\Debug\Gamification.Core.pdb
+D:\Projects\diploma\Gamification\src\Gamification\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\diploma\Gamification\src\Gamification\obj\Debug\Gamification.Core.dll
+D:\Projects\diploma\Gamification\src\Gamification\obj\Debug\Gamification.Core.pdb

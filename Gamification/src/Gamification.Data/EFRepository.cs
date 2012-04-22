@@ -2,8 +2,8 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
-using Gamification.Core.EntitiesAccess;
 using Gamification.Data.EF.Contexts;
 
 namespace Gamification.Data.EF

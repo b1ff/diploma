@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Gamification.Core.Entities;
 
-namespace Gamification.Core.EntitiesAccess
+namespace Gamification.Core.DataAccess
 {
     public interface IRepository<TEntity> 
         where TEntity : BaseEntity

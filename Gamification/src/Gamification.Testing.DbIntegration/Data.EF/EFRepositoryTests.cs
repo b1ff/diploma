@@ -1,5 +1,5 @@
-﻿using Gamification.Core.Entities;
-using Gamification.Core.EntitiesAccess;
+﻿using Gamification.Core.DataAccess;
+using Gamification.Core.Entities;
 using Gamification.Testing.DbIntegration.BaseFixtures;
 using NUnit.Framework;
 using SharpTestsEx;

@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,15 +42,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EntitiesAccess\IRepository.cs" />
+    <Compile Include="Attributes\PropertyToCompareAttribute.cs" />
+    <Compile Include="DataAccess\IRepository.cs" />
+    <Compile Include="Entities\Achievement.cs" />
+    <Compile Include="Entities\AchievementsTrigger.cs" />
+    <Compile Include="Entities\ActionTrigger.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
+    <Compile Include="Entities\CommonBooleanConstraint.cs" />
+    <Compile Include="Entities\GameAction.cs" />
     <Compile Include="Entities\Gamer.cs" />
     <Compile Include="Entities\GamerStatus.cs" />
-    <Compile Include="Entities\UserProject.cs" />
+    <Compile Include="Entities\Level.cs" />
+    <Compile Include="Entities\Project.cs" />
+    <Compile Include="Enums\BooleanOperation.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Operations\AndResultProvider.cs" />
+    <Compile Include="Operations\BaseFromTwoResultsProviders.cs" />
+    <Compile Include="Operations\BooleanOperationExtension.cs" />
+    <Compile Include="Operations\CommonBooleanResultsProvider.cs" />
+    <Compile Include="Operations\IBooleanResultProvider.cs" />
+    <Compile Include="Operations\OrResultProvider.cs" />
     <Compile Include="ProjectSettings\FromConfigFileConfiguration.cs" />
     <Compile Include="ProjectSettings\IApplicationSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

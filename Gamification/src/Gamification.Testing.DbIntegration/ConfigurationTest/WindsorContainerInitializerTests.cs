@@ -1,6 +1,6 @@
 ﻿using System.Linq;
+using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
-using Gamification.Core.EntitiesAccess;
 using Gamification.IOC;
 using NUnit.Framework;
 using SharpTestsEx;
