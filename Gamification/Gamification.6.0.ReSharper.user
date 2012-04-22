@@ -1,0 +1,326 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:ProjectSettings/f:IApplicationSettings.cs" caret="138" fromTop="4" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:ProjectSettings/f:FromConfigFileConfiguration.cs" caret="314" fromTop="7" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/f:App.config" caret="287" fromTop="7" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1119" fromTop="42" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:EntitiesAccess/f:IRepository.cs" caret="624" fromTop="17" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="717" fromTop="14" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="0" fromTop="0" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="692" fromTop="21" />
+      <File id="2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949/f:EFComponentRegistrator.cs" caret="1073" fromTop="21" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:ConfigurationTest/f:WindsorContainerInitializerTests.cs" caret="926" fromTop="19" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:ConfigurationTest/f:WindsorContainerInitializerTests.cs" caret="486" fromTop="17" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:ConfigurationTest/f:WindsorContainerInitializerTests.cs" caret="903" fromTop="24" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:ConfigurationTest/f:WindsorContainerInitializerTests.cs" caret="700" fromTop="19" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:ConfigurationTest/f:WindsorContainerInitializerTests.cs" caret="301" fromTop="9" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="523" fromTop="18" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="627" fromTop="23" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1866" fromTop="18" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1884" fromTop="20" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:EntitiesAccess/f:IRepository.cs" caret="665" fromTop="21" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="256" fromTop="6" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="893" fromTop="23" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="240" fromTop="8" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="152" fromTop="6" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="311" fromTop="12" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="574" fromTop="22" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/f:App.config" caret="242" fromTop="5" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1180" fromTop="32" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="659" fromTop="21" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1107" fromTop="22" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1438" fromTop="35" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:EntitiesAccess/f:IRepository.cs" caret="481" fromTop="20" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="1158" fromTop="37" />
+      <File id="2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949/f:EFComponentRegistrator.cs" caret="466" fromTop="9" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="415" fromTop="13" />
+      <File id="2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949/f:EFComponentRegistrator.cs" caret="1267" fromTop="18" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="1147" fromTop="19" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="581" fromTop="13" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="1147" fromTop="27" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="1851" fromTop="45" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:EntitiesAccess/f:IRepository.cs" caret="644" fromTop="18" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="public" priority="990" />
+      <Item value="virtual" priority="319" />
+      <Item value="int" priority="95" />
+      <Item value="UserProject`0" priority="127" />
+      <Item value="void" priority="447" />
+      <Item value="typeof" priority="223" />
+      <Item value="Gamer`0" priority="31" />
+      <Item value="x" priority="383" />
+      <Item value="Guid`0" priority="31" />
+      <Item value="new" priority="447" />
+      <Item value="HashSet&lt;Gamer&gt;" priority="57" />
+      <Item value="long" priority="63" />
+      <Item value="double" priority="31" />
+      <Item value="GamerStatus`0" priority="95" />
+      <Item value="GetHashCode`0" priority="31" />
+      <Item value="Gamers" priority="31" />
+      <Item value="ISet" priority="31" />
+      <Item value="this" priority="511" />
+      <Item value="string" priority="95" />
+      <Item value="private" priority="159" />
+      <Item value="static" priority="223" />
+      <Item value="var" priority="607" />
+      <Item value="return" priority="319" />
+      <Item value="BaseEntity`0" priority="127" />
+      <Item value="GetEntitiesTypes`0" priority="31" />
+      <Item value="TEntity`0" priority="446" />
+      <Item value="EntityFrameworkDbContext`0" priority="63" />
+      <Item value="connectionString" priority="63" />
+      <Item value="bool" priority="95" />
+      <Item value="EntityFrameworkRepository`0" priority="31" />
+      <Item value="dbContext" priority="191" />
+      <Item value="IObjectSet" priority="31" />
+      <Item value="EntityPersister" priority="191" />
+      <Item value="entity" priority="127" />
+      <Item value="GetAll`0" priority="63" />
+      <Item value="Castle" priority="63" />
+      <Item value="Components" priority="26" />
+      <Item value="DictionaryAdapter" priority="26" />
+      <Item value="Core" priority="22" />
+      <Item value="Facilities" priority="49" />
+      <Item value="Startable" priority="26" />
+      <Item value="TypedFactory" priority="22" />
+      <Item value="Windsor" priority="22" />
+      <Item value="Configuration" priority="26" />
+      <Item value="Interpreters" priority="26" />
+      <Item value="Diagnostics" priority="22" />
+      <Item value="Installer" priority="22" />
+      <Item value="WindsorContainer`0" priority="22" />
+      <Item value="WindsorContainer" priority="57" />
+      <Item value="container" priority="223" />
+      <Item value="AllTypes`0" priority="31" />
+      <Item value="time" priority="31" />
+      <Item value="Component`0" priority="63" />
+      <Item value="EFComponentRegistrator`0" priority="31" />
+      <Item value="IApplicationSettings`0" priority="95" />
+      <Item value="FromConfigFileConfiguration`0" priority="31" />
+      <Item value="Lazy&lt;string&gt;" priority="28" />
+      <Item value="Test" priority="95" />
+      <Item value="repository" priority="31" />
+      <Item value="EfDbContext" priority="28" />
+      <Item value="appSettings" priority="31" />
+      <Item value="IRepository" priority="31" />
+      <Item value="foreach" priority="31" />
+      <Item value="repositoryType" priority="31" />
+      <Item value="Container" priority="95" />
+      <Item value="TestFixtureTearDown" priority="31" />
+      <Item value="prop" priority="31" />
+      <Item value="protected" priority="31" />
+      <Item value="OnTeardown`0" priority="31" />
+      <Item value="OnSetup`0" priority="31" />
+      <Item value="override" priority="31" />
+      <Item value="PairwiseAttribute`0" priority="31" />
+      <Item value="gamer" priority="378" />
+      <Item value="id" priority="31" />
+      <Item value="gamerFromDb" priority="95" />
+      <Item value="SetUpFixture" priority="26" />
+      <Item value="TestFixtureSetUp" priority="26" />
+      <Item value="SetUp" priority="31" />
+      <Item value="t" priority="31" />
+      <Item value="DropCreateDatabaseIfModelChanges" priority="53" />
+      <Item value="DropCreateDatabaseAlways" priority="53" />
+      <Item value="System" priority="31" />
+      <Item value="Data" priority="26" />
+      <Item value="Entity" priority="26" />
+      <Item value="CreateDatabaseIfNotExists" priority="26" />
+      <Item value="Gamer" priority="86" />
+      <Item value="SaveChanges`0" priority="31" />
+      <Item value="Assert`0" priority="31" />
+      <Item value="Is`0" priority="31" />
+      <Item value="gamerId" priority="63" />
+      <Item value="WcfIntegration" priority="26" />
+      <Item value="modelBuilder" priority="31" />
+      <Item value="entityFromDb" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="GetHashCode`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetMember`0" priority="26" />
+      <Item value="GetProperties`0" priority="22" />
+      <Item value="Assembly" priority="107" />
+      <Item value="IsAssignableFrom`0" priority="53" />
+      <Item value="IsAbstract" priority="80" />
+      <Item value="MakeGenericType`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.GamerStatus">
+      <Item value="UserProjects" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="GetType`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToList`1" priority="26" />
+      <Item value="Select`2" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Data.Contexts.EntityFrameworkDbContext">
+      <Item value="Set`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Data.Contexts.EfDbContext">
+      <Item value="Set`0" priority="26" />
+      <Item value="Set`1" priority="76" />
+      <Item value="Dispose`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Entity.DbSet`1">
+      <Item value="AsQueryable`1" priority="26" />
+      <Item value="Add`0" priority="54" />
+      <Item value="Remove`0" priority="26" />
+      <Item value="First`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="FirstOrDefault`1" priority="26" />
+      <Item value="SingleOrDefault`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.Windsor.WindsorContainer">
+      <Item value="AddComponent`0" priority="26" />
+      <Item value="Register`0" priority="81" />
+      <Item value="AddFacility`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.MicroKernel.Registration.Component">
+      <Item value="For`0" priority="53" />
+      <Item value="For`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Castle.MicroKernel.Registration.AllTypes">
+      <Item value="FromAssembly`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.FromAssemblyDescriptor">
+      <Item value="Pick`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.BasedOnDescriptor">
+      <Item value="WithService" priority="26" />
+      <Item value="Configure`0" priority="54" />
+      <Item value="LifestylePerThread`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.ServiceDescriptor">
+      <Item value="DefaultInterfaces`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.ComponentRegistration">
+      <Item value="LifeStyle" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.Lifestyle.LifestyleGroup`1">
+      <Item value="PerThread" priority="81" />
+      <Item value="Singleton" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.Registration.ComponentRegistration`1">
+      <Item value="LifeStyle" priority="53" />
+      <Item value="UsingFactory`2" priority="26" />
+      <Item value="UsingFactoryMethod`1" priority="54" />
+      <Item value="Implementation" priority="26" />
+      <Item value="ImplementedBy`1" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Configuration.ConfigurationManager">
+      <Item value="ConnectionStrings" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.ConnectionStringSettings">
+      <Item value="ConnectionString" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Lazy`1">
+      <Item value="Value" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.Windsor.IWindsorContainer">
+      <Item value="Resolve`0" priority="26" />
+      <Item value="Dispose`0" priority="26" />
+      <Item value="Resolve`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IClassConstraints">
+      <Item value="Be" priority="134" />
+      <Item value="Not" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IClassBeConstraints">
+      <Item value="Null`0" priority="109" />
+      <Item value="EqualTo`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Castle.MicroKernel.IKernel">
+      <Item value="Resolve`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.ProjectSettings.IApplicationSettings">
+      <Item value="ConnectionString" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Gamification.IOC.EFComponentRegistrator">
+      <Item value="GetContainer`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests">
+      <Item value="repository" priority="270" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Gamer">
+      <Item value="Id" priority="162" />
+      <Item value="GamerStatuses" priority="22" />
+      <Item value="UserProject" priority="26" />
+      <Item value="Should`0" priority="107" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.EntitiesAccess.IRepository`1">
+      <Item value="Add`0" priority="53" />
+      <Item value="SaveChanges`0" priority="49" />
+      <Item value="GetById`0" priority="107" />
+      <Item value="AddPhysically`0" priority="72" />
+      <Item value="Delete`0" priority="26" />
+      <Item value="DeletePhysically`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Data.EF.EfRepository`1">
+      <Item value="dbContext" priority="53" />
+      <Item value="Delete`0" priority="26" />
+      <Item value="SaveChanges`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Data.EF.Contexts.EfDbContext">
+      <Item value="SaveChanges`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IComparableConstraints`1">
+      <Item value="Be" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IComparableBeConstraints`1">
+      <Item value="LessThan`0" priority="26" />
+      <Item value="GreaterThan`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:">
+      <Item value="Id" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
+      <Item value="That`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@NUnit.Framework.Is">
+      <Item value="EqualTo`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <UnitTestSessions>
+    <Session>
+      <Name>Session #1</Name>
+      <Elements>
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.Add_ShouldAddEntityToRepository" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="Add_ShouldAddEntityToRepository" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.Delete_ShouldDeleteEntityFromDatabase" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="Delete_ShouldDeleteEntityFromDatabase" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.GetById_IfEntityWithPassedIdIsNotExistInDB_ShouldReturnNull" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="GetById_IfEntityWithPassedIdIsNotExistInDB_ShouldReturnNull" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.GetById_ShouldReturnEntityById" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="GetById_ShouldReturnEntityById" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests.ResolveRepositoryTests" ParentId="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" MethodName="ResolveRepositoryTests" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+      </Elements>
+    </Session>
+  </UnitTestSessions>
+</Configuration>

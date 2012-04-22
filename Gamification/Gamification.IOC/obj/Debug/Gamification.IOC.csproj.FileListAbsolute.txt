@@ -1,0 +1,17 @@
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Gamification.IOC.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Gamification.IOC.pdb
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Castle.Core.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Castle.Windsor.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\EntityFramework.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Gamification.Core.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Gamification.Data.EF.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Gamification.Data.EF.pdb
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Gamification.Core.pdb
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Castle.Core.xml
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Castle.Windsor.xml
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\EntityFramework.xml
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\obj\Debug\ResolveAssemblyReference.cache
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\obj\Debug\Gamification.IOC.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\obj\Debug\Gamification.IOC.pdb
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Castle.Facilities.WcfIntegration.dll
+D:\универ\Диплом\Project\Gamification\Gamification.IOC\bin\Debug\Castle.Facilities.WcfIntegration.xml
