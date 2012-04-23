@@ -8,3 +8,5 @@ D:\Projects\diploma\Gamification\src\Gamification\bin\Debug\Gamification.Core.pd
 D:\Projects\diploma\Gamification\src\Gamification\obj\Debug\ResolveAssemblyReference.cache
 D:\Projects\diploma\Gamification\src\Gamification\obj\Debug\Gamification.Core.dll
 D:\Projects\diploma\Gamification\src\Gamification\obj\Debug\Gamification.Core.pdb
+D:\Projects\diploma\Gamification\src\Gamification\bin\Debug\EntityFramework.dll
+D:\Projects\diploma\Gamification\src\Gamification\bin\Debug\EntityFramework.xml

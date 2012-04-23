@@ -6,15 +6,15 @@ namespace Gamification.Core.Entities
     {
         public Gamer()
         {
-            this.GamerStatuses = new HashSet<GamerStatus>();
             this.Achievements = new List<Achievement>();
+            this.GamerStatuses = new HashSet<GamerStatus>();
         }
 
-        public virtual Project Project { get; set; }
+        public Project Project { get; set; }
 
-        public virtual long Points { get; set;  }
+        public long Points { get; set;  }
 
-        public virtual ISet<GamerStatus> GamerStatuses { get; protected set; }
+        public ISet<GamerStatus> GamerStatuses { get; set; }
 
         public Level CurrentLevel { get; set; }
 

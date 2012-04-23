@@ -1,7 +1,7 @@
 using Gamification.Core.Operations;
 using Moq;
 
-namespace Gamification.Testing.Unit.Core.Operations
+namespace Gamification.Testing.Unit.Core.ResultProviders
 {
     public abstract class BaseResultProviderTest
     {

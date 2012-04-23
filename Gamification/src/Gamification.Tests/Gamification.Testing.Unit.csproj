@@ -49,11 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Entities\CommonBooleanConstraintTests.cs" />
-    <Compile Include="Core\Operations\AndResultProviderTests.cs" />
-    <Compile Include="Core\Operations\BaseResultProviderTest.cs" />
-    <Compile Include="Core\Operations\BooleanOperationExtension.cs" />
-    <Compile Include="Core\Operations\OrResultProviderTests.cs" />
+    <Compile Include="Core\Entities\GameActionTests.cs" />
+    <Compile Include="Core\ResultProviders\AndResultProviderTests.cs" />
+    <Compile Include="Core\ResultProviders\BaseResultProviderTest.cs" />
+    <Compile Include="Core\ResultProviders\BooleanOperationExtension.cs" />
+    <Compile Include="Core\ResultProviders\OrResultProviderTests.cs" />
+    <Compile Include="Core\ResultProviders\StringCollectionResultProviderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

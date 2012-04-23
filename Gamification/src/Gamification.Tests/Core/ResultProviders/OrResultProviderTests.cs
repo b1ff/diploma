@@ -1,8 +1,8 @@
-using Gamification.Core.Operations;
+using Gamification.Core.ResultProviders;
 using NUnit.Framework;
 using SharpTestsEx;
 
-namespace Gamification.Testing.Unit.Core.Operations
+namespace Gamification.Testing.Unit.Core.ResultProviders
 {
     [TestFixture]
     public class OrResultProviderTests : BaseResultProviderTest

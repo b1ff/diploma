@@ -1,6 +1,6 @@
 ﻿namespace Gamification.Core.Enums
 {
-    public enum BooleanOperation
+    public enum BooleanOperations : byte
     {
         Equals,
 

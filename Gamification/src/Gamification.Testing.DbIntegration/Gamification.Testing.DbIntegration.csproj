@@ -58,6 +58,7 @@
     <Compile Include="BaseFixtures\BaseIntegrationFixture.cs" />
     <Compile Include="ConfigurationTest\WindsorContainerInitializerTests.cs" />
     <Compile Include="Data.EF\EFRepositoryTests.cs" />
+    <Compile Include="Entities\QuantityBasedConstraintsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

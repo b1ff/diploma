@@ -5,23 +5,23 @@ namespace Gamification.Core.Operations
 {
     public static class BooleanOperationExtension
     {
-        public static bool Calculate(this BooleanOperation operation, double firstNum, double secondNum)
+        public static bool Calculate(this BooleanOperations operation, double firstNum, double secondNum)
         {
             const double epsilon = 0.0001;
 
             switch (operation)
             {
-                case BooleanOperation.Equals:
+                case BooleanOperations.Equals:
                     return Math.Abs(firstNum - secondNum) < epsilon;
-                case BooleanOperation.GreaterThan:
+                case BooleanOperations.GreaterThan:
                     return firstNum > secondNum;
-                case BooleanOperation.LessThan:
+                case BooleanOperations.LessThan:
                     return firstNum < secondNum;
-                case BooleanOperation.NotEqual:
+                case BooleanOperations.NotEqual:
                     return Math.Abs(firstNum - secondNum) > epsilon;
-                case BooleanOperation.GreaterOrEquals:
+                case BooleanOperations.GreaterOrEquals:
                     return firstNum >= secondNum;
-                case BooleanOperation.LessOrEquals:
+                case BooleanOperations.LessOrEquals:
                     return firstNum <= secondNum;
                 default:
                     throw new ArgumentOutOfRangeException("operation");

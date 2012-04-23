@@ -1,4 +1,6 @@
-namespace Gamification.Core.Operations
+using Gamification.Core.Operations;
+
+namespace Gamification.Core.ResultProviders
 {
     public abstract class BaseFromTwoResultsProviders : IBooleanResultProvider
     {

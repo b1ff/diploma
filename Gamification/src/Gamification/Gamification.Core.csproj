@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -44,25 +47,37 @@
   <ItemGroup>
     <Compile Include="Attributes\PropertyToCompareAttribute.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
+    <Compile Include="Domain\ActionPerformError.cs" />
     <Compile Include="Entities\Achievement.cs" />
     <Compile Include="Entities\AchievementsTrigger.cs" />
     <Compile Include="Entities\ActionTrigger.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\CommonBooleanConstraint.cs" />
+    <Compile Include="Entities\Constraints\AchievementsConstraint.cs" />
+    <Compile Include="Entities\Constraints\BaseQuantityBasedConstraint.cs" />
+    <Compile Include="Entities\Constraints\BaseStringCollectionConstraint.cs" />
+    <Compile Include="Entities\Constraints\ICollectionConstraint.cs" />
+    <Compile Include="Entities\Constraints\IConstraint.cs" />
+    <Compile Include="Entities\Constraints\IOneValueConstraint.cs" />
+    <Compile Include="Entities\Constraints\LevelBasedConstraint.cs" />
+    <Compile Include="Entities\Constraints\PointsBasedConstraint.cs" />
+    <Compile Include="Entities\Constraints\StatusConstraint.cs" />
     <Compile Include="Entities\GameAction.cs" />
     <Compile Include="Entities\Gamer.cs" />
     <Compile Include="Entities\GamerStatus.cs" />
     <Compile Include="Entities\Level.cs" />
     <Compile Include="Entities\Project.cs" />
-    <Compile Include="Enums\BooleanOperation.cs" />
+    <Compile Include="Enums\BooleanOperations.cs" />
+    <Compile Include="Enums\CollectionEqualityOperations.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
-    <Compile Include="Operations\AndResultProvider.cs" />
-    <Compile Include="Operations\BaseFromTwoResultsProviders.cs" />
-    <Compile Include="Operations\BooleanOperationExtension.cs" />
-    <Compile Include="Operations\CommonBooleanResultsProvider.cs" />
-    <Compile Include="Operations\IBooleanResultProvider.cs" />
-    <Compile Include="Operations\OrResultProvider.cs" />
+    <Compile Include="ResultProviders\AndResultProvider.cs" />
+    <Compile Include="ResultProviders\BaseFromTwoResultsProviders.cs" />
+    <Compile Include="ResultProviders\BaseGamerDependResultProvider.cs" />
+    <Compile Include="ResultProviders\BooleanOperationExtension.cs" />
+    <Compile Include="ResultProviders\QuantityBasedResultsProvider.cs" />
+    <Compile Include="ResultProviders\IBooleanResultProvider.cs" />
+    <Compile Include="ResultProviders\OrResultProvider.cs" />
+    <Compile Include="ResultProviders\StringCollectionResultProvider.cs" />
     <Compile Include="ProjectSettings\FromConfigFileConfiguration.cs" />
     <Compile Include="ProjectSettings\IApplicationSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -5,5 +5,7 @@ namespace Gamification.Core.Entities
         public Project Project { get; set; }
 
         public string ImagePath { get; set; }
+
+        public string Name { get; set; }
     }
 }
