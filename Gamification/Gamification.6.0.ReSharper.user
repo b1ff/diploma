@@ -1,103 +1,103 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949/f:EFComponentRegistrator.cs" caret="1073" fromTop="21" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GamerStatus.cs" caret="0" fromTop="0" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:BaseEntity.cs" caret="0" fromTop="0" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Level.cs" caret="320" fromTop="13" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:BooleanOperation.cs" caret="220" fromTop="15" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:OrResultProvider.cs" caret="367" fromTop="10" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:AndResultProvider.cs" caret="41" fromTop="1" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:OrResultProviderTests.cs" caret="157" fromTop="6" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:BaseResultProviderTest.cs" caret="0" fromTop="0" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:AndResultProviderTests.cs" caret="942" fromTop="25" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IRepository.cs" caret="126" fromTop="5" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="38" fromTop="1" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="470" fromTop="17" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:IBooleanResultProvider.cs" caret="64" fromTop="2" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:BooleanOperationExtension.cs" caret="414" fromTop="12" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:BooleanOperationExtension.cs" caret="706" fromTop="19" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Extensions/f:CollectionExtensions.cs" caret="316" fromTop="12" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Attributes/f:PropertyToCompareAttribute.cs" caret="220" fromTop="8" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Entities/f:CommonBooleanConstraintTests.cs" caret="207" fromTop="9" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Extensions/f:ReflectionExtensions.cs" caret="419" fromTop="12" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:CommonBooleanResultsProvider.cs" caret="664" fromTop="17" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:ConfigurationTest/f:WindsorContainerInitializerTests.cs" caret="0" fromTop="0" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="332" fromTop="11" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Achievement.cs" caret="182" fromTop="6" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Gamer.cs" caret="528" fromTop="18" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:BaseFromTwoResultsProviders.cs" caret="499" fromTop="15" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:ActionTrigger.cs" caret="131" fromTop="4" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:CommonBooleanConstraint.cs" caret="305" fromTop="9" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="233" fromTop="9" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:AchievementsTrigger.cs" caret="312" fromTop="11" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:ResultProviders/f:OrResultProvider.cs" caret="66" fromTop="2" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:ResultProviders/f:QuantityBasedResultsProvider.cs" caret="144" fromTop="4" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GamerStatus.cs" caret="262" fromTop="11" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:ICollectionConstraint.cs" caret="129" fromTop="4" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:IOneValueConstraint.cs" caret="0" fromTop="0" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:IConstraint.cs" caret="387" fromTop="12" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:ResultProviders/f:BaseResultProviderTest.cs" caret="91" fromTop="3" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:ResultProviders/f:OrResultProviderTests.cs" caret="126" fromTop="4" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:ResultProviders/f:AndResultProviderTests.cs" caret="40" fromTop="0" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:ResultProviders/f:BooleanOperationExtension.cs" caret="1573" fromTop="35" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:ResultProviders/f:StringCollectionResultProviderTests.cs" caret="354" fromTop="12" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:ResultProviders/f:StringCollectionResultProvider.cs" caret="679" fromTop="18" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:LevelBasedConstraint.cs" caret="70" fromTop="2" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:StatusConstraint.cs" caret="127" fromTop="5" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Achievement.cs" caret="214" fromTop="8" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Gamer.cs" caret="202" fromTop="8" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:AchievementsConstraint.cs" caret="272" fromTop="8" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Entities/f:GameActionTests.cs" caret="512" fromTop="20" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Domain/f:ActionPerformError.cs" caret="225" fromTop="10" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="900" fromTop="24" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:BooleanOperations.cs" caret="197" fromTop="12" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IRepository.cs" caret="686" fromTop="19" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="789" fromTop="30" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="423" fromTop="15" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:CollectionEqualityOperations.cs" caret="89" fromTop="2" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseQuantityBasedConstraint.cs" caret="624" fromTop="17" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseStringCollectionConstraint.cs" caret="627" fromTop="15" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="1491" fromTop="21" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="1525" fromTop="18" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:BaseEntity.cs" caret="442" fromTop="15" />
     </RecentFiles>
     <RecentEdits>
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:CommonBooleanConstraint.cs" caret="305" fromTop="7" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:BaseFromTwoResultsProviders.cs" caret="500" fromTop="16" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:CommonBooleanResultsProvider.cs" caret="383" fromTop="9" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:CommonBooleanConstraint.cs" caret="1423" fromTop="35" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:CommonBooleanConstraint.cs" caret="1186" fromTop="30" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:BooleanOperationExtension.cs" caret="150" fromTop="7" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:BooleanOperationExtension.cs" caret="1097" fromTop="17" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:BooleanOperationExtension.cs" caret="1228" fromTop="23" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:BooleanOperationExtension.cs" caret="1526" fromTop="31" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Operations/f:BooleanOperationExtension.cs" caret="462" fromTop="13" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Operations/f:CommonBooleanResultsProvider.cs" caret="567" fromTop="13" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Attributes/f:PropertyToCompareAttribute.cs" caret="275" fromTop="6" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:CommonBooleanConstraint.cs" caret="44" fromTop="0" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Extensions/f:CollectionExtensions.cs" caret="452" fromTop="14" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Extensions/f:ReflectionExtensions.cs" caret="435" fromTop="11" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Extensions/f:ReflectionExtensions.cs" caret="417" fromTop="11" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Attributes/f:PropertyToCompareAttribute.cs" caret="220" fromTop="8" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:CommonBooleanConstraint.cs" caret="692" fromTop="21" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Entities/f:CommonBooleanConstraintTests.cs" caret="458" fromTop="16" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Gamer.cs" caret="275" fromTop="9" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Gamer.cs" caret="612" fromTop="23" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="363" fromTop="13" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="628" fromTop="21" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="331" fromTop="11" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Achievement.cs" caret="182" fromTop="6" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:AchievementsTrigger.cs" caret="309" fromTop="5" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:ActionTrigger.cs" caret="131" fromTop="4" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:AchievementsTrigger.cs" caret="289" fromTop="8" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="356" fromTop="13" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="233" fromTop="9" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="2084" fromTop="31" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="3245" fromTop="42" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1897" fromTop="45" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="2433" fromTop="46" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="2223" fromTop="36" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="2122" fromTop="34" />
+      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/f:EFRepository.cs" caret="1897" fromTop="14" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IRepository.cs" caret="683" fromTop="19" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="2704" fromTop="29" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseQuantityBasedConstraint.cs" caret="324" fromTop="9" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:CollectionEqualityOperations.cs" caret="89" fromTop="2" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseQuantityBasedConstraint.cs" caret="511" fromTop="13" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseQuantityBasedConstraint.cs" caret="587" fromTop="17" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseStringCollectionConstraint.cs" caret="640" fromTop="12" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseStringCollectionConstraint.cs" caret="627" fromTop="15" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="3407" fromTop="61" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="427" fromTop="8" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="635" fromTop="12" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="1409" fromTop="29" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="1153" fromTop="26" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="1972" fromTop="42" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="847" fromTop="23" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="1150" fromTop="28" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="1702" fromTop="21" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:QuantityBasedConstraintsTests.cs" caret="1605" fromTop="18" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="2684" fromTop="11" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="3386" fromTop="21" />
+      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="735" fromTop="20" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:BaseEntity.cs" caret="898" fromTop="28" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:BaseEntity.cs" caret="594" fromTop="17" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="public" priority="2584" />
+      <Item value="public" priority="3347" />
       <Item value="virtual" priority="351" />
-      <Item value="int" priority="191" />
+      <Item value="int" priority="288" />
       <Item value="UserProject`0" priority="159" />
-      <Item value="void" priority="639" />
+      <Item value="void" priority="831" />
       <Item value="typeof" priority="287" />
-      <Item value="Gamer`0" priority="31" />
-      <Item value="x" priority="479" />
+      <Item value="Gamer`0" priority="159" />
+      <Item value="x" priority="703" />
       <Item value="Guid`0" priority="31" />
-      <Item value="new" priority="927" />
+      <Item value="new" priority="1503" />
       <Item value="HashSet&lt;Gamer&gt;" priority="57" />
       <Item value="long" priority="63" />
       <Item value="double" priority="417" />
       <Item value="GamerStatus`0" priority="95" />
       <Item value="GetHashCode`0" priority="95" />
       <Item value="Gamers" priority="31" />
-      <Item value="ISet" priority="95" />
-      <Item value="this" priority="927" />
-      <Item value="string" priority="383" />
-      <Item value="private" priority="255" />
+      <Item value="ISet" priority="159" />
+      <Item value="this" priority="1471" />
+      <Item value="string" priority="479" />
+      <Item value="private" priority="287" />
       <Item value="static" priority="383" />
-      <Item value="var" priority="1311" />
-      <Item value="return" priority="1023" />
+      <Item value="var" priority="1695" />
+      <Item value="return" priority="1311" />
       <Item value="BaseEntity`0" priority="255" />
       <Item value="GetEntitiesTypes`0" priority="31" />
       <Item value="TEntity`0" priority="446" />
       <Item value="EntityFrameworkDbContext`0" priority="63" />
       <Item value="connectionString" priority="63" />
-      <Item value="bool" priority="479" />
+      <Item value="bool" priority="543" />
       <Item value="EntityFrameworkRepository`0" priority="31" />
-      <Item value="dbContext" priority="191" />
+      <Item value="dbContext" priority="223" />
       <Item value="IObjectSet" priority="31" />
       <Item value="EntityPersister" priority="191" />
       <Item value="entity" priority="191" />
@@ -124,38 +124,38 @@
       <Item value="IApplicationSettings`0" priority="95" />
       <Item value="FromConfigFileConfiguration`0" priority="31" />
       <Item value="Lazy&lt;string&gt;" priority="28" />
-      <Item value="Test" priority="159" />
+      <Item value="Test" priority="191" />
       <Item value="repository" priority="31" />
       <Item value="EfDbContext" priority="28" />
       <Item value="appSettings" priority="31" />
-      <Item value="IRepository" priority="31" />
-      <Item value="foreach" priority="31" />
+      <Item value="IRepository" priority="63" />
+      <Item value="foreach" priority="95" />
       <Item value="repositoryType" priority="31" />
       <Item value="Container" priority="95" />
       <Item value="TestFixtureTearDown" priority="31" />
       <Item value="prop" priority="63" />
-      <Item value="protected" priority="130" />
+      <Item value="protected" priority="162" />
       <Item value="OnTeardown`0" priority="31" />
       <Item value="OnSetup`0" priority="31" />
-      <Item value="override" priority="31" />
+      <Item value="override" priority="95" />
       <Item value="PairwiseAttribute`0" priority="31" />
-      <Item value="gamer" priority="410" />
+      <Item value="gamer" priority="634" />
       <Item value="id" priority="31" />
       <Item value="gamerFromDb" priority="95" />
       <Item value="SetUpFixture" priority="26" />
       <Item value="TestFixtureSetUp" priority="26" />
-      <Item value="SetUp" priority="31" />
+      <Item value="SetUp" priority="95" />
       <Item value="t" priority="31" />
       <Item value="DropCreateDatabaseIfModelChanges" priority="53" />
       <Item value="DropCreateDatabaseAlways" priority="53" />
-      <Item value="System" priority="31" />
+      <Item value="System" priority="95" />
       <Item value="Data" priority="26" />
       <Item value="Entity" priority="26" />
       <Item value="CreateDatabaseIfNotExists" priority="26" />
-      <Item value="Gamer" priority="86" />
+      <Item value="Gamer" priority="147" />
       <Item value="SaveChanges`0" priority="31" />
-      <Item value="Assert`0" priority="31" />
-      <Item value="Is`0" priority="31" />
+      <Item value="Assert`0" priority="95" />
+      <Item value="Is`0" priority="63" />
       <Item value="gamerId" priority="63" />
       <Item value="WcfIntegration" priority="26" />
       <Item value="modelBuilder" priority="31" />
@@ -164,20 +164,20 @@
       <Item value="List&lt;ActionTrigger&gt;" priority="28" />
       <Item value="ActionTrigger`0" priority="63" />
       <Item value="Level`0" priority="95" />
-      <Item value="ctor" priority="95" />
+      <Item value="ctor" priority="127" />
       <Item value="GamerStatuses" priority="31" />
-      <Item value="HashSet&lt;GamerStatus&gt;" priority="28" />
+      <Item value="HashSet&lt;GamerStatus&gt;" priority="57" />
       <Item value="UnlockedActions" priority="31" />
       <Item value="HashSet&lt;GameAction&gt;" priority="28" />
-      <Item value="BooleanOperation" priority="64" />
+      <Item value="BooleanOperation" priority="97" />
       <Item value="object" priority="220" />
       <Item value="PropertyToCompare" priority="127" />
-      <Item value="as" priority="31" />
+      <Item value="as" priority="63" />
       <Item value="null" priority="191" />
-      <Item value="if" priority="63" />
-      <Item value="value" priority="95" />
+      <Item value="if" priority="255" />
+      <Item value="value" priority="159" />
       <Item value="IBooleanOperable`0" priority="58" />
-      <Item value="IBooleanResultProvider`0" priority="316" />
+      <Item value="IBooleanResultProvider`0" priority="380" />
       <Item value="AndResultProviderTests`0" priority="31" />
       <Item value="true" priority="127" />
       <Item value="firstOperation" priority="63" />
@@ -190,12 +190,12 @@
       <Item value="mockFirstProvider" priority="31" />
       <Item value="mockSecondProvider" priority="31" />
       <Item value="andResult" priority="31" />
-      <Item value="result" priority="127" />
+      <Item value="result" priority="191" />
       <Item value="expectedResult" priority="95" />
       <Item value="firstResultProvider" priority="63" />
       <Item value="secondResultProvider" priority="63" />
-      <Item value="class" priority="217" />
-      <Item value="abstract" priority="62" />
+      <Item value="class" priority="280" />
+      <Item value="abstract" priority="120" />
       <Item value="DoubleResultProvider`0" priority="63" />
       <Item value="FromTwoResultsProviders`0" priority="31" />
       <Item value="TestFixture" priority="30" />
@@ -209,7 +209,7 @@
       <Item value="booleanOperable" priority="63" />
       <Item value="entityWithValueToCompare" priority="31" />
       <Item value="propertyInfo" priority="31" />
-      <Item value="constraint" priority="127" />
+      <Item value="constraint" priority="191" />
       <Item value="FakeEntityWithoutProperty" priority="28" />
       <Item value="fake" priority="63" />
       <Item value="throw" priority="31" />
@@ -229,7 +229,7 @@
       <Item value="num1" priority="31" />
       <Item value="comparablePropertyType" priority="31" />
       <Item value="collection" priority="127" />
-      <Item value="IEnumerable" priority="31" />
+      <Item value="IEnumerable" priority="63" />
       <Item value="T`0" priority="31" />
       <Item value="First`1" priority="26" />
       <Item value="FirstOrDefault`1" priority="54" />
@@ -246,6 +246,74 @@
       <Item value="Achievement`0" priority="63" />
       <Item value="HashSet&lt;Achievement&gt;" priority="28" />
       <Item value="AchievementToAssign" priority="31" />
+      <Item value="CommonBooleanConstraint`0" priority="31" />
+      <Item value="Constraints" priority="63" />
+      <Item value="HashSet&lt;CommonBooleanConstraint&gt;" priority="28" />
+      <Item value="for" priority="63" />
+      <Item value="List" priority="28" />
+      <Item value="ActionPerformError`0" priority="31" />
+      <Item value="errors" priority="95" />
+      <Item value="trigger" priority="31" />
+      <Item value="CommonBooleanConstraint" priority="28" />
+      <Item value="Rules" priority="53" />
+      <Item value="AddedConditionAction`0" priority="26" />
+      <Item value="AddedConditionAction" priority="28" />
+      <Item value="RuleExpressionCondition" priority="28" />
+      <Item value="CodeExpression" priority="57" />
+      <Item value="Workflow" priority="26" />
+      <Item value="Activities" priority="26" />
+      <Item value="RuleAction`0" priority="26" />
+      <Item value="RuleUpdateAction" priority="28" />
+      <Item value="RuleStatementAction" priority="28" />
+      <Item value="enum" priority="30" />
+      <Item value="StringBasedResultsProvider`0" priority="31" />
+      <Item value="BaseStringBasedConstraint`0" priority="31" />
+      <Item value="stringBased" priority="32" />
+      <Item value="stringBasedConstraint" priority="128" />
+      <Item value="BaseGameDependResultProvider`0" priority="63" />
+      <Item value="gamerPropertyValue" priority="95" />
+      <Item value="Equals" priority="33" />
+      <Item value="else" priority="31" />
+      <Item value="StringBasedResultsProvider" priority="26" />
+      <Item value="interface" priority="61" />
+      <Item value="IConstraint" priority="63" />
+      <Item value="TValue`0" priority="127" />
+      <Item value="IOneValueConstraint" priority="26" />
+      <Item value="mockConstraint" priority="127" />
+      <Item value="It`0" priority="31" />
+      <Item value="Func&lt;IEnumerable&lt;string&gt;&gt;" priority="28" />
+      <Item value="resultProvider" priority="31" />
+      <Item value="Have" priority="16" />
+      <Item value="BaseFixtures" priority="31" />
+      <Item value="BaseIntegrationFixture`0" priority="26" />
+      <Item value="Testing" priority="31" />
+      <Item value="LevelBasedConstraint" priority="28" />
+      <Item value="levelBasedConstraint" priority="315" />
+      <Item value="PointsBasedConstraint" priority="28" />
+      <Item value="pointsBasedConstraint" priority="256" />
+      <Item value="constraints" priority="63" />
+      <Item value="is" priority="63" />
+      <Item value="LevelBasedConstraint`0" priority="31" />
+      <Item value="pointsBsdFromDb" priority="63" />
+      <Item value="levelBsdFromDb" priority="63" />
+      <Item value="BaseStringCollectionConstraint`0" priority="31" />
+      <Item value="StringCollectionConstraints" priority="31" />
+      <Item value="HashSet&lt;BaseStringCollectionConstraint&gt;" priority="28" />
+      <Item value="PointsBasedConstraint`0" priority="32" />
+      <Item value="GreaterOrEquals" priority="16" />
+      <Item value="BooleanOperations`0" priority="31" />
+      <Item value="Column" priority="63" />
+      <Item value="BooleanOperationId" priority="63" />
+      <Item value="CollectionEqualityOperations`0" priority="127" />
+      <Item value="byte" priority="63" />
+      <Item value="CollectionEqualityOperation" priority="32" />
+      <Item value="CollectionEqualityOperationId" priority="63" />
+      <Item value="AchievementsConstraint" priority="29" />
+      <Item value="StatusConstraint" priority="26" />
+      <Item value="AchievementsConstraint`0" priority="32" />
+      <Item value="StatusConstraint`0" priority="32" />
+      <Item value="GetType`0" priority="31" />
+      <Item value="Id" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
       <Item value="GetHashCode`0" priority="26" />
@@ -258,17 +326,20 @@
       <Item value="IsAbstract" priority="80" />
       <Item value="MakeGenericType`0" priority="26" />
       <Item value="GetProperty`0" priority="26" />
+      <Item value="Name" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.GamerStatus">
       <Item value="UserProjects" priority="26" />
+      <Item value="StatusName" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Reflection.Assembly">
       <Item value="GetType`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
-      <Item value="ToList`1" priority="26" />
+      <Item value="ToList`1" priority="54" />
       <Item value="Select`2" priority="26" />
       <Item value="Any`1" priority="26" />
+      <Item value="Contains`1" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Data.Contexts.EntityFrameworkDbContext">
       <Item value="Set`1" priority="26" />
@@ -335,17 +406,17 @@
       <Item value="Value" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Castle.Windsor.IWindsorContainer">
-      <Item value="Resolve`0" priority="26" />
+      <Item value="Resolve`0" priority="53" />
       <Item value="Dispose`0" priority="26" />
-      <Item value="Resolve`1" priority="26" />
+      <Item value="Resolve`1" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IClassConstraints">
-      <Item value="Be" priority="134" />
+      <Item value="Be" priority="161" />
       <Item value="Not" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IClassBeConstraints">
       <Item value="Null`0" priority="109" />
-      <Item value="EqualTo`0" priority="26" />
+      <Item value="EqualTo`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Castle.MicroKernel.IKernel">
       <Item value="Resolve`1" priority="26" />
@@ -361,10 +432,13 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Gamer">
       <Item value="Id" priority="162" />
-      <Item value="GamerStatuses" priority="22" />
+      <Item value="GamerStatuses" priority="49" />
       <Item value="UserProject" priority="26" />
       <Item value="Should`0" priority="107" />
-      <Item value="Achievements" priority="26" />
+      <Item value="Achievements" priority="53" />
+      <Item value="CurrentLevel" priority="22" />
+      <Item value="Points" priority="22" />
+      <Item value="GamerStatus" priority="81" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.EntitiesAccess.IRepository`1">
       <Item value="Add`0" priority="53" />
@@ -375,7 +449,7 @@
       <Item value="DeletePhysically`0" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Data.EF.EfRepository`1">
-      <Item value="dbContext" priority="53" />
+      <Item value="dbContext" priority="137" />
       <Item value="Delete`0" priority="26" />
       <Item value="SaveChanges`0" priority="26" />
     </ItemStatistics>
@@ -394,10 +468,11 @@
       <Item value="Id" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
-      <Item value="That`0" priority="26" />
+      <Item value="That`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Is">
       <Item value="EqualTo`0" priority="26" />
+      <Item value="GreaterThan`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Project">
       <Item value="Levels" priority="27" />
@@ -417,23 +492,25 @@
       <Item value="Value" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Mock`1">
-      <Item value="Setup`0" priority="26" />
-      <Item value="Object" priority="26" />
+      <Item value="Setup`0" priority="107" />
+      <Item value="Object" priority="104" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Operations.IBooleanResultProvider">
       <Item value="GetResult`0" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Language.Flow.ISetup`2">
-      <Item value="Returns`0" priority="26" />
+      <Item value="Returns`0" priority="107" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Operations.AndResultProvider">
       <Item value="GetResult`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IBooleanConstraints">
-      <Item value="Be" priority="81" />
+      <Item value="Be" priority="108" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IBooleanBeConstraints">
-      <Item value="EqualTo`0" priority="80" />
+      <Item value="EqualTo`0" priority="107" />
+      <Item value="True`0" priority="22" />
+      <Item value="False`0" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Operations.OrResultProvider">
       <Item value="GetResult`0" priority="26" />
@@ -445,6 +522,8 @@
       <Item value="GetPropertyValueToCompare`0" priority="80" />
       <Item value="PropertyToCompare" priority="22" />
       <Item value="ValueToCompare" priority="53" />
+      <Item value="GetResult`0" priority="26" />
+      <Item value="Description" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests+FakeEntityWithoutProperty">
       <Item value="Property" priority="26" />
@@ -475,6 +554,118 @@
     <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
       <Item value="Add`0" priority="26" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="26" />
+      <Item value="FirstOrDefault`1" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.ActionTrigger">
+      <Item value="TriggerOnGamer`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Testing.Unit.Core.Entities.GameActionTests">
+      <Item value="gameAction" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.GameAction">
+      <Item value="Constraints" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ISet`1">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Workflow.Activities.Rules.AddedConditionAction">
+      <Item value="ConditionDefinition" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Level">
+      <Item value="LevelNumber" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Operations.StringBasedResultsProvider">
+      <Item value="stringBasedConstraint" priority="26" />
+      <Item value="Gamer" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.BaseStringBasedConstraint">
+      <Item value="GetValueToCompare`0" priority="26" />
+      <Item value="StringEqualityOperation" priority="26" />
+      <Item value="ValueToCompare" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.BaseStringCollectionBasedConstraint">
+      <Item value="GetValuesToCompare`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Gamification.Core.Enums.CollectionEqualityOperations">
+      <Item value="Have" priority="123" />
+      <Item value="NotHave" priority="55" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.BaseStringCollectionConstraint">
+      <Item value="GetValuesToCompare`0" priority="26" />
+      <Item value="ValueToCompare" priority="53" />
+      <Item value="CollectionEqualityOperation" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Moq.It">
+      <Item value="Is`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Clone`0" priority="53" />
+      <Item value="Should`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.ResultProviders.StringCollectionResultProvider">
+      <Item value="GetResult`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Achievement">
+      <Item value="Name" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests">
+      <Item value="Container" priority="53" />
+      <Item value="qtyBasedConstraintsRepository" priority="161" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.LevelBasedConstraint">
+      <Item value="ValueToCompare" priority="26" />
+      <Item value="Description" priority="80" />
+      <Item value="Id" priority="27" />
+      <Item value="BooleanOperations" priority="26" />
+      <Item value="BooleanOperation" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.DataAccess.IRepository`1">
+      <Item value="AddPhysically`0" priority="26" />
+      <Item value="Add`0" priority="26" />
+      <Item value="GetAll`0" priority="26" />
+      <Item value="ClearContext`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.PointsBasedConstraint">
+      <Item value="ValueToCompare" priority="26" />
+      <Item value="Description" priority="53" />
+      <Item value="BooleanOperation" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IStringConstraints">
+      <Item value="Be" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SharpTestsEx.IStringBeConstraints">
+      <Item value="EqualTo`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.BaseQuantityBasedConstraint">
+      <Item value="Description" priority="26" />
+      <Item value="Id" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Enums.BooleanOperations">
+      <Item value="Should`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Gamification.Core.Enums.BooleanOperations">
+      <Item value="Equals" priority="26" />
+      <Item value="GreaterOrEquals" priority="22" />
+      <Item value="NotEqual" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.AchievementsConstraint">
+      <Item value="CollectionEqualityOperation" priority="50" />
+      <Item value="ValueToCompare" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.StatusConstraint">
+      <Item value="CollectionEqualityOperation" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests">
+      <Item value="collectionConstraintsRepository" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Core.Entities.BaseEntity">
+      <Item value="GetType`0" priority="26" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -499,47 +690,73 @@
     <Session>
       <Name>Session #1</Name>
       <Elements>
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.Add_ShouldAddEntityToRepository" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="Add_ShouldAddEntityToRepository" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension" MethodName="Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.Delete_ShouldDeleteEntityFromDatabase" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="Delete_ShouldDeleteEntityFromDatabase" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.GetById_IfEntityWithPassedIdIsNotExistInDB_ShouldReturnNull" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="GetById_IfEntityWithPassedIdIsNotExistInDB_ShouldReturnNull" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.GetById_ShouldReturnEntityById" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="GetById_ShouldReturnEntityById" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests.GetPropertyValueToCompare_IfPassedObjectDoesntHaveNeededProperty_ShouldReturnZero" ParentId="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" MethodName="GetPropertyValueToCompare_IfPassedObjectDoesntHaveNeededProperty_ShouldReturnZero" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests.GetPropertyValueToCompare_IfPassedObjectHaveNeededProperty_ShouldReturnPropertyValue" ParentId="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" MethodName="GetPropertyValueToCompare_IfPassedObjectHaveNeededProperty_ShouldReturnPropertyValue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests.GetPropertyValueToCompare_IfPassedObjectHaveNullPropertyValue_ShouldReturnZero" ParentId="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.CommonBooleanConstraintTests" MethodName="GetPropertyValueToCompare_IfPassedObjectHaveNullPropertyValue_ShouldReturnZero" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" ParentId="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests" MethodName="GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" ParentId="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests" MethodName="GetResult_ShouldReturnResultOfAndBooleanOperation" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionContainsValue_ShouldReturnTrue" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionContainsValue_ShouldReturnTrue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionNotContainsValue_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionNotContainsValue_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionContainsValue_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionContainsValue_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionNotContainsValue_ShouldReturnTrue" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionNotContainsValue_ShouldReturnTrue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests.ResolveRepositoryTests" ParentId="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" MethodName="ResolveRepositoryTests" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(Equals,1,1,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(Equals,1,2,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterOrEquals,1,1,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterOrEquals,1,2,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterOrEquals,2,1,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterThan,1,2,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterThan,2,1,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterThan,2,2,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessOrEquals,1,1,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessOrEquals,1,2,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessOrEquals,2,1,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessThan,1,2,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessThan,2,1,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessThan,2,2,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(NotEqual,1,1,False)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(NotEqual,1,2,True)" ParentId="Gamification.Testing.Unit.Core.Operations.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(False,False)" ParentId="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(False,True)" ParentId="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(True,False)" ParentId="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(True,True)" ParentId="Gamification.Testing.Unit.Core.Operations.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(False,False)" ParentId="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(False,True)" ParentId="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(True,False)" ParentId="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(True,True)" ParentId="Gamification.Testing.Unit.Core.Operations.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
+      </Elements>
+    </Session>
+    <Session>
+      <Name>Session #2</Name>
+      <Elements>
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GameActionTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.Add_ShouldAddEntityToRepository" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="Add_ShouldAddEntityToRepository" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension" MethodName="Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.Delete_ShouldDeleteEntityFromDatabase" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="Delete_ShouldDeleteEntityFromDatabase" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.GetById_IfEntityWithPassedIdIsNotExistInDB_ShouldReturnNull" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="GetById_IfEntityWithPassedIdIsNotExistInDB_ShouldReturnNull" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests.GetById_ShouldReturnEntityById" ParentId="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Data.EF.EFRepositoryTests" MethodName="GetById_ShouldReturnEntityById" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" ParentId="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests" MethodName="GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" ParentId="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests" MethodName="GetResult_ShouldReturnResultOfAndBooleanOperation" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionContainsValue_ShouldReturnTrue" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionContainsValue_ShouldReturnTrue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionNotContainsValue_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsHaveAndCollectionNotContainsValue_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionContainsValue_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionContainsValue_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests.GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionNotContainsValue_ShouldReturnTrue" ParentId="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.StringCollectionResultProviderTests" MethodName="GetResult_WhenCollectionEqualityOperationIsNotHaveAndCollectionNotContainsValue_ShouldReturnTrue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GameActionTests.PerformAction_WhenAnyOfConstraintIsFail_ShouldNotPerfromAnyTrigger" ParentId="Gamification.Testing.Unit.Core.Entities.GameActionTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.GameActionTests" MethodName="PerformAction_WhenAnyOfConstraintIsFail_ShouldNotPerfromAnyTrigger" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests.ResolveRepositoryTests" ParentId="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.ConfigurationTest.WindsorContainerInitializerTests" MethodName="ResolveRepositoryTests" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests.WhenSaveDifferentTypesOfCollectionBasedConstraints_ShouldGetFromDatabaseRightType" ParentId="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Entities.CollectionBasedConstraintsTests" MethodName="WhenSaveDifferentTypesOfCollectionBasedConstraints_ShouldGetFromDatabaseRightType" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests.WhenSaveDifferentTypesOfQtyBasedConstraints_ShouldGetFromDatabaseRightType" ParentId="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests" MethodName="WhenSaveDifferentTypesOfQtyBasedConstraints_ShouldGetFromDatabaseRightType" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(Equals,1,1,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(Equals,1,2,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterOrEquals,1,1,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterOrEquals,1,2,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterOrEquals,2,1,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterThan,1,2,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterThan,2,1,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(GreaterThan,2,2,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessOrEquals,1,1,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessOrEquals,1,2,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessOrEquals,2,1,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessThan,1,2,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessThan,2,1,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(LessThan,2,2,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(NotEqual,1,1,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight(NotEqual,1,2,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(False,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(False,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(True,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider(True,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests.GetResult_ShouldBeResultOfOrOperationBeetwenFirstAndSecondProvider" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(False,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(False,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(True,False)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation(True,True)" ParentId="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests.GetResult_ShouldReturnResultOfAndBooleanOperation" type="NUnitRowTestElement" />
       </Elements>
     </Session>
   </UnitTestSessions>

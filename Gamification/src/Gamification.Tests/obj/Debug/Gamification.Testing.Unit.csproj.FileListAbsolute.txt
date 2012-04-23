@@ -1,5 +1,0 @@
-D:\универ\Диплом\Project\Gamification\src\Gamification.Tests\bin\Debug\Gamification.Testing.Unit.dll
-D:\универ\Диплом\Project\Gamification\src\Gamification.Tests\bin\Debug\Gamification.Testing.Unit.pdb
-D:\универ\Диплом\Project\Gamification\src\Gamification.Tests\obj\Debug\ResolveAssemblyReference.cache
-D:\универ\Диплом\Project\Gamification\src\Gamification.Tests\obj\Debug\Gamification.Testing.Unit.dll
-D:\универ\Диплом\Project\Gamification\src\Gamification.Tests\obj\Debug\Gamification.Testing.Unit.pdb
