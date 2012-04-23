@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Gamification.Core.Enums;
 using Gamification.Core.Operations;
 using Gamification.Core.ResultProviders;
@@ -7,7 +8,15 @@ namespace Gamification.Core.Entities.Constraints
 {
     public abstract class BaseStringCollectionConstraint : BaseEntity, ICollectionConstraint<string>
     {
-        public CollectionEqualityOperations CollectionEqualityOperation { get; set; }
+        [NotMapped]
+        public CollectionEqualityOperations CollectionEqualityOperation
+        {
+            get { return (CollectionEqualityOperations) CollectionEqualityOperationId; }
+            set { CollectionEqualityOperationId = (byte) value; }
+        }
+
+        [Column("CollectionEqualityOperation")]
+        public byte CollectionEqualityOperationId { get; set; }
 
         public string Description { get; set; }
         

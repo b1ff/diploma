@@ -1,6 +1,6 @@
 namespace Gamification.Core.Enums
 {
-    public enum CollectionEqualityOperations
+    public enum CollectionEqualityOperations : byte
     {
         Have,
 

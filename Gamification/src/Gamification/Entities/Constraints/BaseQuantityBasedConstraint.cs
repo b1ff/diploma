@@ -8,12 +8,14 @@ namespace Gamification.Core.Entities.Constraints
     public abstract class BaseQuantityBasedConstraint : BaseEntity, IOneValueConstraint<double>
     {
         [NotMapped]
-        public BooleanOperations BooleanOperation { 
-            get { return (BooleanOperations) BooleanOperationId; } 
-            set { BooleanOperationId = (int) value; } }
+        public BooleanOperations BooleanOperation
+        {
+            get { return (BooleanOperations)BooleanOperationId; }
+            set { BooleanOperationId = (byte)value; }
+        }
 
         [Column("BooleanOperation")]
-        public int BooleanOperationId { get; set; }
+        public byte BooleanOperationId { get; set; }
 
         public string Description { get; set; }
 

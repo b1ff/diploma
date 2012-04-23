@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
@@ -69,6 +70,23 @@ namespace Gamification.Data.EF
         public void SaveChanges()
         {
             this.dbContext.SaveChanges();
+        }
+
+        public void ClearContext()
+        {
+            if (this.dbContext == null) return;
+
+            var set = this.dbContext.Set<TEntity>();
+            if (set == null || set.Local == null) return;
+
+            foreach (var entity in set.Local.ToList())
+            {
+                var entry = this.dbContext.Entry(entity);
+                if (entry != null && entry.State != EntityState.Deleted)
+                {
+                    entry.State = EntityState.Detached;
+                }
+            }
         }
     }
 }

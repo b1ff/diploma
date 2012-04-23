@@ -8,13 +8,3 @@ D:\универ\Диплом\Project\Gamification\src\Gamification.Data\bin\Debu
 D:\универ\Диплом\Project\Gamification\src\Gamification.Data\obj\Debug\ResolveAssemblyReference.cache
 D:\универ\Диплом\Project\Gamification\src\Gamification.Data\obj\Debug\Gamification.Data.EF.dll
 D:\универ\Диплом\Project\Gamification\src\Gamification.Data\obj\Debug\Gamification.Data.EF.pdb
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\Gamification.Data.EF.dll.config
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\Gamification.Data.EF.dll
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\Gamification.Data.EF.pdb
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\EntityFramework.dll
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\Gamification.Core.dll
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\Gamification.Core.pdb
-D:\Projects\diploma\Gamification\src\Gamification.Data\bin\Debug\EntityFramework.xml
-D:\Projects\diploma\Gamification\src\Gamification.Data\obj\Debug\ResolveAssemblyReference.cache
-D:\Projects\diploma\Gamification\src\Gamification.Data\obj\Debug\Gamification.Data.EF.dll
-D:\Projects\diploma\Gamification\src\Gamification.Data\obj\Debug\Gamification.Data.EF.pdb

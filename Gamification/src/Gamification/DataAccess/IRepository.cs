@@ -17,5 +17,6 @@ namespace Gamification.Core.DataAccess
         TEntity FirstOrDefault(Expression<Func<TEntity, bool>> condition);
         TEntity SingleOrDefault(Expression<Func<TEntity, bool>> condition);
         void SaveChanges();
+        void ClearContext();
     }
 }

@@ -15,13 +15,18 @@
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            if (obj.GetType() != typeof (BaseEntity)) return false;
+            if (obj.GetType() != this.GetType()) return false;
             return Equals((BaseEntity) obj);
         }
 
         public override int GetHashCode()
         {
             return Id.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0}#{1}", GetType().Name, this.Id);
         }
     }
 }

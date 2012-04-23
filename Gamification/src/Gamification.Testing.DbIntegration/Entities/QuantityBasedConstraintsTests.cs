@@ -21,13 +21,11 @@ namespace Gamification.Testing.DbIntegration.Entities
         public void WhenSaveDifferentTypesOfQtyBasedConstraints_ShouldGetFromDatabaseRightType()
         {
             var levelBasedConstraint = new LevelBasedConstraint();
-            levelBasedConstraint.BooleanOperation = BooleanOperations.Equals;
             levelBasedConstraint.ValueToCompare = 10;
             levelBasedConstraint.Description = "needed level when user get 'God' status";
             this.qtyBasedConstraintsRepository.AddPhysically(levelBasedConstraint);
 
             var pointsBasedConstraint = new PointsBasedConstraint();
-            pointsBasedConstraint.BooleanOperation = BooleanOperations.GreaterOrEquals;
             pointsBasedConstraint.ValueToCompare = 2000;
             pointsBasedConstraint.Description = "needed points when user get 10 level";
             this.qtyBasedConstraintsRepository.AddPhysically(pointsBasedConstraint);
@@ -36,6 +34,7 @@ namespace Gamification.Testing.DbIntegration.Entities
             Assert.That(pointsBasedConstraint.Id, Is.GreaterThan(0));
 
 
+            this.qtyBasedConstraintsRepository.ClearContext();
             var constraints = this.qtyBasedConstraintsRepository.GetAll().ToList();
 
 
@@ -43,6 +42,27 @@ namespace Gamification.Testing.DbIntegration.Entities
             var pointsBsdFromDb = (PointsBasedConstraint)constraints.FirstOrDefault(x => x.Id == pointsBasedConstraint.Id);
             levelBsdFromDb.Should().Be.EqualTo(levelBasedConstraint);
             pointsBsdFromDb.Should().Be.EqualTo(pointsBasedConstraint);
+        }
+
+        [Test]
+        public void ShouldSaveEnumValuesToDb()
+        {
+            var levelBasedConstraint = new LevelBasedConstraint();
+            levelBasedConstraint.BooleanOperation = BooleanOperations.Equals;
+            this.qtyBasedConstraintsRepository.AddPhysically(levelBasedConstraint);
+
+            var pointsBasedConstraint = new PointsBasedConstraint();
+            pointsBasedConstraint.BooleanOperation = BooleanOperations.GreaterOrEquals;
+            this.qtyBasedConstraintsRepository.AddPhysically(pointsBasedConstraint);
+
+            this.qtyBasedConstraintsRepository.ClearContext();
+            var constraints = this.qtyBasedConstraintsRepository.GetAll().ToList();
+
+
+            var levelBsdFromDb = (LevelBasedConstraint)constraints.FirstOrDefault(x => x.Id == levelBasedConstraint.Id);
+            var pointsBsdFromDb = (PointsBasedConstraint)constraints.FirstOrDefault(x => x.Id == pointsBasedConstraint.Id);
+            levelBsdFromDb.BooleanOperation.Should().Be.EqualTo(BooleanOperations.Equals);
+            pointsBsdFromDb.BooleanOperation.Should().Be.EqualTo(BooleanOperations.GreaterOrEquals);
         }
     }
 }
