@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0AB7FE17-0607-4E60-AE3F-9B48480EEFA3}</ProjectGuid>
+    <ProjectGuid>{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gamification.Testing.Unit</RootNamespace>
-    <AssemblyName>Gamification.Testing.Unit</AssemblyName>
+    <RootNamespace>Gamification.Testing.Utils</RootNamespace>
+    <AssemblyName>Gamification.Testing.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,15 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Moq">
-      <HintPath>..\..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\packages\NUnit.2.6.0.12054\lib\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpTestsEx">
-      <HintPath>..\..\packages\SharpTestsEx.1.1.1\lib\SharpTestsEx.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,22 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Entities\GameActionTests.cs" />
-    <Compile Include="Core\ResultProviders\AndResultProviderTests.cs" />
-    <Compile Include="Core\ResultProviders\BaseResultProviderTest.cs" />
-    <Compile Include="Core\ResultProviders\BooleanOperationExtension.cs" />
-    <Compile Include="Core\ResultProviders\OrResultProviderTests.cs" />
-    <Compile Include="Core\ResultProviders\StringCollectionResultProviderTests.cs" />
+    <Compile Include="Extension\EntityExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Gamification.Testing.Utils\Gamification.Testing.Utils.csproj">
-      <Project>{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}</Project>
-      <Name>Gamification.Testing.Utils</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Gamification\Gamification.Core.csproj">
       <Project>{1BB43DAB-5363-498F-A72A-D24F1421AD4C}</Project>
       <Name>Gamification.Core</Name>

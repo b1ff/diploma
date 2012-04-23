@@ -1,5 +1,5 @@
 ﻿using Gamification.Core.Enums;
-using Gamification.Core.Operations;
+using Gamification.Core.ResultProviders;
 using NUnit.Framework;
 using SharpTestsEx;
 

@@ -14,6 +14,8 @@ namespace Gamification.Core.Entities
             StringCollectionConstraints = new HashSet<BaseStringCollectionConstraint>();
         }
 
+        public string Title { get; set; }
+
         public string Description { get; set; }
 
         public IList<ActionTrigger> TriggersToCall { get; protected set; }

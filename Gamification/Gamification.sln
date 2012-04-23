@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Testing.DbInte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.IOC", "Gamification.IOC\Gamification.IOC.csproj", "{2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Testing.Utils", "src\Gamification.Testing.Utils\Gamification.Testing.Utils.csproj", "{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,5 +52,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0AB7FE17-0607-4E60-AE3F-9B48480EEFA3} = {76543D63-FDFF-46F0-99D7-74AB4CCE2E29}
 		{C38A9C18-632F-41ED-BD58-78D2FC1316F7} = {76543D63-FDFF-46F0-99D7-74AB4CCE2E29}
+		{1B41DCDC-6BC8-4AA6-AB8C-34ED83F74853} = {76543D63-FDFF-46F0-99D7-74AB4CCE2E29}
 	EndGlobalSection
 EndGlobal

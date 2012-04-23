@@ -1,7 +1,7 @@
 ﻿using System;
 using Gamification.Core.Enums;
 
-namespace Gamification.Core.Operations
+namespace Gamification.Core.ResultProviders
 {
     public static class BooleanOperationExtension
     {
