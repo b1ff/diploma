@@ -2,6 +2,7 @@
 using System.Linq;
 using Gamification.Core.Entities;
 using Gamification.Core.Entities.Constraints;
+using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Enums;
 using Moq;
 using NUnit.Framework;

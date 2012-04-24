@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Gamification.Core.Domain;
 using Gamification.Core.Entities.Constraints;
+using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Extensions;
 
 namespace Gamification.Core.Entities
@@ -24,7 +25,7 @@ namespace Gamification.Core.Entities
 
         public ISet<BaseQuantityBasedConstraint> QtyBasedConstraints { get; protected set; }
 
-        public ISet<BaseStringCollectionConstraint> StringCollectionConstraints { get; protected set; } 
+        public ISet<BaseStringCollectionConstraint> StringCollectionConstraints { get; protected set; }
 
         public IEnumerable<ActionPerformError> PerformAction(Gamer gamer)
         {

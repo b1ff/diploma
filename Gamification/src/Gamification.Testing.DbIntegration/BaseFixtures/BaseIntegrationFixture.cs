@@ -12,7 +12,7 @@ namespace Gamification.Testing.DbIntegration.BaseFixtures
         [SetUp]
         public void SetUp()
         {
-            Container = EFComponentRegistrator.GetContainer();
+            Container = EFComponentRegistrator.BaseGetContainer();
             OnSetup();
         }
 

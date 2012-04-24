@@ -16,6 +16,8 @@ namespace Gamification.Core.Entities
 
         public Guid GamerKey { get; set; }
 
+        public User User { get; set; }
+
         public ISet<Gamer> Gamers { get; protected set; }
 
         public ISet<Level> Levels { get; protected set; }

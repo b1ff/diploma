@@ -6,7 +6,7 @@ using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities.Constraints
 {
-    public abstract class BaseStringCollectionConstraint : BaseEntity, ICollectionConstraint<string>
+    public abstract class BaseStringCollectionConstraint : BaseConstraint<string>
     {
         [NotMapped]
         public CollectionEqualityOperations CollectionEqualityOperation
@@ -18,16 +18,12 @@ namespace Gamification.Core.Entities.Constraints
         [Column("CollectionEqualityOperation")]
         public byte CollectionEqualityOperationId { get; set; }
 
-        public string Description { get; set; }
-        
-        public string ValueToCompare { get; set; }
-
-        public bool GetResult(Gamer gamer)
+        public override bool GetResult(Gamer gamer)
         {
             return this.GetResultProvider(gamer).GetResult();
         }
 
-        public IBooleanResultProvider GetResultProvider(Gamer gamer)
+        public override IBooleanResultProvider GetResultProvider(Gamer gamer)
         {
             return new StringCollectionResultProvider(this, gamer);
         }

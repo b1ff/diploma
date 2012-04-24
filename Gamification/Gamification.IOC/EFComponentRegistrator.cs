@@ -1,4 +1,5 @@
-﻿using Castle.Facilities.WcfIntegration;
+﻿using System.Web;
+using Castle.Facilities.WcfIntegration;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Gamification.Core.ProjectSettings;
@@ -9,24 +10,39 @@ namespace Gamification.IOC
 {
     public class EFComponentRegistrator 
     {
-        public static IWindsorContainer GetContainer()
+        public static IWindsorContainer BaseGetContainer()
         {
             var container = new WindsorContainer();
 
-            container.AddFacility<WcfFacility>();
             container.Register(
                 Component.For<IApplicationSettings>().ImplementedBy<FromConfigFileConfiguration>().LifeStyle.Singleton);
             container.Register(Component.For<EfDbContext>().UsingFactoryMethod(x =>
                                                                                    {
                                                                                        var appSettings = x.Resolve<IApplicationSettings>();
                                                                                        return new EfDbContext(appSettings.ConnectionString);
-                                                                                   }).LifeStyle.PerThread);
+                                                                                   }).LifeStyle.Transient);
             container.Register(
                     AllTypes.FromAssembly(typeof(EfRepository<>).Assembly)
                         .Pick()
                         .WithService.DefaultInterfaces()
-                        .LifestylePerThread());
+                        .LifestyleTransient());
 
+            container.Register(Component.For<IWindsorContainer>().Instance(container));
+            return container;
+        }
+
+        public static IWindsorContainer GetWebContainer()
+        {
+            var container = BaseGetContainer();
+            container.Register(
+                Component.For<HttpContextBase>().UsingFactoryMethod(x => new HttpContextWrapper(HttpContext.Current)).LifeStyle.PerWebRequest);
+            return container;
+        }
+
+        public static IWindsorContainer GetWcfContainer()
+        {
+            var container = BaseGetContainer();
+            container.AddFacility<WcfFacility>();
             return container;
         }
     }

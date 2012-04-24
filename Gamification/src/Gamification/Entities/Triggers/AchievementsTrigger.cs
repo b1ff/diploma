@@ -1,4 +1,4 @@
-namespace Gamification.Core.Entities
+namespace Gamification.Core.Entities.Triggers
 {
     public class AchievementsTrigger : ActionTrigger
     {

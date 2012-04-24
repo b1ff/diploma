@@ -45,19 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\PropertyToCompareAttribute.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
     <Compile Include="Domain\ActionPerformError.cs" />
     <Compile Include="Entities\Achievement.cs" />
-    <Compile Include="Entities\AchievementsTrigger.cs" />
-    <Compile Include="Entities\ActionTrigger.cs" />
+    <Compile Include="Entities\Constraints\BaseConstraint.cs" />
+    <Compile Include="Entities\Triggers\AchievementsTrigger.cs" />
+    <Compile Include="Entities\Triggers\ActionTrigger.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Constraints\AchievementsConstraint.cs" />
     <Compile Include="Entities\Constraints\BaseQuantityBasedConstraint.cs" />
     <Compile Include="Entities\Constraints\BaseStringCollectionConstraint.cs" />
-    <Compile Include="Entities\Constraints\ICollectionConstraint.cs" />
     <Compile Include="Entities\Constraints\IConstraint.cs" />
-    <Compile Include="Entities\Constraints\IOneValueConstraint.cs" />
     <Compile Include="Entities\Constraints\LevelBasedConstraint.cs" />
     <Compile Include="Entities\Constraints\PointsBasedConstraint.cs" />
     <Compile Include="Entities\Constraints\StatusConstraint.cs" />
@@ -66,8 +64,11 @@
     <Compile Include="Entities\GamerStatus.cs" />
     <Compile Include="Entities\Level.cs" />
     <Compile Include="Entities\Project.cs" />
+    <Compile Include="Entities\Triggers\PointsTrigger.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\BooleanOperations.cs" />
     <Compile Include="Enums\CollectionEqualityOperations.cs" />
+    <Compile Include="Enums\PointsOperation.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="ResultProviders\AndResultProvider.cs" />
@@ -81,8 +82,11 @@
     <Compile Include="ProjectSettings\FromConfigFileConfiguration.cs" />
     <Compile Include="ProjectSettings\IApplicationSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ICurrentUserService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Diagrams\FullAssembly.cd" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

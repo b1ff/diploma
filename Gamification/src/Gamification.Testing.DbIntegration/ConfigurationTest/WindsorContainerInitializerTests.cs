@@ -13,7 +13,7 @@ namespace Gamification.Testing.DbIntegration.ConfigurationTest
         [Test]
         public void ResolveRepositoryTests()
         {
-            var container = EFComponentRegistrator.GetContainer();
+            var container = EFComponentRegistrator.BaseGetContainer();
 
             var repositoryTypes = typeof (BaseEntity).Assembly.GetTypes()
                 .Where(x => typeof (BaseEntity).IsAssignableFrom(x) && !x.IsAbstract)

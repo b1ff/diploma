@@ -6,7 +6,6 @@ namespace Gamification.Core.Entities.Constraints
     {
         string Description { get; set; }
         TValue ValueToCompare { get; set; }
-        //TValue GetValueToCompare(Gamer gamer);
         bool GetResult(Gamer gamer);
         IBooleanResultProvider GetResultProvider(Gamer gamer);
     }

@@ -5,7 +5,7 @@ using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities.Constraints
 {
-    public abstract class BaseQuantityBasedConstraint : BaseEntity, IOneValueConstraint<double>
+    public abstract class BaseQuantityBasedConstraint : BaseConstraint<double>
     {
         [NotMapped]
         public BooleanOperations BooleanOperation
@@ -17,18 +17,14 @@ namespace Gamification.Core.Entities.Constraints
         [Column("BooleanOperation")]
         public byte BooleanOperationId { get; set; }
 
-        public string Description { get; set; }
-
-        public double ValueToCompare { get; set; }
-
         public abstract double GetValueToCompare(Gamer gamer);
         
-        public bool GetResult(Gamer gamer)
+        public override bool GetResult(Gamer gamer)
         {
             return this.GetResultProvider(gamer).GetResult();
         }
 
-        public IBooleanResultProvider GetResultProvider(Gamer gamer)
+        public override IBooleanResultProvider GetResultProvider(Gamer gamer)
         {
             return new QuantityBasedResultsProvider(this, gamer);
         }
