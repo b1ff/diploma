@@ -1,5 +1,5 @@
 ﻿using Castle.Windsor;
-using Gamification.IOC;
+using Gamification.Testing.DbIntegration.Utils;
 using NUnit.Framework;
 
 namespace Gamification.Testing.DbIntegration.BaseFixtures
@@ -12,7 +12,7 @@ namespace Gamification.Testing.DbIntegration.BaseFixtures
         [SetUp]
         public void SetUp()
         {
-            Container = EFComponentRegistrator.BaseGetContainer();
+            Container = IntegrationTestsComponentRegistration.CreateTestsWindsorContainer();
             OnSetup();
         }
 
