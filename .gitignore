@@ -1,0 +1,24 @@
+# Visual Studio
+*.suo
+*.user
+*.cache
+
+
+# Direcories
+obj/
+bin/
+Bin/
+
+# Misc
+Thumbs.db
+*.bak
+*.log
+*.txt
+
+# ReSharper
+_ReSharper.*
+*.ReSharper
+*.dotCover
+
+# VS10x plugin temporary files
+*.csproj.vs10x

@@ -25,5 +25,10 @@ namespace Gamification.Core.Extensions
         {
             return query.FirstOrDefault(spec.IsSatisfiedBy());
         }
+
+        public static TValue SafeGet<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, TValue value = default(TValue))
+        {
+            return dictionary.ContainsKey(key) ? dictionary[key] : value;
+        }
     }
 }

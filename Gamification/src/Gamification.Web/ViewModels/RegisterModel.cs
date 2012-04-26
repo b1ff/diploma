@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using DataAnnotationsExtensions;
 
-namespace Gamification.Web.Models
+namespace Gamification.Web.ViewModels
 {
     public class RegisterModel
     {

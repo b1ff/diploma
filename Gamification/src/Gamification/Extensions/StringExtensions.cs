@@ -11,5 +11,10 @@
         {
             return !string.IsNullOrWhiteSpace(@string);
         }
+
+        public static string SafeToString(this object @object)
+        {
+            return @object == null ? string.Empty : @object.ToString();
+        }
     }
 }

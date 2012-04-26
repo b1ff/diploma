@@ -1,7 +1,9 @@
 ﻿using System.Web.Mvc;
+using Microsoft.Web.Mvc;
 
 namespace Gamification.Web.Controllers
 {
+    [ActionLinkArea("")]
     public class HomeController : Controller
     {
         public ActionResult Index()

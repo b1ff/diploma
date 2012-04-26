@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
-namespace Gamification.Web.Models
+namespace Gamification.Web.ViewModels
 {
     public class ChangePasswordModel
     {

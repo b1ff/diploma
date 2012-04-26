@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\packages\AutoMapper.2.1.267\lib\net40\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core">
       <HintPath>..\..\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll</HintPath>
     </Reference>
@@ -63,6 +66,7 @@
     <Compile Include="Entities\QuantityBasedConstraintsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\IntegrationTestsComponentRegistration.cs" />
+    <Compile Include="Web\AutoMappings\CommonAutoMapperTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -76,6 +80,10 @@
     <ProjectReference Include="..\Gamification.Data\Gamification.Data.EF.csproj">
       <Project>{F5B46435-5C62-4ECC-9B9E-E408F21105D2}</Project>
       <Name>Gamification.Data.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gamification.Web\Gamification.Web.csproj">
+      <Project>{F3368622-97A1-4844-94AF-AC24A0AFF192}</Project>
+      <Name>Gamification.Web</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gamification\Gamification.Core.csproj">
       <Project>{1BB43DAB-5363-498F-A72A-D24F1421AD4C}</Project>

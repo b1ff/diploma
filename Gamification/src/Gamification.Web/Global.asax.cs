@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Castle.MicroKernel.Registration;
 using Gamification.IOC;
+using Gamification.Web.AutoMapper;
 using Gamification.Web.ControllerFactory;
 using Gamification.Web.Controllers;
 
@@ -34,8 +35,9 @@ namespace Gamification.Web
         {
             var container = ComponentRegistrator.BuildWebContainer();
             container.Register(
-                AllTypes.FromAssembly(typeof(HomeController).Assembly).BasedOn<Controller>().LifestylePerWebRequest());
+                AllTypes.FromAssembly(typeof(HomeController).Assembly).BasedOn<Controller>().LifestyleTransient());
             ControllerBuilder.Current.SetControllerFactory(new CastleControllerFactory(container));
+            AutoMappingConfiguration.ConfigureAutoMapper();
 
             AreaRegistration.RegisterAllAreas();
 

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ProjectNavItemViewModel>
+     
+<ul>
+    @foreach (var navItem in Model)
+    {
+        var projId = Request.GetIntParam("id");
+        
+        <li>
+            @if (projId.HasValue && projId == navItem.Id)
+            {
+                @Html.ActionLink(navItem.ProjectName, "Show", "Projects", new { id = navItem.Id })
+            }
+            else
+            {
+                <span>@navItem.ProjectName</span>
+            }
+        </li>
+    }
+</ul>

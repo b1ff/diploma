@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Gamification.Web.Models
+namespace Gamification.Web.ViewModels
 {
     public class LogOnModel
     {

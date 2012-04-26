@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Web.Mvc;
 using System.Web.Security;
-using Gamification.Web.Models;
 using Gamification.Web.Utils.SimpleMembership;
+using Gamification.Web.ViewModels;
+using Microsoft.Web.Mvc;
 
 namespace Gamification.Web.Controllers
 {
+    [ActionLinkArea("")]
     public class AccountController : Controller
     {
         private readonly ISimpleMembership simpleMembership;

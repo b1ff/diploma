@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<nav>
+    @Html.Action("ProjectsNav", "Projects")
+</nav>
+
+<article>
+    @RenderBody()
+</article>
