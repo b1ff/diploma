@@ -1,1 +1,51 @@
-﻿<h2>Manage your projects</h2>
+﻿@model IEnumerable<Project>
+
+<h2>Manage your projects</h2>
+
+@Html.ValidationSummary(false)
+
+<section>
+    <ul>
+        @foreach (var project in Model)
+        {
+            <li>
+                @(Html.ActionLink<ProjectsController>(x => x.Show(project.Id), project.Title))
+            </li>
+        }
+    </ul>
+
+    <a href="javascript:void(0)" id="addProjectLink">Add project</a>
+
+    <div id="addProjectDialog">
+        @using (Html.BeginForm<ProjectsController>(x => x.Save(null, null)))
+        {
+            <div class="editor-label">
+                <label for="title">Project title: </label>
+            </div>
+            <div class="editor-field">
+                <input type="text" name="title" id="title"/>
+            </div>
+        }
+    </div>
+</section>
+
+<script type="text/javascript">
+    $(function () {
+        $('#addProjectDialog').dialog({
+            title: 'Add project',
+            buttons: {
+                'OK': function () {
+                    $(this).find('form').submit();
+                },
+                'Cancel': function () {
+                    $(this).find('input[type=text]').val('');
+                    $(this).dialog('close');
+                }
+            }
+        });
+
+        $('#addProjectLink').click(function () {
+            $('#addProjectDialog').dialog('open');
+        });
+    });
+</script>

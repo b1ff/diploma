@@ -23,6 +23,8 @@ namespace Gamification.Core.Entities
 
         public bool IsMultiple { get; set; }
 
+        public Project Project { get; set; }
+
         public ISet<BaseQuantityBasedConstraint> QtyBasedConstraints { get; protected set; }
 
         public ISet<BaseStringCollectionConstraint> StringCollectionConstraints { get; protected set; }

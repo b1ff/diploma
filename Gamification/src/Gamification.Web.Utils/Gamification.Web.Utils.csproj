@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="Helpers\HtmlExtensions.cs" />
+    <Compile Include="Helpers\ModelStateDictionaryExtension.cs" />
     <Compile Include="Helpers\RequestExtensions.cs" />
     <Compile Include="Helpers\RequestInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Gamification.Core.Entities.Triggers;
 
 namespace Gamification.Core.Entities
 {
@@ -10,6 +11,8 @@ namespace Gamification.Core.Entities
             this.Gamers = new HashSet<Gamer>();
             this.Levels = new HashSet<Level>();
             this.Achievements = new HashSet<Achievement>();
+            this.GameActions = new HashSet<GameAction>();
+            this.Triggers = new HashSet<ActionTrigger>();
         }
 
         public Guid UserKey { get; set; }
@@ -24,6 +27,10 @@ namespace Gamification.Core.Entities
 
         public ISet<Level> Levels { get; protected set; }
 
-        public ISet<Achievement> Achievements { get; protected set; } 
+        public ISet<Achievement> Achievements { get; protected set; }
+
+        public ISet<GameAction> GameActions { get; protected set; }
+
+        public ISet<ActionTrigger> Triggers { get; protected set; }
     }
 }

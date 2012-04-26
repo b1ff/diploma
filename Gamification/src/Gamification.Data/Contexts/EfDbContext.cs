@@ -13,12 +13,11 @@ namespace Gamification.Data.EF.Contexts
     {
         public EfDbContext(string connectionString) : base(connectionString)
         {
-            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<EfDbContext>());
+            Database.SetInitializer(new DefaultUserInitializer<EfDbContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            
             RegisterAllEntities(modelBuilder, typeof(BaseEntity).Assembly, new[] { typeof(BaseEntity) });
             OverrideMappings(modelBuilder);
         }

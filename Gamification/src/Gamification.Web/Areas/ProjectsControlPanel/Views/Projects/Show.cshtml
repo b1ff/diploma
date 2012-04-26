@@ -1,0 +1,23 @@
+﻿@model Project
+
+@{
+    ViewBag.Title = "Project";
+    Layout = "~/Areas/ProjectsControlPanel/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.Title</h2>
+
+
+<section>
+    <h3>Actions</h3>
+    <ul> 
+        @foreach (var action in Model.GameActions)
+        {
+            <li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>
+        }
+    </ul>
+</section>
+
+<section>
+    
+</section>
