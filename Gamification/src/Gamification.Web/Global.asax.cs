@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Web;
+﻿using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Castle.MicroKernel.Registration;
@@ -19,6 +18,9 @@ namespace Gamification.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+            routes.IgnoreRoute("{*favicon}", new { favicon = @"(.*/)?favicon.([iI][cC][oO]|[gG][iI][fF])(/.*)?" });
+            routes.IgnoreRoute("{*urlToCss}", new { urlToCss = @"(.*).css" });
+            routes.IgnoreRoute("{*urlToJs}", new { urlToJs = @"(.*).js" });
 
             routes.MapRoute(
                 "Default", // Route name
@@ -30,9 +32,9 @@ namespace Gamification.Web
 
         protected void Application_Start()
         {
-            var container = EFComponentRegistrator.GetWebContainer();
+            var container = ComponentRegistrator.BuildWebContainer();
             container.Register(
-                AllTypes.FromAssembly(typeof(HomeController).Assembly).BasedOn<Controller>().LifestyleTransient());
+                AllTypes.FromAssembly(typeof(HomeController).Assembly).BasedOn<Controller>().LifestylePerWebRequest());
             ControllerBuilder.Current.SetControllerFactory(new CastleControllerFactory(container));
 
             AreaRegistration.RegisterAllAreas();

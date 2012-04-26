@@ -1,8 +1,8 @@
 ﻿using Castle.Windsor;
-using Gamification.Testing.DbIntegration.Utils;
+using Gamification.Testing.Integration.Utils;
 using NUnit.Framework;
 
-namespace Gamification.Testing.DbIntegration.BaseFixtures
+namespace Gamification.Testing.Integration.BaseFixtures
 {
     [TestFixture]
     public abstract class BaseIntegrationFixture

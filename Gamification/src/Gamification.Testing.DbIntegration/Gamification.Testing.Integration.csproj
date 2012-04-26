@@ -8,8 +8,8 @@
     <ProjectGuid>{C38A9C18-632F-41ED-BD58-78D2FC1316F7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Gamification.Testing.DbIntegration</RootNamespace>
-    <AssemblyName>Gamification.Testing.DbIntegration</AssemblyName>
+    <RootNamespace>Gamification.Testing.Integration</RootNamespace>
+    <AssemblyName>Gamification.Testing.Integration</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

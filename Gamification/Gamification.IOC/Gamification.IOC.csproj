@@ -61,7 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EFComponentRegistrator.cs" />
+    <Compile Include="ComponentRegistrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +71,10 @@
     <ProjectReference Include="..\src\Gamification.Data\Gamification.Data.EF.csproj">
       <Project>{F5B46435-5C62-4ECC-9B9E-E408F21105D2}</Project>
       <Name>Gamification.Data.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\src\Gamification.Web.Utils\Gamification.Web.Utils.csproj">
+      <Project>{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}</Project>
+      <Name>Gamification.Web.Utils</Name>
     </ProjectReference>
     <ProjectReference Include="..\src\Gamification\Gamification.Core.csproj">
       <Project>{1BB43DAB-5363-498F-A72A-D24F1421AD4C}</Project>

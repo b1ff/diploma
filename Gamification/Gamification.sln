@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Testing.Unit",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Data.EF", "src\Gamification.Data\Gamification.Data.EF.csproj", "{F5B46435-5C62-4ECC-9B9E-E408F21105D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Testing.DbIntegration", "src\Gamification.Testing.DbIntegration\Gamification.Testing.DbIntegration.csproj", "{C38A9C18-632F-41ED-BD58-78D2FC1316F7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Testing.Integration", "src\Gamification.Testing.DbIntegration\Gamification.Testing.Integration.csproj", "{C38A9C18-632F-41ED-BD58-78D2FC1316F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.IOC", "Gamification.IOC\Gamification.IOC.csproj", "{2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Web", "src\Gamification.Web\Gamification.Web.csproj", "{F3368622-97A1-4844-94AF-AC24A0AFF192}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Services", "src\Gamification.Services\Gamification.Services.csproj", "{CDB2C820-5989-4278-883A-45F2C0179C48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Web.Utils", "src\Gamification.Web.Utils\Gamification.Web.Utils.csproj", "{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{CDB2C820-5989-4278-883A-45F2C0179C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDB2C820-5989-4278-883A-45F2C0179C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDB2C820-5989-4278-883A-45F2C0179C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

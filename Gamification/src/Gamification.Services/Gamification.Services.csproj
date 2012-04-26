@@ -50,6 +50,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Gamification.IOC\Gamification.IOC.csproj">
+      <Project>{2FDFA0B5-26B2-4A80-8C6E-7E545D4D9949}</Project>
+      <Name>Gamification.IOC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gamification.Data\Gamification.Data.EF.csproj">
+      <Project>{F5B46435-5C62-4ECC-9B9E-E408F21105D2}</Project>
+      <Name>Gamification.Data.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gamification\Gamification.Core.csproj">
+      <Project>{1BB43DAB-5363-498F-A72A-D24F1421AD4C}</Project>
+      <Name>Gamification.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>

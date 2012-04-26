@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Gamification.Core.Enums;
 
 namespace Gamification.Core.Entities.Triggers
@@ -13,7 +12,6 @@ namespace Gamification.Core.Entities.Triggers
 
         public int Points { get; set; }
 
-        [Column("PointsOperation")]
         public byte PointsOperationId { get; set; }
 
         public override void CallOnGamer(Gamer gamer)

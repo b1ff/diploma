@@ -1,16 +1,17 @@
 ﻿using System.Web;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
-using Gamification.Core.Service;
+using Gamification.Data.EF.Contexts;
 
-namespace Gamification.Data.EF.Services
+namespace Gamification.Data.EF.Repositories
 {
-    public class CurrentUserService : ICurrentUserService
+    public class UsersRepository : EfRepository<User>, IUsersRepository
     {
         private readonly HttpContextBase httpContext;
         private readonly IRepository<User> userRepository;
 
-        public CurrentUserService(HttpContextBase httpContext, IRepository<User> userRepository)
+        public UsersRepository(HttpContextBase httpContext, IRepository<User> userRepository, EfDbContext dbContext) 
+            : base(dbContext)
         {
             this.httpContext = httpContext;
             this.userRepository = userRepository;

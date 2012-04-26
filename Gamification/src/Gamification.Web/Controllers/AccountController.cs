@@ -2,11 +2,19 @@
 using System.Web.Mvc;
 using System.Web.Security;
 using Gamification.Web.Models;
+using Gamification.Web.Utils.SimpleMembership;
 
 namespace Gamification.Web.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly ISimpleMembership simpleMembership;
+
+        public AccountController(ISimpleMembership simpleMembership)
+        {
+            this.simpleMembership = simpleMembership;
+        }
+
         public ActionResult LogOn()
         {
             return View();
@@ -15,30 +23,30 @@ namespace Gamification.Web.Controllers
         [HttpPost]
         public ActionResult LogOn(LogOnModel model, string returnUrl)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                if (Membership.ValidateUser(model.UserName, model.Password))
-                {
-                    FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
-                    if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
-                        && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
-                    {
-                        return Redirect(returnUrl);
-                    }
-                    
-                    return RedirectToAction("Index", "Home");
-                }
-                
-                ModelState.AddModelError(string.Empty, "The user name or password provided is incorrect.");
+                return View(model);
             }
 
+            if (simpleMembership.ValidateUser(model.UserName, model.Password))
+            {
+                simpleMembership.LogInUser(model.UserName, model.RememberMe);
+                if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
+                    && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
+                {
+                    return Redirect(returnUrl);
+                }
+                    
+                return RedirectToAction("Index", "Home");
+            }
+                
+            ModelState.AddModelError(string.Empty, "The user name or password provided is incorrect.");
             return View(model);
         }
 
         public ActionResult LogOff()
         {
-            FormsAuthentication.SignOut();
-
+            simpleMembership.LogOutCurrentUser();
             return RedirectToAction("Index", "Home");
         }
 
@@ -50,20 +58,21 @@ namespace Gamification.Web.Controllers
         [HttpPost]
         public ActionResult Register(RegisterModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                MembershipCreateStatus createStatus;
-                Membership.CreateUser(model.UserName, model.Password, model.Email, null, null, true, null, out createStatus);
-
-                if (createStatus == MembershipCreateStatus.Success)
-                {
-                    FormsAuthentication.SetAuthCookie(model.UserName, false /* createPersistentCookie */);
-                    return RedirectToAction("Index", "Home");
-                }
-
-                ModelState.AddModelError("", ErrorCodeToString(createStatus));
+                return View(model);
             }
 
+            var createStatus = this.simpleMembership.CreateUser(
+                model.UserName, model.Password, model.Email);
+            
+            if (createStatus == MembershipCreateStatus.Success)
+            {
+                this.simpleMembership.LogInUser(model.UserName, false);
+                return RedirectToAction("Index", "Home");
+            }
+
+            ModelState.AddModelError("", ErrorCodeToString(createStatus));
             return View(model);
         }
 
@@ -77,28 +86,27 @@ namespace Gamification.Web.Controllers
         [HttpPost]
         public ActionResult ChangePassword(ChangePasswordModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                bool changePasswordSucceeded;
-                try
-                {
-                    MembershipUser currentUser = Membership.GetUser(User.Identity.Name, true /* userIsOnline */);
-                    changePasswordSucceeded = currentUser.ChangePassword(model.OldPassword, model.NewPassword);
-                }
-                catch (Exception)
-                {
-                    changePasswordSucceeded = false;
-                }
-
-                if (changePasswordSucceeded)
-                {
-                    return RedirectToAction("ChangePasswordSuccess");
-                }
-                else
-                {
-                    ModelState.AddModelError("", "The current password is incorrect or the new password is invalid.");
-                }
+                return View(model);
             }
+
+            bool changePasswordSucceeded;
+            try
+            {
+                changePasswordSucceeded = this.simpleMembership.ChangeCurrentUserPassword(model.OldPassword, model.NewPassword);
+            }
+            catch (Exception)
+            {
+                changePasswordSucceeded = false;
+            }
+
+            if (changePasswordSucceeded)
+            {
+                return RedirectToAction("ChangePasswordSuccess");
+            }
+
+            ModelState.AddModelError("", "The current password is incorrect or the new password is invalid.");
 
             return View(model);
         }

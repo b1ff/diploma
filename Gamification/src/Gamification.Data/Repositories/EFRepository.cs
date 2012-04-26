@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
+using Gamification.Core.Extensions;
 using Gamification.Data.EF.Contexts;
+using LinqSpecs;
 
-namespace Gamification.Data.EF
+namespace Gamification.Data.EF.Repositories
 {
     public class EfRepository<TEntity> : IRepository<TEntity> 
         where TEntity : BaseEntity
@@ -32,6 +35,21 @@ namespace Gamification.Data.EF
         public TEntity GetById(int id)
         {
             return EntityPersister.FirstOrDefault(x => x.Id == id);
+        }
+
+        public IQueryable<TEntity> BySpec(Specification<TEntity> spec)
+        {
+            return GetAll().BySpec(spec);
+        }
+
+        public IEnumerable<TEntity> BySpecWithQuery(Specification<TEntity> spec)
+        {
+            return GetAll().BySpec(spec).ToList();
+        }
+
+        public TEntity FirstBySpec(Specification<TEntity> spec)
+        {
+            return GetAll().FirstBySpec(spec);
         }
 
         public TEntity Add(TEntity entity)

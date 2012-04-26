@@ -1,24 +1,13 @@
-﻿using Castle.MicroKernel.Registration;
-using Castle.Windsor;
-using Gamification.Core.ProjectSettings;
-using Gamification.Data.EF;
-using Gamification.Data.EF.Contexts;
+﻿using Castle.Windsor;
 using Gamification.IOC;
 
-namespace Gamification.Testing.DbIntegration.Utils
+namespace Gamification.Testing.Integration.Utils
 {
     public static class IntegrationTestsComponentRegistration
     {
         public static IWindsorContainer CreateTestsWindsorContainer()
         {
-            var container = EFComponentRegistrator.BaseGetContainer();
-            container.Register(Component.For<EfDbContext>().UsingFactoryMethod(x =>
-            {
-                var appSettings = x.Resolve<IApplicationSettings>();
-                return new EfDbContext(appSettings.ConnectionString);
-            }).LifeStyle.Transient);
-
-            container.Register(AllTypes.FromAssembly(typeof(EfRepository<>).Assembly).Pick().WithService.DefaultInterfaces().LifestyleTransient());
+            var container = ComponentRegistrator.BuildContainerWithCommonComponents();
             return container;
         }
     }

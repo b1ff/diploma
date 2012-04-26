@@ -1,10 +1,10 @@
 ﻿using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
-using Gamification.Testing.DbIntegration.BaseFixtures;
+using Gamification.Testing.Integration.BaseFixtures;
 using NUnit.Framework;
 using SharpTestsEx;
 
-namespace Gamification.Testing.DbIntegration.Data.EF
+namespace Gamification.Testing.Integration.Data.EF
 {
     public class EFRepositoryTests : BaseIntegrationFixture
     {

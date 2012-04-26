@@ -2,11 +2,11 @@
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Core.Enums;
-using Gamification.Testing.DbIntegration.BaseFixtures;
+using Gamification.Testing.Integration.BaseFixtures;
 using NUnit.Framework;
 using SharpTestsEx;
 
-namespace Gamification.Testing.DbIntegration.Entities
+namespace Gamification.Testing.Integration.Entities
 {
     public class QuantityBasedConstraintsTests : BaseIntegrationFixture
     {

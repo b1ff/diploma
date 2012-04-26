@@ -47,7 +47,7 @@ namespace Gamification.Web.ControllerFactory
             {
                 return (IController)this.container.Resolve(controllerType);
             }
-            catch
+            catch(Exception e)
             {
                 throw new HttpException(404, "Not found");
             }
