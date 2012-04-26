@@ -1,11 +1,8 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using System.Web.Security;
 using Castle.MicroKernel.Registration;
 using CommonServiceLocator.WindsorAdapter;
-using Gamification.Core.DataAccess;
-using Gamification.Core.Specifications;
 using Gamification.IOC;
 using Gamification.Web.AutoMapper;
 using Gamification.Web.ControllerFactory;
@@ -19,9 +16,6 @@ namespace Gamification.Web
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-#if DEBUG
-            filters.Add(new ResetUserAttribute());
-#endif
         }
 
         public static void RegisterRoutes(RouteCollection routes)
@@ -51,20 +45,6 @@ namespace Gamification.Web
             AreaRegistration.RegisterAllAreas();
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
-        }
-    }
-
-    public class ResetUserAttribute : ActionFilterAttribute
-    {
-        public override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            if (filterContext.HttpContext.User != null && filterContext.HttpContext.User.Identity.IsAuthenticated)
-            {
-                var repository = ServiceLocator.Current.GetInstance<IUsersRepository>();
-                var user = repository.FirstBySpec(new UserByNameSpec(filterContext.HttpContext.User.Identity.Name));
-                if (user == null)
-                    FormsAuthentication.SignOut();
-            }
         }
     }
 }

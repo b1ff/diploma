@@ -2,13 +2,10 @@
 using Castle.Facilities.WcfIntegration;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
-using CommonServiceLocator.WindsorAdapter;
 using Gamification.Core.ProjectSettings;
-using Gamification.Data.EF;
 using Gamification.Data.EF.Contexts;
 using Gamification.Data.EF.Repositories;
 using Gamification.Web.Utils.SimpleMembership;
-using Microsoft.Practices.ServiceLocation;
 
 namespace Gamification.IOC
 {

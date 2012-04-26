@@ -27,9 +27,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 
         public ActionResult Index()
         {
-            var currentUser = this.usersRepository.GetCurrentUser();
-            var projects = projectsRepository.GetAll().Where(x => x.User.Id == currentUser.Id).ToList();
-            return View(projects);
+            return View();
         }
 
         public ActionResult ProjectsNav()

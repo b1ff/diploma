@@ -1,18 +1,7 @@
-﻿@model IEnumerable<Project>
+﻿<h2>Manage your projects</h2>
 
-<h2>Manage your projects</h2>
-
-@Html.ValidationSummary(false)
-@*
 <section>
-    <ul>
-        @foreach (var project in Model)
-        {
-            <li>
-                @(Html.ActionLink<ProjectsController>(x => x.Show(project.Id), project.Title))
-            </li>
-        }
-    </ul>*@
+    @Html.ValidationSummary(false)
 
     <a href="javascript:void(0)" id="addProjectLink">Add project</a>
 

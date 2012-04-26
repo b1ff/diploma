@@ -20,12 +20,11 @@ namespace Gamification.Web.Utils.Helpers
             var menuParams = new RouteValueDictionary(routeParams);
             return actionName.ToLower() == currentState.Action.ToLower()
                    && controllerName.ToLower() == currentState.Controller.ToLower()
-                   //&& areaName.ToLower() == currentState.Area.ToLower()
                    && ((menuParams.Count == 0 ||
                         menuParams.All(x => currentState.RequestParams.SafeGet(x.Key) == x.Value.ToString())));
         }
 
-        public static int? GetIntParam(this HttpRequestBase request, string paramName, bool tryGetIdInTheLast = true)
+        public static int? GetIntParam(this HttpRequestBase request, string paramName, bool tryGetIdAtLast = true)
         {
             var param = request.RequestContext.RouteData.Values[paramName];
             int paramValue;
@@ -40,8 +39,8 @@ namespace Gamification.Web.Utils.Helpers
                 return paramValue;
             }
 
-            var idParamName = "id";
-            return tryGetIdInTheLast && paramName != idParamName ? request.GetIntParam(idParamName, false) : null;
+            const string idParamName = "id";
+            return tryGetIdAtLast && paramName != idParamName ? request.GetIntParam(idParamName, false) : null;
         }
     }
 }

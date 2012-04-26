@@ -1,3 +1,10 @@
 ﻿nav > ul > li > span {
     font-weight: bold;
 }
+
+section > nav {
+    width: 200px;
+    float: left;
+    margin: 15px;
+    border: 1px solid #5c87b2;
+}
