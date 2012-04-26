@@ -9,7 +9,7 @@ namespace Gamification.Core.Entities
     {
         public User()
         {
-            Projects = new HashSet<Project>();
+            Projects = new List<Project>();
         }
 
         public string Username { get; set; }
@@ -18,6 +18,6 @@ namespace Gamification.Core.Entities
 
         public string Email { get; set; }
 
-        public ISet<Project> Projects { get; protected set; }
+        public ICollection<Project> Projects { get; set; }
     }
 }

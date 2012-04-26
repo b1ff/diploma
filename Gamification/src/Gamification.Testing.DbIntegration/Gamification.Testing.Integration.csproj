@@ -81,6 +81,10 @@
       <Project>{F5B46435-5C62-4ECC-9B9E-E408F21105D2}</Project>
       <Name>Gamification.Data.EF</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Gamification.Web.Utils\Gamification.Web.Utils.csproj">
+      <Project>{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}</Project>
+      <Name>Gamification.Web.Utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Gamification.Web\Gamification.Web.csproj">
       <Project>{F3368622-97A1-4844-94AF-AC24A0AFF192}</Project>
       <Name>Gamification.Web</Name>

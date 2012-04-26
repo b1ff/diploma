@@ -6,9 +6,9 @@
         var projId = Request.GetIntParam("id");
         
         <li>
-            @if (projId.HasValue && projId == navItem.Id)
+            @if (!projId.HasValue || projId.Value != navItem.Id)
             {
-                @Html.ActionLink(navItem.ProjectName, "Show", "Projects", new { id = navItem.Id })
+                @(Html.ActionLink<ProjectsController>(x => x.Show(navItem.Id), navItem.ProjectName))
             }
             else
             {

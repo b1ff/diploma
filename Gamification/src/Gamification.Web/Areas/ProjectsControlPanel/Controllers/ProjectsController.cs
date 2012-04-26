@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
@@ -46,6 +47,11 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
         public ActionResult Show(int id)
         {
             var project = this.projectsRepository.GetById(id);
+            if (project.User != this.usersRepository.GetCurrentUser())
+            {
+                return HttpNotFound();
+            }
+
             return View(project);
         }
 
@@ -66,7 +72,11 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
             {
                 project = new Project();
                 project.Title = title;
+                project.UserKey = Guid.NewGuid();
+                project.GamerKey = Guid.NewGuid();
+                project.User = currentUser;
                 this.projectsRepository.Add(project);
+                this.projectsRepository.SaveChanges();
             }
             else
             {
