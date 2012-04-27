@@ -5,6 +5,7 @@ using Gamification.Core.Entities.Constraints;
 using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Enums;
 using Moq;
+using Moq.Protected;
 using NUnit.Framework;
 using SharpTestsEx;
 
@@ -26,7 +27,7 @@ namespace Gamification.Testing.Unit.Core.Entities
         {
             SetupActionWithFailedConstraintsAndTriggerWithException(null);
             var gamer = CreateGamerWithLevelAndPoints(1, 1000);
-
+            
             this.gameAction.PerformAction(gamer);
 
             Assert.Pass();
@@ -54,7 +55,7 @@ namespace Gamification.Testing.Unit.Core.Entities
             this.gameAction.QtyBasedConstraints.Add(levelConstraint);
             this.gameAction.QtyBasedConstraints.Add(pointsConstraint);
             var trigger = new Mock<ActionTrigger>();
-            trigger.Setup(x => x.CallOnGamer(It.IsAny<Gamer>()))
+            trigger.Protected().Setup("RaiseTriggerAction", ItExpr.IsAny<Gamer>())
                 .Callback((Gamer g) => { throw new InvalidOperationException("Trigger is fired"); });
             this.gameAction.TriggersToCall.Add(trigger.Object);
         }

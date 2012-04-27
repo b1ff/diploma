@@ -18,7 +18,7 @@ namespace Gamification.Testing.Integration.Data.EF
         [Test]
         public void Add_ShouldAddEntityToRepository()
         {
-            var gamer = new Gamer();
+            var gamer = CreateGamer();
             Assert.That(gamer.Id, Is.EqualTo(0));
 
             this.repository.AddPhysically(gamer);
@@ -31,7 +31,7 @@ namespace Gamification.Testing.Integration.Data.EF
         [Test]
         public void Delete_ShouldDeleteEntityFromDatabase()
         {
-            var gamer = new Gamer();
+            var gamer = CreateGamer();
             this.repository.AddPhysically(gamer);
             var gamerId = gamer.Id;
 
@@ -44,7 +44,7 @@ namespace Gamification.Testing.Integration.Data.EF
         [Test]
         public void GetById_ShouldReturnEntityById()
         {
-            var gamer = new Gamer();
+            var gamer = CreateGamer();
             this.repository.AddPhysically(gamer);
             var gamerId = gamer.Id;
 
@@ -59,6 +59,13 @@ namespace Gamification.Testing.Integration.Data.EF
             var entityFromDb = this.repository.GetById(-1);
 
             entityFromDb.Should().Be.Null();
+        }
+
+        private static Gamer CreateGamer()
+        {
+            var gamer = new Gamer();
+            gamer.Project = new Project();
+            return gamer;
         }
     }
 }

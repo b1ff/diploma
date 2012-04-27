@@ -9,10 +9,18 @@ namespace Gamification.Testing.Unit.Core.Entities.Triggers
     [TestFixture]
     public class ChangePointsTriggerTests
     {
+        private ChangePointsTrigger pointsTrigger;
+
+        [SetUp]
+        public void SetUp()
+        {
+            this.pointsTrigger = new ChangePointsTrigger();
+            this.pointsTrigger.ChildTriggers.Clear();
+        }
+
         [Test]
         public void CallOnGamer_WhenPointsOperationIsDecrease_ShouldDecreaseGamerPointsOnPointsValue()
         {
-            var pointsTrigger = new ChangePointsTrigger();
             pointsTrigger.PointsOperation = PointsOperation.Decrease;
             pointsTrigger.Points = 10;
             var gamer = new Gamer();
@@ -26,9 +34,8 @@ namespace Gamification.Testing.Unit.Core.Entities.Triggers
         [Test]
         public void CallOnGamer_WhenPointsOperationIsIncrease_ShouldIncreaseGamerPointsOnPointsValue()
         {
-            var pointsTrigger = new ChangePointsTrigger();
-            pointsTrigger.PointsOperation = PointsOperation.Increase;
             pointsTrigger.Points = 10;
+            pointsTrigger.PointsOperation = PointsOperation.Increase;
             var gamer = new Gamer();
             gamer.Points = 20;
 
