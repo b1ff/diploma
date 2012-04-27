@@ -54,7 +54,7 @@
     <Compile Include="Entities\Triggers\ActionTrigger.cs" />
     <Compile Include="Entities\BaseEntity.cs" />
     <Compile Include="Entities\Constraints\AchievementsConstraint.cs" />
-    <Compile Include="Entities\Constraints\BaseQuantityBasedConstraint.cs" />
+    <Compile Include="Entities\Constraints\BaseNumericBasedConstraint.cs" />
     <Compile Include="Entities\Constraints\BaseStringCollectionConstraint.cs" />
     <Compile Include="Entities\Constraints\IConstraint.cs" />
     <Compile Include="Entities\Constraints\LevelBasedConstraint.cs" />
@@ -65,7 +65,10 @@
     <Compile Include="Entities\GamerStatus.cs" />
     <Compile Include="Entities\Level.cs" />
     <Compile Include="Entities\Project.cs" />
-    <Compile Include="Entities\Triggers\PointsTrigger.cs" />
+    <Compile Include="Entities\Triggers\AddStatusToGamerTrigger.cs" />
+    <Compile Include="Entities\Triggers\AutoChangeLevelTrigger.cs" />
+    <Compile Include="Entities\Triggers\ChangeStatusTrigger.cs" />
+    <Compile Include="Entities\Triggers\ChangePointsTrigger.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Enums\BooleanOperations.cs" />
     <Compile Include="Enums\CollectionEqualityOperations.cs" />
@@ -79,7 +82,7 @@
     <Compile Include="ResultProviders\BaseGamerDependResultProvider.cs" />
     <Compile Include="ResultProviders\BooleanOperationExtension.cs" />
     <Compile Include="ResultProviders\QuantityBasedResultsProvider.cs" />
-    <Compile Include="ResultProviders\IBooleanResultProvider.cs" />
+    <Compile Include="ResultProviders\BooleanResultProvider.cs" />
     <Compile Include="ResultProviders\OrResultProvider.cs" />
     <Compile Include="ResultProviders\StringCollectionResultProvider.cs" />
     <Compile Include="ProjectSettings\FromConfigFileConfiguration.cs" />
@@ -89,7 +92,11 @@
     <Compile Include="Specifications\UserByNameSpec.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Diagrams\ConstraintsDiagram.cd" />
+    <None Include="Diagrams\Entities.cd" />
     <None Include="Diagrams\FullAssembly.cd" />
+    <None Include="Diagrams\ResultProvidersDiagram.cd" />
+    <None Include="Diagrams\TriggersDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

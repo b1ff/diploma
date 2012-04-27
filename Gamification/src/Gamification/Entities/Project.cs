@@ -32,5 +32,11 @@ namespace Gamification.Core.Entities
         public ISet<GameAction> GameActions { get; protected set; }
 
         public ISet<ActionTrigger> Triggers { get; protected set; }
+
+        public bool UseLevels { get; set; }
+
+        public bool UseAchievements { get; set; }
+
+        public bool UsePoints { get; set; }
     }
 }

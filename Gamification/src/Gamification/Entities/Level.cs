@@ -18,5 +18,15 @@ namespace Gamification.Core.Entities
         public Project Project { get; set; }
 
         public ISet<GameAction> UnlockedActions { get; protected set; }
+
+        public static bool operator <(Level left, Level right)
+        {
+            return left.LevelNumber < right.LevelNumber;
+        }
+
+        public static bool operator >(Level left, Level right)
+        {
+            return left.LevelNumber > right.LevelNumber;
+        }
     }
 }

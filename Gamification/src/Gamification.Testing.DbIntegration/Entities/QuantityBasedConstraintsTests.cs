@@ -10,11 +10,11 @@ namespace Gamification.Testing.Integration.Entities
 {
     public class QuantityBasedConstraintsTests : BaseIntegrationFixture
     {
-        private IRepository<BaseQuantityBasedConstraint> qtyBasedConstraintsRepository;
+        private IRepository<BaseNumericBasedConstraint> qtyBasedConstraintsRepository;
 
         protected override void OnSetup()
         {
-            this.qtyBasedConstraintsRepository = this.Container.Resolve<IRepository<BaseQuantityBasedConstraint>>();
+            this.qtyBasedConstraintsRepository = this.Container.Resolve<IRepository<BaseNumericBasedConstraint>>();
         }
 
         [Test]

@@ -54,7 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Entities\GameActionTests.cs" />
-    <Compile Include="Core\Entities\Triggers\PointsTriggerTests.cs" />
+    <Compile Include="Core\Entities\Triggers\ChangeLevelTriggerTests.cs" />
+    <Compile Include="Core\Entities\Triggers\ChangePointsTriggerTests.cs" />
     <Compile Include="Core\ResultProviders\AndResultProviderTests.cs" />
     <Compile Include="Core\ResultProviders\BaseResultProviderTest.cs" />
     <Compile Include="Core\ResultProviders\BooleanOperationExtension.cs" />

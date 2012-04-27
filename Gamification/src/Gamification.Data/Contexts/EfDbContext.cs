@@ -36,10 +36,10 @@ namespace Gamification.Data.EF.Contexts
 
         private static void OverrideMappings(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BaseQuantityBasedConstraint>()
+            modelBuilder.Entity<BaseNumericBasedConstraint>()
                 .Property(x => x.BooleanOperationId)
                 .HasColumnName("BooleanOperation");
-            modelBuilder.Entity<BaseQuantityBasedConstraint>()
+            modelBuilder.Entity<BaseNumericBasedConstraint>()
                 .Ignore(x => x.BooleanOperation);
 
             modelBuilder.Entity<BaseStringCollectionConstraint>()
@@ -47,11 +47,13 @@ namespace Gamification.Data.EF.Contexts
             modelBuilder.Entity<BaseStringCollectionConstraint>()
                 .Property(x => x.CollectionEqualityOperationId).HasColumnName("CollectionEqualityOperation");
 
-            modelBuilder.Entity<PointsTrigger>()
+            modelBuilder.Entity<ChangePointsTrigger>()
                 .Ignore(x => x.PointsOperation);
-            modelBuilder.Entity<PointsTrigger>()
+            modelBuilder.Entity<ChangePointsTrigger>()
                 .Property(x => x.PointsOperationId)
                 .HasColumnName("PointsOperation");
+
+            modelBuilder.Entity<Gamer>().HasRequired(x => x.Project);
         }
     }
 }

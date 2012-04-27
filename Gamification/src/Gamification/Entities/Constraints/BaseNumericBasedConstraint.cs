@@ -1,10 +1,9 @@
 ﻿using Gamification.Core.Enums;
-using Gamification.Core.Operations;
 using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities.Constraints
 {
-    public abstract class BaseQuantityBasedConstraint : BaseConstraint<double>
+    public abstract class BaseNumericBasedConstraint : BaseConstraint<double>
     {
         public BooleanOperations BooleanOperation
         {
@@ -16,12 +15,7 @@ namespace Gamification.Core.Entities.Constraints
 
         public abstract double GetValueToCompare(Gamer gamer);
         
-        public override bool GetResult(Gamer gamer)
-        {
-            return this.GetResultProvider(gamer).GetResult();
-        }
-
-        public override IBooleanResultProvider GetResultProvider(Gamer gamer)
+        public override BooleanResultProvider GetResultProvider(Gamer gamer)
         {
             return new QuantityBasedResultsProvider(this, gamer);
         }

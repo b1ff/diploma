@@ -3,6 +3,7 @@ using Gamification.Core.Domain;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Extensions;
+using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities
 {
@@ -11,7 +12,7 @@ namespace Gamification.Core.Entities
         public GameAction()
         {
             TriggersToCall = new List<ActionTrigger>();
-            QtyBasedConstraints = new HashSet<BaseQuantityBasedConstraint>();
+            QtyBasedConstraints = new HashSet<BaseNumericBasedConstraint>();
             StringCollectionConstraints = new HashSet<BaseStringCollectionConstraint>();
         }
 
@@ -25,7 +26,7 @@ namespace Gamification.Core.Entities
 
         public Project Project { get; set; }
 
-        public ISet<BaseQuantityBasedConstraint> QtyBasedConstraints { get; protected set; }
+        public ISet<BaseNumericBasedConstraint> QtyBasedConstraints { get; protected set; }
 
         public ISet<BaseStringCollectionConstraint> StringCollectionConstraints { get; protected set; }
 

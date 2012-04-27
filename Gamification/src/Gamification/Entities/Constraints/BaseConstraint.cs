@@ -1,4 +1,4 @@
-﻿using Gamification.Core.Operations;
+﻿using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities.Constraints
 {
@@ -6,7 +6,11 @@ namespace Gamification.Core.Entities.Constraints
     {
         public string Description { get; set; }
         public TValue ValueToCompare { get; set; }
-        public abstract bool GetResult(Gamer gamer);
-        public abstract IBooleanResultProvider GetResultProvider(Gamer gamer);
+        public abstract BooleanResultProvider GetResultProvider(Gamer gamer);
+
+        public bool GetResult(Gamer gamer)
+        {
+            return this.GetResultProvider(gamer).GetResult();
+        }
     }
 }

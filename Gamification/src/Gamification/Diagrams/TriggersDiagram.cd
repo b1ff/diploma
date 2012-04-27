@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gamification.Core.Entities.Triggers.AchievementsTrigger">
+    <Position X="3.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\AchievementsTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Triggers.ActionTrigger">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="ActionTrigger" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\ActionTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ChildTriggers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Triggers.ChangePointsTrigger">
+    <Position X="6" Y="3.25" Width="1.75" />
+    <Members>
+      <Property Name="PointsOperationId" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAgAAAAAAAAAAAAgAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\ChangePointsTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Triggers.ChangeStatusTrigger">
+    <Position X="1.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\ChangeStatusTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Triggers.AddStatusToGamerTrigger">
+    <Position X="8" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\AddStatusToGamerTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Triggers.AutoChangeLevelTrigger">
+    <Position X="10.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\AutoChangeLevelTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

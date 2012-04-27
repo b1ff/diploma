@@ -7,12 +7,12 @@ using SharpTestsEx;
 namespace Gamification.Testing.Unit.Core.Entities.Triggers
 {
     [TestFixture]
-    public class PointsTriggerTests
+    public class ChangePointsTriggerTests
     {
         [Test]
         public void CallOnGamer_WhenPointsOperationIsDecrease_ShouldDecreaseGamerPointsOnPointsValue()
         {
-            var pointsTrigger = new PointsTrigger();
+            var pointsTrigger = new ChangePointsTrigger();
             pointsTrigger.PointsOperation = PointsOperation.Decrease;
             pointsTrigger.Points = 10;
             var gamer = new Gamer();
@@ -26,7 +26,7 @@ namespace Gamification.Testing.Unit.Core.Entities.Triggers
         [Test]
         public void CallOnGamer_WhenPointsOperationIsIncrease_ShouldIncreaseGamerPointsOnPointsValue()
         {
-            var pointsTrigger = new PointsTrigger();
+            var pointsTrigger = new ChangePointsTrigger();
             pointsTrigger.PointsOperation = PointsOperation.Increase;
             pointsTrigger.Points = 10;
             var gamer = new Gamer();

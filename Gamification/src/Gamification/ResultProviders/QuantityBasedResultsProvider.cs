@@ -5,17 +5,17 @@ namespace Gamification.Core.ResultProviders
 {
     public class QuantityBasedResultsProvider : BaseGamerDependResultProvider
     {
-        private readonly BaseQuantityBasedConstraint quantityBasedConstraint;
+        private readonly BaseNumericBasedConstraint numericBasedConstraint;
 
-        public QuantityBasedResultsProvider(BaseQuantityBasedConstraint quantityBasedConstraint, Gamer gamer) : base(gamer)
+        public QuantityBasedResultsProvider(BaseNumericBasedConstraint numericBasedConstraint, Gamer gamer) : base(gamer)
         {
-            this.quantityBasedConstraint = quantityBasedConstraint;
+            this.numericBasedConstraint = numericBasedConstraint;
         }
 
         public override bool GetResult()
         {
-            var propertyValue = this.quantityBasedConstraint.GetValueToCompare(this.Gamer);
-            return this.quantityBasedConstraint.BooleanOperation.Calculate(propertyValue, this.quantityBasedConstraint.ValueToCompare);
+            var propertyValue = this.numericBasedConstraint.GetValueToCompare(this.Gamer);
+            return this.numericBasedConstraint.BooleanOperation.Calculate(propertyValue, this.numericBasedConstraint.ValueToCompare);
         }
     }
 }

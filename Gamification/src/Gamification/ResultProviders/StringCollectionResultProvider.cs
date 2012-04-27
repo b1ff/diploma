@@ -2,7 +2,6 @@ using System.Linq;
 using Gamification.Core.Entities;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Core.Enums;
-using Gamification.Core.Operations;
 
 namespace Gamification.Core.ResultProviders
 {

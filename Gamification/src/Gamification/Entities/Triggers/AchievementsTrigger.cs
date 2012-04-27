@@ -4,7 +4,7 @@ namespace Gamification.Core.Entities.Triggers
     {
         public Achievement AchievementToAssign { get; set; }
 
-        public override void CallOnGamer(Gamer gamer)
+        protected override void RaiseTriggerAction(Gamer gamer)
         {
             gamer.Achievements.Add(AchievementToAssign);
         }

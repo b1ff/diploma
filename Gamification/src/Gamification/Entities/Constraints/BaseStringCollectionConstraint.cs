@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Gamification.Core.Enums;
-using Gamification.Core.Operations;
 using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities.Constraints
@@ -15,12 +14,7 @@ namespace Gamification.Core.Entities.Constraints
 
         public byte CollectionEqualityOperationId { get; set; }
 
-        public override bool GetResult(Gamer gamer)
-        {
-            return this.GetResultProvider(gamer).GetResult();
-        }
-
-        public override IBooleanResultProvider GetResultProvider(Gamer gamer)
+        public override BooleanResultProvider GetResultProvider(Gamer gamer)
         {
             return new StringCollectionResultProvider(this, gamer);
         }

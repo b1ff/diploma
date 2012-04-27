@@ -1,9 +1,8 @@
 using Gamification.Core.Entities;
-using Gamification.Core.Operations;
 
 namespace Gamification.Core.ResultProviders
 {
-    public abstract class BaseGamerDependResultProvider : IBooleanResultProvider
+    public abstract class BaseGamerDependResultProvider : BooleanResultProvider
     {
         protected BaseGamerDependResultProvider(Gamer gamer)
         {
@@ -11,7 +10,5 @@ namespace Gamification.Core.ResultProviders
         }
 
         public Gamer Gamer { get; private set; }
-
-        public abstract bool GetResult();
     }
 }

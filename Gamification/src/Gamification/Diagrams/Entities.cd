@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Gamification.Core.Entities.Achievement" Collapsed="true">
+    <Position X="18.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACIQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Achievement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.BaseEntity" Collapsed="true">
+    <Position X="24.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.GameAction" Collapsed="true">
+    <Position X="21" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACIgAEAAgAAACAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Entities\GameAction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TriggersToCall" />
+      <Property Name="QtyBasedConstraints" />
+      <Property Name="StringCollectionConstraints" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Gamer" Collapsed="true">
+    <Position X="28.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAGACAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Gamer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CurrentLevel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Achievements" />
+      <Property Name="GamerStatuses" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Gamification.Core.Entities.GamerStatus" Collapsed="true">
+    <Position X="27.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAIABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\GamerStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Level" Collapsed="true">
+    <Position X="18" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAIAAAAAAAAAAAAAACAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Level.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Project" Collapsed="true">
+    <Position X="25.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAAAAAAEAAAAEAAAAAKAAAIAABAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Achievements" />
+      <Property Name="GameActions" />
+      <Property Name="Gamers" />
+      <Property Name="Levels" />
+      <Property Name="Triggers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Gamification.Core.Entities.User" Collapsed="true">
+    <Position X="23.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Triggers.ActionTrigger" Collapsed="true">
+    <Position X="23.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Triggers\ActionTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Constraints.BaseQuantityBasedConstraint" Collapsed="true">
+    <Position X="24" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAEAgAAAAEAA=</HashCode>
+      <FileName>Entities\Constraints\BaseQuantityBasedConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Gamification.Core.Entities.Constraints.BaseStringCollectionConstraint" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAQwAAAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Entities\Constraints\BaseStringCollectionConstraint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
