@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
+using Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums;
 
 namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 {
@@ -41,19 +42,13 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
             }
         }
 
-        //
-        // GET: /ProjectsControlPanel/Constraints/Create
-
-        public ActionResult Create()
+        public ActionResult Add(int projectId)
         {
             return View();
-        } 
-
-        //
-        // POST: /ProjectsControlPanel/Constraints/Create
+        }
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Save(FormCollection collection)
         {
             try
             {

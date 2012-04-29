@@ -31,7 +31,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
             return View(actions);
         }
 
-        public ActionResult Add()
+        public ActionResult Add(int projectId)
         {
             return View();
         }

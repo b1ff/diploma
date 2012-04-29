@@ -1,4 +1,5 @@
-﻿@model Project
+﻿@using Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums
+@model Project
 
 @{
     ViewBag.Title = "Project";
@@ -16,8 +17,31 @@
             <li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>
         }
     </ul>
+    @(Html.ActionLink<ActionsController>(x => x.Add(Model.Id), "Add Action"))
 </section>
 
 <section>
-    
+    <h3>Triggers</h3>
+    <ul>
+        @foreach (var trigger in Model.Triggers)
+        {
+            <li>@(Html.ActionLink<TriggersController>(x => x.Show(trigger.Id), trigger.Title) )</li>
+        }
+    </ul>
+    @(Html.ActionLink<TriggersController>(x => x.Add(Model.Id), "Add Trigger"))
+</section>
+
+<section>
+    <h3>Constraints</h3>
+    <ul>
+        @foreach (var constraint in Model.NumericConstraints)
+        {
+            <li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseNumericConstrait), constraint.Description))</li>
+        }
+        @foreach (var constraint in Model.CollectionConstraints)
+        {
+            <li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseStringConstraint), constraint.Description))</li>
+        }
+    </ul>
+    @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint"))
 </section>

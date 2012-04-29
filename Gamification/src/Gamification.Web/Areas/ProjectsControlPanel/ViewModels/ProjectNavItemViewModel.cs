@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Gamification.Web.Areas.ProjectsControlPanel.ViewModels
+﻿namespace Gamification.Web.Areas.ProjectsControlPanel.ViewModels
 {
     public class ProjectNavItemViewModel
     {

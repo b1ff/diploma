@@ -16,3 +16,7 @@ section > nav {
     margin: 15px;
     border: 1px solid #5c87b2;
 }
+
+section#main > article {
+    float: left;
+}

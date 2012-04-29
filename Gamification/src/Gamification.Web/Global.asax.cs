@@ -8,6 +8,8 @@ using Gamification.Web.AutoMapper;
 using Gamification.Web.ControllerFactory;
 using Gamification.Web.Controllers;
 using Gamification.Web.Utils.ActionFilters;
+using Gamification.Web.Utils.CommonViewModels;
+using Gamification.Web.Utils.ModelBinders;
 using Microsoft.Practices.ServiceLocation;
 
 namespace Gamification.Web
@@ -43,6 +45,8 @@ namespace Gamification.Web
             ServiceLocator.SetLocatorProvider(() => new WindsorServiceLocator(container));
             ControllerBuilder.Current.SetControllerFactory(new CastleControllerFactory(container));
             AutoMappingConfiguration.ConfigureAutoMapper();
+
+            ModelBinders.Binders[typeof(DataSource)] = new DataSourceModelBinder();
 
             AreaRegistration.RegisterAllAreas();
             RegisterGlobalFilters(GlobalFilters.Filters);

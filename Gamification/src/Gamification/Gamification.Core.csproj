@@ -65,11 +65,11 @@
     <Compile Include="Entities\GamerStatus.cs" />
     <Compile Include="Entities\Level.cs" />
     <Compile Include="Entities\Project.cs" />
-    <Compile Include="Entities\Triggers\AddStatusToGamerTrigger.cs" />
+    <Compile Include="Entities\Triggers\AddOrRemoveStatusTrigger.cs" />
     <Compile Include="Entities\Triggers\AutoChangeLevelTrigger.cs" />
-    <Compile Include="Entities\Triggers\ChangeStatusTrigger.cs" />
     <Compile Include="Entities\Triggers\ChangePointsTrigger.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\AchievementsActions.cs" />
     <Compile Include="Enums\BooleanOperations.cs" />
     <Compile Include="Enums\CollectionEqualityOperations.cs" />
     <Compile Include="Enums\PointsOperation.cs" />

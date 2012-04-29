@@ -1,0 +1,44 @@
+﻿@model ActionTriggerViewModel
+
+@{
+    ViewBag.Title = "Add new trigger";
+    Layout = "~/Areas/ProjectsControlPanel/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add new trigger</h2>
+
+@using(Html.BeginForm("Save"))
+{
+    @Html.HiddenFor(x => x.Id)
+
+    <div class="editor-label">
+        @Html.LabelFor(x => x.Title)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(x => x.Title)
+        @Html.ValidationMessageFor(x => x.Title)
+    </div>
+    <div class="editor-label">
+        @Html.LabelFor(x => x.TriggersTypes)
+    </div>
+    <div class="editor-field">
+	    @Html.BuildSelectForEnum(x => x.TriggersTypes)
+        @Html.ValidationMessageFor(x => x.TriggersTypes)
+    </div>
+    
+    <div data-depend-value="@TriggersTypes.Achievement.Val()">
+    	oooooooo
+    </div>
+    <div data-depend-value="@TriggersTypes.AddOrRemoveStatus.Val()">
+    	aaaaaaaaaaaaa
+    </div>
+    <div data-depend-value="@TriggersTypes.ChangePoints.Val()">
+    	bbbbbbbbbbbbbbb
+    </div>
+}
+
+<script type="text/javascript">
+    $(function () {
+        $('#@Html.IdFor(x => x.TriggersTypes)').toggleBlocks();
+    });
+</script>

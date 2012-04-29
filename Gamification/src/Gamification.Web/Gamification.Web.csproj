@@ -100,13 +100,17 @@
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ProjectsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\TriggersController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ProjectsControlPanelAreaRegistration.cs" />
-    <Compile Include="Areas\ProjectsControlPanel\ViewModels\BaseConstraintsTypes.cs" />
+    <Compile Include="Areas\ProjectsControlPanel\ViewModels\ActionTriggerViewModel.cs" />
+    <Compile Include="Areas\ProjectsControlPanel\ViewModels\Enums\BaseConstraintsTypes.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ViewModels\ConstraintsIndexViewModel.cs" />
+    <Compile Include="Areas\ProjectsControlPanel\ViewModels\Enums\TriggersTypes.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ViewModels\ProjectNavItemViewModel.cs" />
     <Compile Include="AutoMapper\AutoMappingConfiguration.cs" />
     <Compile Include="AutoMapper\Extensions\MappingExtensions.cs" />
     <Compile Include="AutoMapper\IAutomapperConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\ProjectsMappingConfiguration.cs" />
+    <Compile Include="AutoMapper\Mappings\SelectListItemViewModelConfiguration.cs" />
+    <Compile Include="AutoMapper\Mappings\ViewModels\ActionTriggerViewModelConfiguration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="ControllerFactory\CastleControllerFactory.cs" />
@@ -184,7 +188,7 @@
     <Content Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\userscript.js" />
+    <Content Include="Scripts\userscripts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -255,6 +259,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\ProjectsControlPanel\Views\Actions\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\ProjectsControlPanel\Views\Triggers\Add.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

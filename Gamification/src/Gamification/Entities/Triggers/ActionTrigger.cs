@@ -30,5 +30,7 @@ namespace Gamification.Core.Entities.Triggers
         public IList<GameAction> GameActions { get; set; }
 
         public Project Project { get; set; }
+
+        public string Title { get; set; }
     }
 }
