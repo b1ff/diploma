@@ -35,7 +35,7 @@ namespace Gamification.Testing.Integration.Entities
 
 
             this.qtyBasedConstraintsRepository.ClearContext();
-            var constraints = this.qtyBasedConstraintsRepository.GetAll().ToList();
+            var constraints = this.qtyBasedConstraintsRepository.ToList();
 
 
             var levelBsdFromDb = (LevelBasedConstraint)constraints.FirstOrDefault(x => x.Id == levelBasedConstraint.Id);
@@ -56,7 +56,7 @@ namespace Gamification.Testing.Integration.Entities
             this.qtyBasedConstraintsRepository.AddPhysically(pointsBasedConstraint);
 
             this.qtyBasedConstraintsRepository.ClearContext();
-            var constraints = this.qtyBasedConstraintsRepository.GetAll().ToList();
+            var constraints = this.qtyBasedConstraintsRepository.ToList();
 
 
             var levelBsdFromDb = (LevelBasedConstraint)constraints.FirstOrDefault(x => x.Id == levelBasedConstraint.Id);

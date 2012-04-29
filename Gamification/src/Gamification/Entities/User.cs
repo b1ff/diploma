@@ -18,6 +18,6 @@ namespace Gamification.Core.Entities
 
         public string Email { get; set; }
 
-        public ICollection<Project> Projects { get; set; }
+        public IList<Project> Projects { get; set; }
     }
 }

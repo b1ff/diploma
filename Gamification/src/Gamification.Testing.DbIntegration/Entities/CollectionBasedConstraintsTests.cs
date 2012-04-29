@@ -35,7 +35,7 @@ namespace Gamification.Testing.Integration.Entities
             Assert.That(statusConstraint.Id, Is.GreaterThan(0));
 
             this.collectionConstraintsRepository.ClearContext();
-            var constraints = this.collectionConstraintsRepository.GetAll().ToList();
+            var constraints = this.collectionConstraintsRepository.ToList();
 
 
             var levelBsdFromDb = (AchievementsConstraint)constraints.FirstOrDefault(x => x.Id == achievementsConstraint.Id);
@@ -56,7 +56,7 @@ namespace Gamification.Testing.Integration.Entities
             this.collectionConstraintsRepository.AddPhysically(statusConstraint);
 
             this.collectionConstraintsRepository.ClearContext();
-            var constraints = this.collectionConstraintsRepository.GetAll().ToList();
+            var constraints = this.collectionConstraintsRepository.ToList();
 
 
             var levelBsdFromDb = (AchievementsConstraint)constraints.FirstOrDefault(x => x.Id == achievementsConstraint.Id);

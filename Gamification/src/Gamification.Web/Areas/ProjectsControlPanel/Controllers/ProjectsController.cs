@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Linq;
 using System.Web.Mvc;
 using Gamification.Core.DataAccess;
@@ -38,14 +39,16 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
                 return PartialView(Enumerable.Empty<ProjectNavItemViewModel>());
             }
 
-            var navItems = this.MapEnumerable<Project, ProjectNavItemViewModel>(currentUser.Projects);
+            var currentProjects = this.projectsRepository.Where(x => x.User.Id == currentUser.Id);
+            var navItems = this.MapEnumerable<Project, ProjectNavItemViewModel>(currentProjects);
             return PartialView(navItems);
         }
 
         public ActionResult Show(int id)
         {
             var project = this.projectsRepository.GetById(id);
-            if (project.User != this.usersRepository.GetCurrentUser())
+            var currentUser = this.usersRepository.GetCurrentUser();
+            if (!currentUser.Projects.Contains(project))
             {
                 return HttpNotFound();
             }

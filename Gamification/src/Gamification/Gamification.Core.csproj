@@ -73,6 +73,7 @@
     <Compile Include="Enums\BooleanOperations.cs" />
     <Compile Include="Enums\CollectionEqualityOperations.cs" />
     <Compile Include="Enums\PointsOperation.cs" />
+    <Compile Include="Exceptions\EntityNotFoundException.cs" />
     <Compile Include="Extensions\CollectionExtensions.cs" />
     <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />

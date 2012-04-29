@@ -7,6 +7,7 @@ namespace Gamification.Core.Entities.Constraints
         public string Description { get; set; }
         public TValue ValueToCompare { get; set; }
         public abstract BooleanResultProvider GetResultProvider(Gamer gamer);
+        public Project Project { get; set; }
 
         public bool GetResult(Gamer gamer)
         {

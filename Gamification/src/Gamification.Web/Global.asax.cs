@@ -7,6 +7,7 @@ using Gamification.IOC;
 using Gamification.Web.AutoMapper;
 using Gamification.Web.ControllerFactory;
 using Gamification.Web.Controllers;
+using Gamification.Web.Utils.ActionFilters;
 using Microsoft.Practices.ServiceLocation;
 
 namespace Gamification.Web
@@ -15,6 +16,7 @@ namespace Gamification.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
+            filters.Add(new EntityNotFoundActionFilterAttribute());
             filters.Add(new HandleErrorAttribute());
         }
 

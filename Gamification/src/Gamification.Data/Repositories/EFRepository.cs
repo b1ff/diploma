@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -6,6 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
+using Gamification.Core.Exceptions;
 using Gamification.Core.Extensions;
 using Gamification.Data.EF.Contexts;
 using LinqSpecs;
@@ -34,7 +36,16 @@ namespace Gamification.Data.EF.Repositories
 
         public TEntity GetById(int id)
         {
-            return EntityPersister.FirstOrDefault(x => x.Id == id);
+            var entity = EntityPersister.FirstOrDefault(x => x.Id == id);
+            return entity;
+        }
+
+        public TEntity StrictGetById(int id)
+        {
+            var entity = this.GetById(id);
+            if (entity == null)
+                throw new EntityNotFoundException(typeof(TEntity).Name);
+            return entity;
         }
 
         public IQueryable<TEntity> BySpec(Specification<TEntity> spec)
@@ -42,7 +53,7 @@ namespace Gamification.Data.EF.Repositories
             return GetAll().BySpec(spec);
         }
 
-        public IEnumerable<TEntity> BySpecWithQuery(Specification<TEntity> spec)
+        public IEnumerable<TEntity> BySpecWihoutQuery(Specification<TEntity> spec)
         {
             return GetAll().BySpec(spec).ToList();
         }
@@ -105,6 +116,31 @@ namespace Gamification.Data.EF.Repositories
                     entry.State = EntityState.Detached;
                 }
             }
+        }
+
+        public IEnumerator<TEntity> GetEnumerator()
+        {
+            return GetAll().GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetAll().GetEnumerator();
+        }
+
+        public Expression Expression
+        {
+            get { return GetAll().Expression; }
+        }
+
+        public Type ElementType
+        {
+            get { return GetAll().ElementType; }
+        }
+
+        public IQueryProvider Provider
+        {
+            get { return GetAll().Provider; }
         }
     }
 }

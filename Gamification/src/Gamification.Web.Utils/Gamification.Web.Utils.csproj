@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionFilters\EntityNotFoundActionFilterAttribute.cs" />
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="Helpers\HtmlExtensions.cs" />
+    <Compile Include="Helpers\HttpExceptionsHelper.cs" />
     <Compile Include="Helpers\ModelStateDictionaryExtension.cs" />
     <Compile Include="Helpers\RequestExtensions.cs" />
     <Compile Include="Helpers\RequestInfo.cs" />

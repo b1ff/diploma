@@ -8,6 +8,7 @@ namespace Gamification.Core.Entities.Triggers
         protected ActionTrigger()
         {
             ChildTriggers = new List<ActionTrigger>();
+            this.GameActions = new List<GameAction>();
         }
 
         public void CallOnGamer(Gamer gamer)
@@ -25,5 +26,9 @@ namespace Gamification.Core.Entities.Triggers
         protected abstract void RaiseTriggerAction(Gamer gamer);
 
         public IList<ActionTrigger> ChildTriggers { get; set; }
+
+        public IList<GameAction> GameActions { get; set; }
+
+        public Project Project { get; set; }
     }
 }
