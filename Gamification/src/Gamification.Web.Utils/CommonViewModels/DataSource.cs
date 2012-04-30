@@ -7,6 +7,10 @@ namespace Gamification.Web.Utils.CommonViewModels
     [Serializable]
     public class DataSource : SortedSet<NumericSelectListItem> // put string here probably
     {
+        public DataSource()
+        {
+        }
+
         public DataSource(int id)
         {
             Id = id;

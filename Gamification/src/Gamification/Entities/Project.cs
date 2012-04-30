@@ -26,6 +26,8 @@ namespace Gamification.Core.Entities
 
         public string Title { get; set; }
 
+        public bool AcceptMultipleStatuses { get; set; }
+
         public ISet<Gamer> Gamers { get; set; }
 
         public ISet<Level> Levels { get; set; }
@@ -33,6 +35,8 @@ namespace Gamification.Core.Entities
         public ISet<Achievement> Achievements { get; set; }
 
         public ISet<GameAction> GameActions { get; set; }
+
+        public ISet<GamerStatus> Statuses { get; set; } 
 
         public ISet<ActionTrigger> Triggers { get; set; }
 

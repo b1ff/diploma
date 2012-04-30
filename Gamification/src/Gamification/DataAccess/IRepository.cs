@@ -10,7 +10,9 @@ namespace Gamification.Core.DataAccess
     public interface IRepository<TEntity> : IQueryable<TEntity>
         where TEntity : BaseEntity
     {
+        IQueryable<TEntity> QueryIncluding(params Expression<Func<TEntity, object>>[] includes);
         TEntity GetById(int id);
+        TEntity GetByIdIncluding(int id, params Expression<Func<TEntity, object>>[] includes);
         TEntity StrictGetById(int id);
         IQueryable<TEntity> BySpec(Specification<TEntity> spec); 
         IEnumerable<TEntity> BySpecWihoutQuery(Specification<TEntity> spec); 

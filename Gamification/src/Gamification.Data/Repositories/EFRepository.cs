@@ -34,10 +34,26 @@ namespace Gamification.Data.EF.Repositories
             return EntityPersister.AsQueryable();
         }
 
+        public IQueryable<TEntity> QueryIncluding(params Expression<Func<TEntity, object>>[] includes)
+        {
+            var query = this.GetAll();
+            foreach (var expression in includes)
+            {
+                query = query.Include(expression);
+            }
+
+            return query;
+        }
+
         public TEntity GetById(int id)
         {
             var entity = EntityPersister.FirstOrDefault(x => x.Id == id);
             return entity;
+        }
+
+        public TEntity GetByIdIncluding(int id, params Expression<Func<TEntity, object>>[] includes)
+        {
+            return QueryIncluding(includes).FirstOrDefault(x => x.Id == id);
         }
 
         public TEntity StrictGetById(int id)

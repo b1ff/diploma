@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Gamification.Core.Enums;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums;
 using Gamification.Web.Utils.CommonViewModels;
@@ -8,6 +9,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.ViewModels
     {
         public int Id { get; set; }
 
+        [Required]
         public string Title { get; set; }
 
         public TriggersTypes TriggersTypes { get; set; }
@@ -22,6 +24,6 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.ViewModels
 
         public PointsOperation PointsOperation { get; set; }
 
-        public int Points { get; set; }
+        public int? Points { get; set; }
     }
 }

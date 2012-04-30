@@ -4,6 +4,10 @@ namespace Gamification.Core.Entities.Triggers
 {
     public class AddOrRemoveStatusTrigger : ActionTrigger
     {
+        public AddOrRemoveStatusTrigger()
+        {
+        }
+
         public AddOrRemoveStatusTrigger(GamerStatus status)
         {
             Status = status;
@@ -21,7 +25,7 @@ namespace Gamification.Core.Entities.Triggers
 
         protected override void RaiseTriggerAction(Gamer gamer)
         {
-            if (gamer.AcceptMultipleStatuses)
+            if (gamer.Project.AcceptMultipleStatuses)
             {
                 RaiseForMultipleStatuses(gamer);
             }

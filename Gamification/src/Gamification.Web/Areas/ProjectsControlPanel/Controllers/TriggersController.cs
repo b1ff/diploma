@@ -1,71 +1,112 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Mvc;
+using AutoMapper;
 using Gamification.Core.DataAccess;
+using Gamification.Core.Entities;
 using Gamification.Core.Entities.Triggers;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
-using Gamification.Web.Utils.Helpers;
+using Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums;
 using Microsoft.Web.Mvc;
 
 namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 {
     public class TriggersController : Controller
     {
-        private readonly IRepository<ActionTrigger> actionRepository;
+        private readonly IRepository<ActionTrigger> triggersRepository;
+        private readonly IRepository<Project> projectsRepository;
+        private readonly IRepository<Achievement> achievementsRepository;
+        private readonly IRepository<GamerStatus> statusesRepository;
 
-        public TriggersController(IRepository<ActionTrigger> actionRepository)
+        public TriggersController(
+            IRepository<ActionTrigger> triggersRepository,
+            IRepository<Project> projectsRepository,
+            IRepository<Achievement> achievementsRepository,
+            IRepository<GamerStatus> statusesRepository)
         {
-            this.actionRepository = actionRepository;
-        }
-
-        public ActionResult Index(int projectId)
-        {
-            var triggers = this.actionRepository.Where(x => x.Project.Id == projectId).ToList();
-            return View(triggers);
+            this.triggersRepository = triggersRepository;
+            this.projectsRepository = projectsRepository;
+            this.achievementsRepository = achievementsRepository;
+            this.statusesRepository = statusesRepository;
         }
 
         public ActionResult Add(int projectId)
         {
-            return View();
+            var project = this.projectsRepository.GetByIdIncluding(
+                projectId, x => x.Achievements, x => x.Statuses);
+            var viewModel = Mapper.Map<Project, ActionTriggerViewModel>(project);
+            return View(viewModel);
         }
 
-        public ActionResult Show(int id)
-        {
-            var trigger = this.actionRepository.GetById(id);
-            trigger.ThrowNotFoundIfNull();
-            return View(trigger);
-        }
-
-        public ActionResult Save(int projectId, ActionTriggerViewModel trigger)
+        [HttpPost]
+        public ActionResult Save(int projectId, ActionTriggerViewModel triggerViewModel)
         {
             if (!ModelState.IsValid)
-                return View("Add", trigger);
+                return View("Add", triggerViewModel);
+            
+            if (triggerViewModel.Id == 0)
+            {
+                ActionTrigger actionTrigger;
+                switch (triggerViewModel.TriggersTypes)
+                {
+                    case TriggersTypes.Achievement:
+                        actionTrigger = CreateAchievementTrigger(triggerViewModel);
+                        break;
+                    case TriggersTypes.ChangePoints:
+                        actionTrigger = CreateChangePointsTrigger(triggerViewModel);
+                        break;
+                    case TriggersTypes.AddOrRemoveStatus:
+                        actionTrigger = CreateStatusTrigger(triggerViewModel);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
 
-            //if (trigger.Id == 0)
-            //{
-                
-            //}
-            //else
-            //{
-                
-            //}
-            return this.RedirectToAction(x => x.Show(trigger.Id));
+                actionTrigger.Project = this.projectsRepository.GetById(projectId);
+                this.triggersRepository.AddPhysically(actionTrigger);
+            }
+            else
+            {
+
+            }
+            return this.RedirectToAction<ProjectsController>(x => x.Show(projectId));
         }
 
         [HttpPost]
         public ActionResult Delete(int id)
         {
+            var actionTrigger = this.triggersRepository.GetById(id);
+            var projectId = actionTrigger.Project.Id;
             try
             {
-                var actionTrigger = this.actionRepository.GetById(id);
-                var projectId = actionTrigger.Project.Id;
-                this.actionRepository.DeletePhysically(actionTrigger);
-
-                return this.RedirectToAction(x => x.Index(projectId));
+                this.triggersRepository.DeletePhysically(actionTrigger);
+                return this.RedirectToAction<ProjectsController>(x => x.Show(projectId));
             }
             catch
             {
-                return this.RedirectToAction(x => x.Show(id));
+                return this.RedirectToAction<ProjectsController>(x => x.Show(projectId));
             }
+        }
+
+        public AchievementsTrigger CreateAchievementTrigger(ActionTriggerViewModel viewModel)
+        {
+            var achievementTrigger = Mapper.Map<ActionTriggerViewModel, AchievementsTrigger>(viewModel);
+            var achievement = this.achievementsRepository.GetById(viewModel.Achievements.Id);
+            achievementTrigger.Achievement = achievement;
+            return achievementTrigger;
+        }
+
+        public AddOrRemoveStatusTrigger CreateStatusTrigger(ActionTriggerViewModel viewModel)
+        {
+            var statusTrigger = Mapper.Map<ActionTriggerViewModel, AddOrRemoveStatusTrigger>(viewModel);
+            statusTrigger.Status = this.statusesRepository.GetById(viewModel.Status.Id);
+            return statusTrigger;
+        }
+
+        public ChangePointsTrigger CreateChangePointsTrigger(ActionTriggerViewModel viewModel)
+        {
+            var pointsTrigger = Mapper.Map<ActionTriggerViewModel, ChangePointsTrigger>(viewModel);
+            return pointsTrigger;
         }
     }
 }

@@ -6,10 +6,6 @@
 .clear { zoom: 1; }
 /*clearFix*/
 
-nav > ul > li > span {
-    font-weight: bold;
-}
-
 section > nav {
     width: 200px;
     float: left;
@@ -17,6 +13,15 @@ section > nav {
     border: 1px solid #5c87b2;
 }
 
+    nav > h3 {
+        margin-left: 20px;
+    }
+    
+    nav > ul > li > span {
+        font-weight: bold;
+    }
+
 section#main > article {
     float: left;
+    width: 78%;
 }

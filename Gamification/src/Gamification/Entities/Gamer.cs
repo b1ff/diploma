@@ -12,8 +12,6 @@ namespace Gamification.Core.Entities
 
         public Project Project { get; set; }
 
-        public bool AcceptMultipleStatuses { get; set; }
-
         public long Points { get; set;  }
 
         public ISet<GamerStatus> GamerStatuses { get; set; }

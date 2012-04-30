@@ -39,6 +39,12 @@ namespace Gamification.Web.Utils.Helpers
                 return paramValue;
             }
 
+            var getParam = request.QueryString[paramName];
+            if (getParam != null && int.TryParse(getParam, out paramValue))
+            {
+                return paramValue;
+            }
+
             const string idParamName = "id";
             return tryGetIdAtLast && paramName != idParamName ? request.GetIntParam(idParamName, false) : null;
         }

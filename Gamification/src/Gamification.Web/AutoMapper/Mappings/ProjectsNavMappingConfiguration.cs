@@ -4,7 +4,7 @@ using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
 
 namespace Gamification.Web.AutoMapper.Mappings
 {
-    public class ProjectsMappingConfiguration : IAutomapperConfiguration
+    public class ProjectsNavMappingConfiguration : IAutomapperConfiguration
     {
         public void BuildMappings()
         {

@@ -4,11 +4,12 @@ using System.Linq;
 using System.Linq.Expressions;
 using AutoMapper;
 using Gamification.Core.Entities;
+using Gamification.Core.Extensions;
 using Gamification.Web.Utils.CommonViewModels;
 
 namespace Gamification.Web.AutoMapper.Mappings
 {
-    public class SelectListItemViewModelConfiguration : IAutomapperConfiguration
+    public class DataSourceMapingConfiguration : IAutomapperConfiguration
     {
         public void BuildMappings()
         {
@@ -35,7 +36,8 @@ namespace Gamification.Web.AutoMapper.Mappings
                                       dataSource.Add(Mapper.Map<T, NumericSelectListItem>(item));
                                   }
 
-                                  dataSource.Id = dataSource.First().Value;
+                                  if (dataSource.IsNotEmpty())
+                                    dataSource.Id = dataSource.First().Value;
                               });
         }
     }

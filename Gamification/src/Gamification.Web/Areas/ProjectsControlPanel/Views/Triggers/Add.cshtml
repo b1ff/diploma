@@ -7,35 +7,89 @@
 
 <h2>Add new trigger</h2>
 
-@using(Html.BeginForm("Save"))
+@using(Html.BeginForm("Save", "Triggers", new { projectId = Request.GetIntParam("projectId") }))
 {
-    @Html.HiddenFor(x => x.Id)
+    <div>
+    <fieldset>
+        <legend>
+            Add new trigger
+        </legend>
+        @Html.HiddenFor(x => x.Id)
 
-    <div class="editor-label">
-        @Html.LabelFor(x => x.Title)
-    </div>
-    <div class="editor-field">
-        @Html.TextBoxFor(x => x.Title)
-        @Html.ValidationMessageFor(x => x.Title)
-    </div>
-    <div class="editor-label">
-        @Html.LabelFor(x => x.TriggersTypes)
-    </div>
-    <div class="editor-field">
-	    @Html.BuildSelectForEnum(x => x.TriggersTypes)
-        @Html.ValidationMessageFor(x => x.TriggersTypes)
-    </div>
+        @Html.ValidationSummary(false)
+        <div class="editor-label">
+            @Html.LabelFor(x => x.Title)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.Title)
+            @Html.ValidationMessageFor(x => x.Title)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.TriggersTypes)
+        </div>
+        <div class="editor-field">
+	        @Html.BuildSelectForEnum(x => x.TriggersTypes)
+            @Html.ValidationMessageFor(x => x.TriggersTypes)
+        </div>
     
-    <div data-depend-value="@TriggersTypes.Achievement.Val()">
-    	oooooooo
-    </div>
-    <div data-depend-value="@TriggersTypes.AddOrRemoveStatus.Val()">
-    	aaaaaaaaaaaaa
-    </div>
-    <div data-depend-value="@TriggersTypes.ChangePoints.Val()">
-    	bbbbbbbbbbbbbbb
+        <div data-depend-value="@TriggersTypes.Achievement.Val()">
+            <div class="editor-label">
+        	    @Html.LabelFor(x => x.AchievementAction)
+            </div>
+            <div class="editor-field">
+        	    @Html.BuildSelectForEnum(x => x.AchievementAction)
+                @Html.ValidationMessageFor(x => x.AchievementAction)
+            </div>
+
+            <div class="editor-label">
+    	        @Html.LabelFor(x => x.Achievements)
+            </div>
+            <div class="editor-field">
+        	    @Html.SelectListFor(x => x.Achievements)
+                @Html.ValidationMessageFor(x => x.Achievements)
+            </div>    	
+        </div>
+        <div data-depend-value="@TriggersTypes.AddOrRemoveStatus.Val()">
+    	    <div class="editor-label">
+    		    @Html.LabelFor(x => x.StatusAction)
+    	    </div>
+    	    <div class="editor-field">
+    		    @Html.BuildSelectForEnum(x => x.StatusAction)
+                @Html.ValidationMessageFor(x => x.StatusAction)
+    	    </div>
+
+            <div class="editor-label">
+        	    @Html.LabelFor(x => x.Status)
+            </div>
+            <div class="editor-field">
+        	    @Html.SelectListFor(x => x.Status)
+                @Html.ValidationMessageFor(x => x.Status)
+            </div>
+        </div>
+        <div data-depend-value="@TriggersTypes.ChangePoints.Val()">
+    	    <div class="editor-label">
+    		    @Html.LabelFor(x => x.PointsOperation)
+    	    </div>
+    	    <div class="editor-field">
+    		    @Html.BuildSelectForEnum(x => x.PointsOperation)
+                @Html.ValidationMessageFor(x => x.PointsOperation)
+    	    </div>
+
+            <div class="editor-label">
+        	    @Html.LabelFor(x => x.Points)
+            </div>
+            <div class="editor-field">
+        	    @Html.TextBoxFor(x => x.Points)
+                @Html.ValidationMessageFor(x => x.Points)
+            </div>
+        </div>
+        <p>
+            @Html.SubmitButton("Save", "Save")
+        </p>
+    </fieldset>
     </div>
 }
+
 
 <script type="text/javascript">
     $(function () {

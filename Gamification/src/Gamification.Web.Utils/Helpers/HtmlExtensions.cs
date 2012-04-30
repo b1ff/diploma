@@ -66,10 +66,19 @@ namespace Gamification.Web.Utils.Helpers
             return MvcHtmlString.Create(selectBuilder.ToString());
         }
 
-        public static MvcHtmlString SelectListFor<TModel, TProp>(this HtmlHelper<TModel> html, Expression<Func<TModel, TProp>> propertyAccessor)
-            where TProp : DataSource
+        public static MvcHtmlString SelectListFor<TModel>(this HtmlHelper<TModel> html, Expression<Func<TModel, DataSource>> propertyAccessor) where TModel : class
         {
+            if (html.ViewData.Model == null)
+            {
+                return html.DropDownListFor(propertyAccessor, Enumerable.Empty<SelectListItem>());
+            }
+
             var dataSource = propertyAccessor.Compile().Invoke(html.ViewData.Model);
+            if (dataSource == null)
+            {
+                return html.DropDownListFor(propertyAccessor, Enumerable.Empty<SelectListItem>());
+            }
+
             var selectItems = dataSource.Select(x => new SelectListItem
                                                          {
                                                              Selected = x.Selected,

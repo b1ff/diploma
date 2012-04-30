@@ -108,8 +108,8 @@
     <Compile Include="AutoMapper\AutoMappingConfiguration.cs" />
     <Compile Include="AutoMapper\Extensions\MappingExtensions.cs" />
     <Compile Include="AutoMapper\IAutomapperConfiguration.cs" />
-    <Compile Include="AutoMapper\Mappings\ProjectsMappingConfiguration.cs" />
-    <Compile Include="AutoMapper\Mappings\SelectListItemViewModelConfiguration.cs" />
+    <Compile Include="AutoMapper\Mappings\ProjectsNavMappingConfiguration.cs" />
+    <Compile Include="AutoMapper\Mappings\DataSourceMapingConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\ViewModels\ActionTriggerViewModelConfiguration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
