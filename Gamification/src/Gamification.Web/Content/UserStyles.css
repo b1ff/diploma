@@ -25,3 +25,31 @@ section#main > article {
     float: left;
     width: 78%;
 }
+
+ul.imagesList {
+    list-style: none;
+}
+
+    ul.imagesList > li {
+        vertical-align: middle;
+        height: 50px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    
+    ul.imagesList > li:hover {
+        background-color: #5C87B2;
+        color: white;
+    }
+        ul.imagesList > li > * {
+            float: left;
+        }
+
+        ul.imagesList > li > span {
+            margin: 15px;
+            display: block;
+            width: 110px;
+        }
+        ul.imagesList > li > img {
+            height: 50px;
+        }

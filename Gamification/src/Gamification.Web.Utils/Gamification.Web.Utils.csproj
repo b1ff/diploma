@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -52,6 +53,7 @@
   <ItemGroup>
     <Compile Include="ActionFilters\EntityNotFoundActionFilterAttribute.cs" />
     <Compile Include="CommonViewModels\DataSource.cs" />
+    <Compile Include="CommonViewModels\FileViewModel.cs" />
     <Compile Include="CommonViewModels\NumericSelectListItem.cs" />
     <Compile Include="CryptoHelper.cs" />
     <Compile Include="Helpers\EnumExtensions.cs" />
@@ -60,10 +62,13 @@
     <Compile Include="Helpers\ModelStateDictionaryExtension.cs" />
     <Compile Include="Helpers\RequestExtensions.cs" />
     <Compile Include="Helpers\RequestInfo.cs" />
+    <Compile Include="Helpers\UrlExtensions.cs" />
     <Compile Include="ModelBinders\DataSourceModelBinder.cs" />
+    <Compile Include="ModelBinders\FileViewModelModelBinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleMembership\ISimpleMembership.cs" />
     <Compile Include="SimpleMembership\SimpleMembership.cs" />
+    <Compile Include="WebStorage\Storage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gamification\Gamification.Core.csproj">

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
+using Gamification.Core.Extensions;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
 using Gamification.Web.AutoMapper.Extensions;
 using Gamification.Web.Utils.Helpers;
@@ -46,7 +47,8 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 
         public ActionResult Show(int id)
         {
-            var project = this.projectsRepository.GetByIdIncluding(id, x => x.Triggers, x => x.GameActions);
+            var project = this.projectsRepository.GetByIdIncluding(
+                id, x => x.Triggers, x => x.GameActions, x => x.Statuses, x => x.Achievements);
             var currentUser = this.usersRepository.GetCurrentUser();
             if (!currentUser.Projects.Contains(project))
             {
@@ -59,6 +61,12 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
         [HttpPost]
         public ActionResult Save(int? projectId, string title)
         {
+            if (title.IsNullOrBlank())
+            {
+                ModelState.AddGeneralError("Project name must be not empty");
+                return this.RedirectToAction(x => x.Index());
+            }
+
             var currentUser = this.usersRepository.GetCurrentUser();
             var existingProject = this.projectsRepository.FirstOrDefault(x => x.Title == title && x.User.Id == currentUser.Id);
             if (existingProject != null)

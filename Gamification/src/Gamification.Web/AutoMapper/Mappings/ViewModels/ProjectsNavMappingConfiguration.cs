@@ -2,7 +2,7 @@
 using Gamification.Core.Entities;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
 
-namespace Gamification.Web.AutoMapper.Mappings
+namespace Gamification.Web.AutoMapper.Mappings.ViewModels
 {
     public class ProjectsNavMappingConfiguration : IAutomapperConfiguration
     {

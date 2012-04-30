@@ -32,5 +32,18 @@ namespace Gamification.Core.Entities.Triggers
         public Project Project { get; set; }
 
         public string Title { get; set; }
+
+        public void SetProject(Project project)
+        {
+            this.Project = project;
+        }
+
+        protected virtual void OnSetProject(Project project)
+        {
+            foreach(var trigger in this.ChildTriggers)
+            {
+                trigger.SetProject(project);
+            }
+        }
     }
 }

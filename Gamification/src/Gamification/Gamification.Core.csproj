@@ -91,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specifications\UserByEmailSpec.cs" />
     <Compile Include="Specifications\UserByNameSpec.cs" />
+    <Compile Include="StorageManagement\IStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Diagrams\ConstraintsDiagram.cd" />

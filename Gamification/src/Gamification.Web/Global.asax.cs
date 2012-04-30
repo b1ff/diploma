@@ -42,15 +42,24 @@ namespace Gamification.Web
             var container = ComponentRegistrator.BuildWebContainer();
             container.Register(
                 AllTypes.FromAssembly(typeof(HomeController).Assembly).BasedOn<Controller>().LifestyleTransient());
+            container.Register(
+                Component.For<UrlHelper>().UsingFactoryMethod(x => new UrlHelper(x.Resolve<HttpContextBase>().Request.RequestContext)).LifestylePerWebRequest());
+
             ServiceLocator.SetLocatorProvider(() => new WindsorServiceLocator(container));
             ControllerBuilder.Current.SetControllerFactory(new CastleControllerFactory(container));
             AutoMappingConfiguration.ConfigureAutoMapper();
 
-            ModelBinders.Binders[typeof(DataSource)] = new DataSourceModelBinder();
+            RegisterModelBinders();
 
             AreaRegistration.RegisterAllAreas();
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+        }
+
+        private static void RegisterModelBinders()
+        {
+            ModelBinders.Binders[typeof(DataSource)] = new DataSourceModelBinder();
+            ModelBinders.Binders[typeof(FileViewModel)] = new FileViewModelModelBinder();
         }
     }
 }

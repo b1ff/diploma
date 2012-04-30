@@ -16,6 +16,7 @@ namespace Gamification.Core.Entities
             this.Triggers = new HashSet<ActionTrigger>();
             this.NumericConstraints = new HashSet<BaseNumericBasedConstraint>();
             this.CollectionConstraints = new HashSet<BaseStringCollectionConstraint>();
+            this.Statuses = new HashSet<GamerStatus>();
         }
 
         public Guid UserKey { get; set; }

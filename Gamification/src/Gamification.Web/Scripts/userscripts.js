@@ -28,4 +28,25 @@
         }); // --each
     };  // --plugin
 
+
+    $.fn.submitDialog = function (title, openDialogElementSelector) {
+        var me = this;
+        $(me).dialog({
+            title: title,
+            buttons: {
+                'OK': function () {
+                    $(this).find('form').submit();
+                },
+                'Cancel': function () {
+                    $(this).find('input[type=text]').val('');
+                    $(this).dialog('close');
+                }
+            }
+        });
+
+        $(openDialogElementSelector).click(function () {
+            $(me).dialog('open');
+        });
+    };
+
 })(jQuery);

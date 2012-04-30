@@ -59,11 +59,11 @@
     	    </div>
 
             <div class="editor-label">
-        	    @Html.LabelFor(x => x.Status)
+        	    @Html.LabelFor(x => x.Statuses)
             </div>
             <div class="editor-field">
-        	    @Html.SelectListFor(x => x.Status)
-                @Html.ValidationMessageFor(x => x.Status)
+        	    @Html.SelectListFor(x => x.Statuses)
+                @Html.ValidationMessageFor(x => x.Statuses)
             </div>
         </div>
         <div data-depend-value="@TriggersTypes.ChangePoints.Val()">

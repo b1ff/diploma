@@ -10,8 +10,9 @@ namespace Gamification.Web.AutoMapper.Mappings.ViewModels
         public void BuildMappings()
         {
             Mapper.CreateMap<Project, ActionTriggerViewModel>()
-                .ForMember(x => x.Status, opt => opt.MapFrom(x => x.Statuses))
+                .ForMember(x => x.Statuses, opt => opt.MapFrom(x => x.Statuses))
                 .ForMember(x => x.Achievements, opt => opt.MapFrom(x => x.Achievements))
+                .ForMember(x => x.Id, opt => opt.Ignore())
                 ;
 
 
@@ -23,6 +24,7 @@ namespace Gamification.Web.AutoMapper.Mappings.ViewModels
             Mapper.CreateMap<ActionTriggerViewModel, AddOrRemoveStatusTrigger>()
                 .ForMember(x => x.Title, map => map.MapFrom(x => x.Title))
                 .ForMember(x => x.StatusAction, map => map.MapFrom(x => x.StatusAction))
+                .ForMember(x => x.Status, map => map.Ignore())
                 ;
 
             Mapper.CreateMap<ActionTriggerViewModel, ChangePointsTrigger>()

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Web.Mvc;
 using AutoMapper;
 using Gamification.Core.DataAccess;
@@ -99,7 +98,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
         public AddOrRemoveStatusTrigger CreateStatusTrigger(ActionTriggerViewModel viewModel)
         {
             var statusTrigger = Mapper.Map<ActionTriggerViewModel, AddOrRemoveStatusTrigger>(viewModel);
-            statusTrigger.Status = this.statusesRepository.GetById(viewModel.Status.Id);
+            statusTrigger.Status = this.statusesRepository.GetById(viewModel.Statuses.Id);
             return statusTrigger;
         }
 

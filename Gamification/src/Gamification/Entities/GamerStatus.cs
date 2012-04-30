@@ -13,6 +13,6 @@ namespace Gamification.Core.Entities
 
         public virtual ISet<Gamer> Gamers { get; protected set; }
 
-        public virtual Project UserProject { get; protected set; }
+        public virtual Project UserProject { get; set; }
     }
 }

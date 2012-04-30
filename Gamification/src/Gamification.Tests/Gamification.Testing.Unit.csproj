@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=2.1.267.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL" />
     <Reference Include="LinqSpecs">
       <HintPath>..\..\packages\LinqSpecs.1.0\lib\LinqSpecs.dll</HintPath>
     </Reference>
@@ -64,7 +65,8 @@
     <Compile Include="Core\ResultProviders\StringCollectionResultProviderTests.cs" />
     <Compile Include="EnumsConventionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web.Utils\SimpleMembershipTests.cs" />
+    <Compile Include="Web\Mappings\ActionTriggerViewModelMappingTests.cs" />
+    <Compile Include="Web\Utils\SimpleMembershipTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -87,6 +89,7 @@
       <Name>Gamification.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

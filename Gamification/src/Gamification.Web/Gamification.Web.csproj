@@ -95,9 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RegisterClientValidationExtensions.cs" />
+    <Compile Include="Areas\ProjectsControlPanel\Controllers\AchievementsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ActionsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ConstraintsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ProjectsController.cs" />
+    <Compile Include="Areas\ProjectsControlPanel\Controllers\StatusesController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\TriggersController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ProjectsControlPanelAreaRegistration.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ViewModels\ActionTriggerViewModel.cs" />
@@ -108,7 +110,7 @@
     <Compile Include="AutoMapper\AutoMappingConfiguration.cs" />
     <Compile Include="AutoMapper\Extensions\MappingExtensions.cs" />
     <Compile Include="AutoMapper\IAutomapperConfiguration.cs" />
-    <Compile Include="AutoMapper\Mappings\ProjectsNavMappingConfiguration.cs" />
+    <Compile Include="AutoMapper\Mappings\ViewModels\ProjectsNavMappingConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\DataSourceMapingConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\ViewModels\ActionTriggerViewModelConfiguration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -221,6 +223,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Storage\Achievements\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

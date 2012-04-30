@@ -18,7 +18,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.ViewModels
 
         public AssignUnassign AchievementAction { get; set; }
 
-        public DataSource Status { get; set; }
+        public DataSource Statuses { get; set; }
 
         public AssignUnassign StatusAction { get; set; }
 

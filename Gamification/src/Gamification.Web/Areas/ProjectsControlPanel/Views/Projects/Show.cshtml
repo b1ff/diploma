@@ -45,3 +45,64 @@
     </ul>
     @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint"))
 </section>
+
+<section>
+	<h3>Statuses</h3>
+	<ul>
+        @foreach (var status in Model.Statuses)
+        {
+            <li>@status.StatusName</li>
+        }
+	</ul>
+    <a href="javascript:void(0)" id="addStatusButton">Add status</a>
+</section>
+
+<section>
+	<h3>Achievement</h3>
+	<ul class="imagesList">
+        @foreach (var achievement in Model.Achievements)
+        {
+            <li><span>@achievement.Name</span> <img src="@Url.Path(achievement)" alt="@("Achievement" + achievement.Name)"/></li>
+        }        
+	</ul>
+    <a href="javascript:void(0)" id="addAchievementButton">Add Achievement</a>
+</section>
+    
+<div id="addStatusDialog">
+    @using (Html.BeginForm<StatusesController>(x => x.Save(Model.Id, null)))
+    {
+        <div class="editor-label">
+            <label for="title">Status name: </label>
+        </div>
+        <div class="editor-field">
+            <input type="text" name="statusTitle" id="statusTitle"/>
+        </div>
+    }
+</div>
+
+<div id="addAchievementDialog">
+	@using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div class="editor-label">
+        	<label for="title">Title: </label>
+        </div>
+        <div class="editor-field">
+        	<input type="text" name="achievementTitle" id="achievementTitle"/>
+        </div>
+     
+        <div class="editor-label">
+        	<label for="achievementImage">Image: </label>
+        </div>
+        <div class="editor-field">
+        	<input type="file" name="achievementImage" id="achievementImage" />
+        </div>
+    }
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#addStatusDialog').submitDialog('Add Status', '#addStatusButton');
+        $('#addAchievementDialog').submitDialog('Add Achievement', '#addAchievementButton')
+    });
+</script>

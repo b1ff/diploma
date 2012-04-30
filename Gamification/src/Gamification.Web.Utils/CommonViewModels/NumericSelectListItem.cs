@@ -1,7 +1,13 @@
-﻿namespace Gamification.Web.Utils.CommonViewModels
+﻿using System;
+
+namespace Gamification.Web.Utils.CommonViewModels
 {
-    public class NumericSelectListItem
+    public class NumericSelectListItem : IComparable<NumericSelectListItem>
     {
+        public NumericSelectListItem()
+        {
+        }
+
         public NumericSelectListItem(int value, string text) 
             : this(value, text, false)
         {
@@ -25,6 +31,11 @@
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
             return other.Value == Value;
+        }
+
+        public int CompareTo(NumericSelectListItem other)
+        {
+            return Value - other.Value;
         }
 
         public override bool Equals(object obj)

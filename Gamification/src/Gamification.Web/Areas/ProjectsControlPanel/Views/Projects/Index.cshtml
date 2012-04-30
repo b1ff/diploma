@@ -20,21 +20,6 @@
 
 <script type="text/javascript">
     $(function () {
-        $('#addProjectDialog').dialog({
-            title: 'Add project',
-            buttons: {
-                'OK': function () {
-                    $(this).find('form').submit();
-                },
-                'Cancel': function () {
-                    $(this).find('input[type=text]').val('');
-                    $(this).dialog('close');
-                }
-            }
-        });
-
-        $('#addProjectLink').click(function () {
-            $('#addProjectDialog').dialog('open');
-        });
+        $('#addProjectDialog').submitDialog('Add project', '#addProjectLink');
     });
 </script>
