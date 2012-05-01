@@ -36,11 +36,13 @@
     <ul>
         @foreach (var constraint in Model.NumericConstraints)
         {
-            <li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseNumericConstrait), constraint.Description))</li>
+            <li>@constraint.Description</li>
+            @*<li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseNumericConstrait), constraint.Description))</li>*@
         }
         @foreach (var constraint in Model.CollectionConstraints)
         {
-            <li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseStringConstraint), constraint.Description))</li>
+            <li>@constraint.Description</li>
+            @*<li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseStringConstraint), constraint.Description))</li>*@
         }
     </ul>
     @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint"))
@@ -82,7 +84,7 @@
 
 <div id="addAchievementDialog">
 	@using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
+ {
         <div class="editor-label">
         	<label for="title">Title: </label>
         </div>

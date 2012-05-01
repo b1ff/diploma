@@ -1,117 +1,117 @@
-﻿using System.Linq;
+﻿using System;
 using System.Web.Mvc;
+using System.Linq;
+using AutoMapper;
 using Gamification.Core.DataAccess;
+using Gamification.Core.Entities;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums;
+using Microsoft.Web.Mvc;
 
 namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 {
+    [Authorize]
+    [ActionLinkArea("ProjectsControlPanel")]
     public class ConstraintsController : Controller
     {
         private readonly IRepository<BaseNumericBasedConstraint> numericConstraintsRepository;
         private readonly IRepository<BaseStringCollectionConstraint> collectionConstraintsRepository;
+        private readonly IRepository<Project> projectsRepository;
+        private readonly IRepository<GamerStatus> statusesRepository;
+        private readonly IRepository<Achievement> achievementsRepository;
+        private readonly ConstraintTypes[] quantityTypes = new[] { ConstraintTypes.PointsBasedConstraint, ConstraintTypes.LevelBasedConstraint };
 
         public ConstraintsController(
             IRepository<BaseNumericBasedConstraint> numericConstraintsRepository,
-            IRepository<BaseStringCollectionConstraint> collectionConstraintsRepository)
+            IRepository<BaseStringCollectionConstraint> collectionConstraintsRepository,
+            IRepository<Project> projectsRepository,
+            IRepository<GamerStatus> statusesRepository,
+            IRepository<Achievement> achievementsRepository)
         {
             this.numericConstraintsRepository = numericConstraintsRepository;
             this.collectionConstraintsRepository = collectionConstraintsRepository;
-        }
-
-        public ActionResult Index(int projectId)
-        {
-            var viewModel = new ConstraintsIndexViewModel();
-            viewModel.NumericConstraints = this.numericConstraintsRepository.Where(x => x.Project.Id == projectId).ToList();
-            viewModel.StringsConstraits = this.collectionConstraintsRepository.Where(x => x.Project.Id == projectId).ToList();
-            
-            return View(viewModel);
-        }
-
-        public ActionResult Show(int id, BaseConstraintsTypes type)
-        {
-            if (type == BaseConstraintsTypes.BaseNumericConstrait)
-            {
-                var constraint = this.numericConstraintsRepository.GetById(id);
-                return View(constraint);
-            }
-            else
-            {
-                return View();
-            }
+            this.projectsRepository = projectsRepository;
+            this.statusesRepository = statusesRepository;
+            this.achievementsRepository = achievementsRepository;
         }
 
         public ActionResult Add(int projectId)
         {
-            return View();
+            var project = this.projectsRepository.GetByIdIncluding(projectId, x => x.Achievements, x => x.Statuses);
+            var viewModel = Mapper.Map<Project, ConstraintViewModel>(project);
+            return View(viewModel);
         }
 
         [HttpPost]
-        public ActionResult Save(FormCollection collection)
+        public ActionResult Save(int projectId, ConstraintViewModel constraintViewModel)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                // TODO: Add insert logic here
+                constraintViewModel.ProjectId = projectId;
+                return View("Add", constraintViewModel);
+            }
 
-                return RedirectToAction("Index");
-            }
-            catch
+            if (quantityTypes.Contains(constraintViewModel.ConstraintType))
             {
-                return View();
+                var constraint = this.CreateNumericConstraint(constraintViewModel);
+                FillConstraint<BaseNumericBasedConstraint, double>(constraint, projectId);
             }
-        }
-        
-        //
-        // GET: /ProjectsControlPanel/Constraints/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+            else
+            {
+                var constraint = this.CreateCollectionConstraint(constraintViewModel);
+                FillConstraint<BaseStringCollectionConstraint, string>(constraint, projectId);
+            }
 
-        //
-        // POST: /ProjectsControlPanel/Constraints/Edit/5
-
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
- 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            this.projectsRepository.SaveChanges();
+            return this.RedirectToAction<ProjectsController>(x => x.Show(projectId));
         }
 
-        //
-        // GET: /ProjectsControlPanel/Constraints/Delete/5
- 
-        public ActionResult Delete(int id)
+        private void FillConstraint<TConstraint, TValue>(TConstraint constraint, int projectId)
+
+            where TConstraint : BaseConstraint<TValue>
         {
-            return View();
+            constraint.Project = this.projectsRepository.GetById(projectId);
         }
 
-        //
-        // POST: /ProjectsControlPanel/Constraints/Delete/5
-
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        private BaseNumericBasedConstraint CreateNumericConstraint(ConstraintViewModel viewModel)
         {
-            try
+            BaseNumericBasedConstraint constraint;
+            switch (viewModel.ConstraintType)
             {
-                // TODO: Add delete logic here
- 
-                return RedirectToAction("Index");
+                case ConstraintTypes.PointsBasedConstraint:
+                    constraint = Mapper.Map<PointsBasedConstraint>(viewModel);
+                    break;
+                case ConstraintTypes.LevelBasedConstraint:
+                    constraint = Mapper.Map<LevelBasedConstraint>(viewModel);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
-            catch
+
+            this.numericConstraintsRepository.Add(constraint);
+            return constraint;
+        }
+
+        private BaseStringCollectionConstraint CreateCollectionConstraint(ConstraintViewModel viewModel)
+        {
+            BaseStringCollectionConstraint constraint;
+            switch (viewModel.ConstraintType)
             {
-                return View();
+                case ConstraintTypes.AchievementConstraint:
+                    constraint = Mapper.Map<AchievementsConstraint>(viewModel);
+                    constraint.ValueToCompare = this.achievementsRepository.GetById(viewModel.Achievements.Id).Name;
+                    break;
+                case ConstraintTypes.StatusConstraint:
+                    constraint = Mapper.Map<StatusConstraint>(viewModel);
+                    constraint.ValueToCompare = this.statusesRepository.GetById(viewModel.Statuses.Id).StatusName;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
+
+            this.collectionConstraintsRepository.Add(constraint);
+            return constraint;
         }
     }
 }

@@ -1,0 +1,118 @@
+﻿@model ConstraintViewModel
+
+@{
+    ViewBag.Title = "Add constraint";
+    Layout = "~/Areas/ProjectsControlPanel/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add constraint</h2>
+
+@using(Html.BeginForm<ConstraintsController>(x => x.Save(Model.ProjectId, null)))
+{
+    <div>
+    	<fieldset>
+    		<legend>
+    			Add constraint
+    		</legend>
+
+            @Html.ValidationSummary()
+            <div class="editor-label">
+            	@Html.LabelFor(x => x.Description)
+            </div>
+            <div class="editor-field">
+            	@Html.TextBoxFor(x => x.Description)
+                @Html.ValidationMessageFor(x => x.Description)
+            </div>
+
+            <div class="editor-label">
+            	@Html.LabelFor(x => x.ConstraintType)
+            </div>
+            <div class="editor-field">
+            	@Html.BuildSelectForEnum(x => x.ConstraintType)
+                @Html.ValidationMessageFor(x => x.ConstraintType)
+            </div>
+
+
+            <div id="booleanOperations">
+            	<div class="editor-label">
+            		@Html.LabelFor(x => x.BooleanOperation)
+            	</div>
+            	<div class="editor-field">
+            		@Html.BuildSelectForEnum(x => x.BooleanOperation)
+            	</div>
+            </div>
+
+            <div id="collectionOperations">
+            	<div class="editor-label">
+            		@Html.LabelFor(x => x.CollectionOperation)
+            	</div>
+            	<div class="editor-field">
+            		@Html.BuildSelectForEnum(x => x.CollectionOperation)
+            	</div>
+            </div>
+
+            <div data-depend-value="@ConstraintTypes.AchievementConstraint.Val()">
+                <div class="editor-label">
+            	    @Html.LabelFor(x => x.Achievements)
+                </div>
+                <div class="editor-field">
+            	    @Html.SelectListFor(x => x.Achievements)
+                </div>
+            </div>
+
+            <div data-depend-value="@ConstraintTypes.StatusConstraint.Val()">
+            	<div class="editor-label">
+            		@Html.LabelFor(x => x.Statuses)
+            	</div>            
+                <div class="editor-field">
+            	    @Html.SelectListFor(x => x.Statuses)
+                </div>
+            </div>
+
+            <div data-depend-value="@ConstraintTypes.PointsBasedConstraint.Val()">
+                <div class="editor-label">
+                	@Html.LabelFor(x => x.Points)
+                </div>
+            	<div class="editor-field">
+            	    @Html.TextBoxFor(x => x.Points)
+                    @Html.ValidationMessageFor(x => x.Level)
+                </div>
+            </div>
+            
+            <div data-depend-value="@ConstraintTypes.LevelBasedConstraint.Val()">
+                <div class="editor-label">
+                	@Html.LabelFor(x => x.Level)
+                </div>
+            	<div class="editor-field">
+            	    @Html.TextBoxFor(x => x.Level)
+                    @Html.ValidationMessageFor(x => x.Level)
+                </div>
+            </div>
+            
+            <p>
+            	@Html.SubmitButton("Save")
+            </p>
+    	</fieldset>
+    </div>
+}
+
+<script type="text/javascript">
+    $(function () {
+        var numericValues = [ @ConstraintTypes.LevelBasedConstraint.Val() , @ConstraintTypes.PointsBasedConstraint.Val() ];
+
+        console.log(numericValues);
+        $('#@Html.IdFor(x => x.ConstraintType)').toggleBlocks(function() {
+
+            var selecVal = parseInt($(this).val(), 10);
+            
+            if ($.inArray(selecVal, numericValues) !== -1) {
+                $('#booleanOperations').show();
+                $('#collectionOperations').hide();
+            }
+            else {
+                $('#collectionOperations').show();
+                $('#booleanOperations').hide();
+            }
+        });
+    });
+</script>

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Linq;
 using System.Web.Mvc;
 using Gamification.Core.DataAccess;
@@ -48,7 +47,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
         public ActionResult Show(int id)
         {
             var project = this.projectsRepository.GetByIdIncluding(
-                id, x => x.Triggers, x => x.GameActions, x => x.Statuses, x => x.Achievements);
+                id, x => x.Triggers, x => x.GameActions, x => x.Statuses, x => x.Achievements, x => x.CollectionConstraints, x =>x.NumericConstraints);
             var currentUser = this.usersRepository.GetCurrentUser();
             if (!currentUser.Projects.Contains(project))
             {

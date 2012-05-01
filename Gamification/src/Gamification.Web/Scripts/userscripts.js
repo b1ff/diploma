@@ -16,18 +16,29 @@
         });
     }
 
-    $.fn.toggleBlocks = function () {
+    $.fn.toggleBlocks = function (onToggleFn) {
+        function callOnToggle(self) {
+            if (onToggleFn != null && typeof (onToggleFn) === 'function') {
+                onToggleFn.apply(self);
+            }
+        }
+
         return $(this).each(function () {
             if (this.tagName !== 'SELECT')
                 return;
 
             toggleBlock(this);
+            callOnToggle(this);
+
             $(this).change(function () {
                 toggleBlock(this);
+                callOnToggle(this);
             }); // --change
         }); // --each
     };  // --plugin
 
+    
+    
 
     $.fn.submitDialog = function (title, openDialogElementSelector) {
         var me = this;
