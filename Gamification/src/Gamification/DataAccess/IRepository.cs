@@ -14,9 +14,9 @@ namespace Gamification.Core.DataAccess
         TEntity GetById(int id);
         TEntity GetByIdIncluding(int id, params Expression<Func<TEntity, object>>[] includes);
         TEntity StrictGetById(int id);
-        IQueryable<TEntity> BySpec(Specification<TEntity> spec); 
-        IEnumerable<TEntity> BySpecWihoutQuery(Specification<TEntity> spec); 
-        TEntity FirstBySpec(Specification<TEntity> spec); 
+        IQueryable<TEntity> BySpec(Specification<TEntity> spec, params Expression<Func<TEntity, object>>[] includes); 
+        IEnumerable<TEntity> BySpecWihoutQuery(Specification<TEntity> spec);
+        TEntity FirstBySpec(Specification<TEntity> spec, params Expression<Func<TEntity, object>>[] includes); 
         TEntity Add(TEntity entity);
         TEntity AddPhysically(TEntity entity);
         void Delete(TEntity entity);

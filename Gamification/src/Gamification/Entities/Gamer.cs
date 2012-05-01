@@ -19,5 +19,7 @@ namespace Gamification.Core.Entities
         public Level CurrentLevel { get; set; }
 
         public IList<Achievement> Achievements { get; set; }
+
+        public string UniqueKey { get; set; }
     }
 }

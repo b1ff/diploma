@@ -89,6 +89,7 @@
     <Compile Include="ProjectSettings\FromConfigFileConfiguration.cs" />
     <Compile Include="ProjectSettings\IApplicationSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specifications\GamerByNameSpec.cs" />
     <Compile Include="Specifications\UserByEmailSpec.cs" />
     <Compile Include="Specifications\UserByNameSpec.cs" />
     <Compile Include="StorageManagement\IStorage.cs" />

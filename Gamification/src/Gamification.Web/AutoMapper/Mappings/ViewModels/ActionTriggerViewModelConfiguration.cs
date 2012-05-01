@@ -13,6 +13,7 @@ namespace Gamification.Web.AutoMapper.Mappings.ViewModels
                 .ForMember(x => x.Statuses, opt => opt.MapFrom(x => x.Statuses))
                 .ForMember(x => x.Achievements, opt => opt.MapFrom(x => x.Achievements))
                 .ForMember(x => x.Id, opt => opt.Ignore())
+                .ForMember(x => x.Title, opt => opt.Ignore())
                 ;
 
 

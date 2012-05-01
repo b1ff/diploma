@@ -9,6 +9,7 @@ using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
 using Gamification.Core.Exceptions;
 using Gamification.Core.Extensions;
+using Gamification.Core.Specifications;
 using Gamification.Data.EF.Contexts;
 using LinqSpecs;
 
@@ -64,9 +65,9 @@ namespace Gamification.Data.EF.Repositories
             return entity;
         }
 
-        public IQueryable<TEntity> BySpec(Specification<TEntity> spec)
+        public IQueryable<TEntity> BySpec(Specification<TEntity> spec, params Expression<Func<TEntity, object>>[] includes)
         {
-            return GetAll().BySpec(spec);
+            return QueryIncluding(includes).BySpec(spec);
         }
 
         public IEnumerable<TEntity> BySpecWihoutQuery(Specification<TEntity> spec)
@@ -74,9 +75,9 @@ namespace Gamification.Data.EF.Repositories
             return GetAll().BySpec(spec).ToList();
         }
 
-        public TEntity FirstBySpec(Specification<TEntity> spec)
+        public TEntity FirstBySpec(Specification<TEntity> spec, params Expression<Func<TEntity, object>>[] includes)
         {
-            return GetAll().FirstBySpec(spec);
+            return QueryIncluding(includes).FirstBySpec(spec);
         }
 
         public TEntity Add(TEntity entity)

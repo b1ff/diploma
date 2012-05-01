@@ -17,9 +17,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Testing.Utils"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Web", "src\Gamification.Web\Gamification.Web.csproj", "{F3368622-97A1-4844-94AF-AC24A0AFF192}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Services", "src\Gamification.Services\Gamification.Services.csproj", "{CDB2C820-5989-4278-883A-45F2C0179C48}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.Web.Utils", "src\Gamification.Web.Utils\Gamification.Web.Utils.csproj", "{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamification.WebServices", "src\Gamification.WebServices\Gamification.WebServices.csproj", "{8B01ABF4-930E-4D99-A573-6CB2027F3DF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,14 +55,14 @@ Global
 		{F3368622-97A1-4844-94AF-AC24A0AFF192}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3368622-97A1-4844-94AF-AC24A0AFF192}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3368622-97A1-4844-94AF-AC24A0AFF192}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CDB2C820-5989-4278-883A-45F2C0179C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDB2C820-5989-4278-883A-45F2C0179C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDB2C820-5989-4278-883A-45F2C0179C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDB2C820-5989-4278-883A-45F2C0179C48}.Release|Any CPU.Build.0 = Release|Any CPU
 		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B01ABF4-930E-4D99-A573-6CB2027F3DF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B01ABF4-930E-4D99-A573-6CB2027F3DF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B01ABF4-930E-4D99-A573-6CB2027F3DF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B01ABF4-930E-4D99-A573-6CB2027F3DF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

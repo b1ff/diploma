@@ -41,13 +41,13 @@ namespace Gamification.IOC
         public static IWindsorContainer BuildWcfContainer()
         {
             var container = BuildContainerWithCommonComponents();
-            container.AddFacility<WcfFacility>();
-
-            container.Register(Component.For<EfDbContext>().UsingFactoryMethod(x =>
+            container.AddFacility<WcfFacility>()
+                     .Register(Component.For<EfDbContext>().UsingFactoryMethod(x =>
             {
                 var appSettings = x.Resolve<IApplicationSettings>();
                 return new EfDbContext(appSettings.ConnectionString);
             }).LifeStyle.PerWcfOperation());
+
             container.Register(AllTypes.FromAssembly(typeof(EfRepository<>).Assembly).Pick().WithService.DefaultInterfaces().LifestyleTransient());
             return container;
         }

@@ -1,101 +1,101 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:User.cs" caret="262" fromTop="11" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="430" fromTop="4" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Utils/f:IntegrationTestsComponentRegistration.cs" caret="564" fromTop="16" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:ProjectTests.cs" caret="698" fromTop="21" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="332" fromTop="0" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:ControllerFactory/f:CastleControllerFactory.cs" caret="1069" fromTop="37" />
-      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ActionFilters/f:EntityNotFoundActionFilterAttribute.cs" caret="309" fromTop="9" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IRepository.cs" caret="364" fromTop="13" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:TriggersController.cs" caret="1380" fromTop="35" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:AchievementsActions.cs" caret="54" fromTop="2" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AchievementsTrigger.cs" caret="466" fromTop="15" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/f:Web.config" caret="1217" fromTop="18" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/d:Enums/f:BaseConstraintsTypes.cs" caret="9" fromTop="0" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="69" fromTop="1" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ConstraintsController.cs" caret="261" fromTop="7" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Achievement.cs" caret="58" fromTop="2" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Data.EF/f:EFRepositoryTests.cs" caret="378" fromTop="12" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="2291" fromTop="30" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Repositories/f:UsersRepository.cs" caret="299" fromTop="9" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/d:ViewModels/f:ActionTriggerViewModelConfiguration.cs" caret="294" fromTop="9" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:SelectListItemViewModelConfiguration.cs" caret="459" fromTop="14" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AutoChangeLevelTrigger.cs" caret="599" fromTop="17" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:ChangePointsTrigger.cs" caret="121" fromTop="4" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="263" fromTop="5" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/f:ActionTriggerViewModel.cs" caret="359" fromTop="12" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Triggers/f:Add.cshtml" caret="455" fromTop="18" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Repositories/f:EFRepository.cs" caret="879" fromTop="18" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/d:Enums/f:TriggersTypes.cs" caret="163" fromTop="8" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:ActionTrigger.cs" caret="322" fromTop="10" />
-      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:Helpers/f:HtmlExtensions.cs" caret="813" fromTop="22" />
+      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Web/d:Conventions/f:ConstraintsTypesTests.cs" caret="877" fromTop="24" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:CollectionEqualityOperations.cs" caret="36" fromTop="1" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/d:Enums/f:ConstraintTypes.cs" caret="227" fromTop="9" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseConstraint.cs" caret="215" fromTop="6" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseStringCollectionConstraint.cs" caret="336" fromTop="9" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:StatusConstraint.cs" caret="347" fromTop="9" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Constraints/f:Add.cshtml" caret="291" fromTop="12" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="498" fromTop="3" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/f:ConstraintViewModel.cs" caret="453" fromTop="12" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:PointsBasedConstraint.cs" caret="119" fromTop="2" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Constraints/f:BaseNumericBasedConstraint.cs" caret="540" fromTop="16" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/d:ViewModels/f:ConstraintViewModelConfiguration.cs" caret="1285" fromTop="26" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ConstraintsController.cs" caret="1994" fromTop="14" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/f:Web.config" caret="1360" fromTop="19" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="265" fromTop="14" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:ProjectsNav.cshtml" caret="183" fromTop="8" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ProjectsController.cs" caret="342" fromTop="0" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NullableDataSource.cs" caret="224" fromTop="8" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:DataSource.cs" caret="263" fromTop="9" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/f:Global.asax.cs" caret="2660" fromTop="26" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NumericSelectListItem.cs" caret="1676" fromTop="29" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:DataSourceMapingConfiguration.cs" caret="2284" fromTop="32" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:WebStorage/f:Storage.cs" caret="0" fromTop="0" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ModelBinders/f:NullableDataSourceModelBinder.cs" caret="307" fromTop="9" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ModelBinders/f:DataSourceModelBinder.cs" caret="192" fromTop="6" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/f:GameActionViewModel.cs" caret="296" fromTop="9" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Actions/f:Add.cshtml" caret="109" fromTop="4" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/d:ViewModels/f:GameActionViewModelConfiguration.cs" caret="909" fromTop="19" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="784" fromTop="23" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ActionsController.cs" caret="1959" fromTop="42" />
     </RecentFiles>
     <RecentEdits>
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Enums/f:AchievementsActions.cs" caret="54" fromTop="2" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AchievementsTrigger.cs" caret="230" fromTop="8" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/d:Enums/f:BaseConstraintsTypes.cs" caret="31" fromTop="0" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/f:Web.config" caret="1217" fromTop="18" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="491" fromTop="17" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="3702" fromTop="29" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="3493" fromTop="24" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="3700" fromTop="29" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="1415" fromTop="5" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="3104" fromTop="33" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/f:ActionTriggerViewModel.cs" caret="384" fromTop="12" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/d:ViewModels/f:ActionTriggerViewModelConfiguration.cs" caret="294" fromTop="9" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:SelectListItemViewModelConfiguration.cs" caret="459" fromTop="14" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="113" fromTop="4" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="298" fromTop="11" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="783" fromTop="28" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="705" fromTop="25" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="685" fromTop="25" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="827" fromTop="29" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="966" fromTop="42" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="964" fromTop="35" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="924" fromTop="35" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AddOrRemoveStatusTrigger.cs" caret="1107" fromTop="40" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Triggers/f:Add.cshtml" caret="29" fromTop="0" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Triggers/f:Add.cshtml" caret="546" fromTop="22" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Repositories/f:EFRepository.cs" caret="942" fromTop="20" />
-      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/d:Enums/f:TriggersTypes.cs" caret="163" fromTop="8" />
-      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:Helpers/f:HtmlExtensions.cs" caret="826" fromTop="19" />
-      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:Helpers/f:HtmlExtensions.cs" caret="541" fromTop="17" />
-      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:Helpers/f:HtmlExtensions.cs" caret="815" fromTop="23" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/d:ViewModels/f:GameActionViewModelConfiguration.cs" caret="810" fromTop="15" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Actions/f:Add.cshtml" caret="65" fromTop="3" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ActionsController.cs" caret="1838" fromTop="18" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:DataSourceMapingConfiguration.cs" caret="1005" fromTop="22" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Actions/f:Add.cshtml" caret="454" fromTop="12" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ActionsController.cs" caret="2840" fromTop="23" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:ProjectsNav.cshtml" caret="182" fromTop="8" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:DataSource.cs" caret="1786" fromTop="45" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NumericSelectListItem.cs" caret="204" fromTop="8" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NumericSelectListItem.cs" caret="15" fromTop="1" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:DataSource.cs" caret="167" fromTop="7" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:DataSource.cs" caret="1786" fromTop="45" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/f:GameActionViewModel.cs" caret="356" fromTop="11" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:ViewModels/f:GameActionViewModel.cs" caret="225" fromTop="7" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ModelBinders/f:DataSourceModelBinder.cs" caret="186" fromTop="6" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ModelBinders/f:DataSourceModelBinder.cs" caret="1338" fromTop="36" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NullableDataSource.cs" caret="223" fromTop="8" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/f:Global.asax.cs" caret="2660" fromTop="26" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:DataSourceMapingConfiguration.cs" caret="513" fromTop="16" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:DataSourceMapingConfiguration.cs" caret="1228" fromTop="28" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:DataSourceMapingConfiguration.cs" caret="2715" fromTop="41" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NumericSelectListItem.cs" caret="1708" fromTop="38" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NumericSelectListItem.cs" caret="1579" fromTop="27" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:CommonViewModels/f:NumericSelectListItem.cs" caret="1532" fromTop="28" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:AutoMapper/d:Mappings/f:DataSourceMapingConfiguration.cs" caret="2352" fromTop="34" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ActionsController.cs" caret="2664" fromTop="27" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ModelBinders/f:DataSourceModelBinder.cs" caret="1275" fromTop="31" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:ModelBinders/f:NullableDataSourceModelBinder.cs" caret="307" fromTop="9" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="1180" fromTop="14" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="1479" fromTop="22" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="public" priority="7014" />
+      <Item value="public" priority="7686" />
       <Item value="virtual" priority="351" />
-      <Item value="int" priority="1086" />
+      <Item value="int" priority="1342" />
       <Item value="UserProject`0" priority="159" />
-      <Item value="void" priority="1887" />
-      <Item value="typeof" priority="447" />
+      <Item value="void" priority="1983" />
+      <Item value="typeof" priority="543" />
       <Item value="Gamer`0" priority="255" />
-      <Item value="x" priority="2463" />
+      <Item value="x" priority="3871" />
       <Item value="Guid`0" priority="63" />
-      <Item value="new" priority="3519" />
+      <Item value="new" priority="3743" />
       <Item value="HashSet&lt;Gamer&gt;" priority="57" />
       <Item value="long" priority="63" />
-      <Item value="double" priority="417" />
-      <Item value="GamerStatus`0" priority="191" />
+      <Item value="double" priority="481" />
+      <Item value="GamerStatus`0" priority="223" />
       <Item value="GetHashCode`0" priority="95" />
       <Item value="Gamers" priority="31" />
       <Item value="ISet" priority="255" />
-      <Item value="this" priority="3450" />
-      <Item value="string" priority="2041" />
-      <Item value="private" priority="511" />
+      <Item value="this" priority="3930" />
+      <Item value="string" priority="2198" />
+      <Item value="private" priority="671" />
       <Item value="static" priority="1311" />
-      <Item value="var" priority="4095" />
-      <Item value="return" priority="3615" />
+      <Item value="var" priority="4575" />
+      <Item value="return" priority="3871" />
       <Item value="BaseEntity`0" priority="383" />
       <Item value="GetEntitiesTypes`0" priority="31" />
       <Item value="TEntity`0" priority="830" />
       <Item value="EntityFrameworkDbContext`0" priority="63" />
       <Item value="connectionString" priority="63" />
-      <Item value="bool" priority="1119" />
+      <Item value="bool" priority="1151" />
       <Item value="EntityFrameworkRepository`0" priority="31" />
       <Item value="dbContext" priority="255" />
       <Item value="IObjectSet" priority="31" />
@@ -128,7 +128,7 @@
       <Item value="repository" priority="63" />
       <Item value="EfDbContext" priority="28" />
       <Item value="appSettings" priority="31" />
-      <Item value="IRepository" priority="191" />
+      <Item value="IRepository" priority="415" />
       <Item value="foreach" priority="341" />
       <Item value="repositoryType" priority="31" />
       <Item value="Container" priority="159" />
@@ -137,10 +137,10 @@
       <Item value="protected" priority="226" />
       <Item value="OnTeardown`0" priority="31" />
       <Item value="OnSetup`0" priority="31" />
-      <Item value="override" priority="191" />
+      <Item value="override" priority="223" />
       <Item value="PairwiseAttribute`0" priority="31" />
       <Item value="gamer" priority="2521" />
-      <Item value="id" priority="255" />
+      <Item value="id" priority="351" />
       <Item value="gamerFromDb" priority="95" />
       <Item value="SetUpFixture" priority="26" />
       <Item value="TestFixtureSetUp" priority="26" />
@@ -148,7 +148,7 @@
       <Item value="t" priority="31" />
       <Item value="DropCreateDatabaseIfModelChanges" priority="53" />
       <Item value="DropCreateDatabaseAlways" priority="53" />
-      <Item value="System" priority="158" />
+      <Item value="System" priority="189" />
       <Item value="Data" priority="76" />
       <Item value="Entity" priority="76" />
       <Item value="CreateDatabaseIfNotExists" priority="26" />
@@ -163,8 +163,8 @@
       <Item value="ProjectSettings" priority="127" />
       <Item value="List&lt;ActionTrigger&gt;" priority="28" />
       <Item value="ActionTrigger`0" priority="247" />
-      <Item value="Level`0" priority="287" />
-      <Item value="ctor" priority="639" />
+      <Item value="Level`0" priority="314" />
+      <Item value="ctor" priority="671" />
       <Item value="GamerStatuses" priority="31" />
       <Item value="HashSet&lt;GamerStatus&gt;" priority="57" />
       <Item value="UnlockedActions" priority="31" />
@@ -173,8 +173,8 @@
       <Item value="object" priority="348" />
       <Item value="PropertyToCompare" priority="127" />
       <Item value="as" priority="95" />
-      <Item value="null" priority="1087" />
-      <Item value="if" priority="1727" />
+      <Item value="null" priority="1215" />
+      <Item value="if" priority="1951" />
       <Item value="value" priority="223" />
       <Item value="IBooleanOperable`0" priority="58" />
       <Item value="IBooleanResultProvider`0" priority="380" />
@@ -209,12 +209,12 @@
       <Item value="booleanOperable" priority="63" />
       <Item value="entityWithValueToCompare" priority="31" />
       <Item value="propertyInfo" priority="31" />
-      <Item value="constraint" priority="383" />
+      <Item value="constraint" priority="829" />
       <Item value="FakeEntityWithoutProperty" priority="28" />
       <Item value="fake" priority="63" />
       <Item value="throw" priority="223" />
       <Item value="NotImplementedException" priority="28" />
-      <Item value="switch" priority="31" />
+      <Item value="switch" priority="95" />
       <Item value="firstNum" priority="223" />
       <Item value="secondNum" priority="191" />
       <Item value="epsilon" priority="31" />
@@ -242,8 +242,8 @@
       <Item value="IList" priority="31" />
       <Item value="Achievements" priority="97" />
       <Item value="List&lt;Achievement&gt;" priority="28" />
-      <Item value="Project`0" priority="223" />
-      <Item value="Achievement`0" priority="127" />
+      <Item value="Project`0" priority="255" />
+      <Item value="Achievement`0" priority="223" />
       <Item value="HashSet&lt;Achievement&gt;" priority="28" />
       <Item value="AchievementToAssign" priority="31" />
       <Item value="CommonBooleanConstraint`0" priority="31" />
@@ -273,11 +273,11 @@
       <Item value="BaseGameDependResultProvider`0" priority="63" />
       <Item value="gamerPropertyValue" priority="95" />
       <Item value="Equals" priority="33" />
-      <Item value="else" priority="287" />
+      <Item value="else" priority="319" />
       <Item value="StringBasedResultsProvider" priority="26" />
       <Item value="interface" priority="61" />
       <Item value="IConstraint" priority="63" />
-      <Item value="TValue`0" priority="127" />
+      <Item value="TValue`0" priority="159" />
       <Item value="IOneValueConstraint" priority="26" />
       <Item value="mockConstraint" priority="127" />
       <Item value="It`0" priority="95" />
@@ -293,25 +293,25 @@
       <Item value="pointsBasedConstraint" priority="256" />
       <Item value="constraints" priority="63" />
       <Item value="is" priority="127" />
-      <Item value="LevelBasedConstraint`0" priority="31" />
+      <Item value="LevelBasedConstraint`0" priority="90" />
       <Item value="pointsBsdFromDb" priority="63" />
       <Item value="levelBsdFromDb" priority="63" />
-      <Item value="BaseStringCollectionConstraint`0" priority="213" />
+      <Item value="BaseStringCollectionConstraint`0" priority="368" />
       <Item value="StringCollectionConstraints" priority="31" />
       <Item value="HashSet&lt;BaseStringCollectionConstraint&gt;" priority="28" />
-      <Item value="PointsBasedConstraint`0" priority="32" />
+      <Item value="PointsBasedConstraint`0" priority="96" />
       <Item value="GreaterOrEquals" priority="33" />
-      <Item value="BooleanOperations`0" priority="63" />
+      <Item value="BooleanOperations`0" priority="95" />
       <Item value="Column" priority="63" />
       <Item value="BooleanOperationId" priority="63" />
       <Item value="CollectionEqualityOperations`0" priority="127" />
-      <Item value="byte" priority="289" />
+      <Item value="byte" priority="320" />
       <Item value="CollectionEqualityOperation" priority="32" />
       <Item value="CollectionEqualityOperationId" priority="63" />
       <Item value="AchievementsConstraint" priority="29" />
       <Item value="StatusConstraint" priority="26" />
-      <Item value="AchievementsConstraint`0" priority="32" />
-      <Item value="StatusConstraint`0" priority="32" />
+      <Item value="AchievementsConstraint`0" priority="150" />
+      <Item value="StatusConstraint`0" priority="118" />
       <Item value="GetType`0" priority="31" />
       <Item value="Id" priority="31" />
       <Item value="ValueToCompare" priority="63" />
@@ -342,7 +342,7 @@
       <Item value="PointsTrigger" priority="28" />
       <Item value="Increase" priority="33" />
       <Item value="Decrease" priority="16" />
-      <Item value="BaseConstraint" priority="95" />
+      <Item value="BaseConstraint" priority="154" />
       <Item value="String`0" priority="31" />
       <Item value="User`0" priority="127" />
       <Item value="Projects" priority="96" />
@@ -382,7 +382,7 @@
       <Item value="EfDbContext`0" priority="58" />
       <Item value="BaseAutoMoqFixtureWithSubject" priority="26" />
       <Item value="Subject" priority="127" />
-      <Item value="const" priority="63" />
+      <Item value="const" priority="127" />
       <Item value="username" priority="348" />
       <Item value="password" priority="193" />
       <Item value="Setup`1" priority="95" />
@@ -391,7 +391,7 @@
       <Item value="DbModelBuilder`0" priority="90" />
       <Item value="s" priority="63" />
       <Item value="OverrideMappings`0" priority="31" />
-      <Item value="using" priority="153" />
+      <Item value="using" priority="214" />
       <Item value="ModelConfiguration" priority="49" />
       <Item value="Conventions" priority="68" />
       <Item value="IConvention`0" priority="26" />
@@ -410,7 +410,7 @@
       <Item value="UserByNameSpec" priority="57" />
       <Item value="isPersistence" priority="31" />
       <Item value="FormsAuthentication`0" priority="63" />
-      <Item value="View`0" priority="319" />
+      <Item value="View`0" priority="351" />
       <Item value="model" priority="253" />
       <Item value="simpleMembership" priority="127" />
       <Item value="MembershipCreateStatus`0" priority="90" />
@@ -437,10 +437,10 @@
       <Item value="ActionResult`0" priority="319" />
       <Item value="currentUser" priority="319" />
       <Item value="ConfigureAutoMapper`0" priority="31" />
-      <Item value="Mapper`0" priority="122" />
-      <Item value="IAutomapperConfiguration`0" priority="95" />
+      <Item value="Mapper`0" priority="506" />
+      <Item value="IAutomapperConfiguration`0" priority="159" />
       <Item value="Activator`0" priority="26" />
-      <Item value="opt" priority="63" />
+      <Item value="opt" priority="575" />
       <Item value="CommonAutoMapperTest`0" priority="31" />
       <Item value="ProjectsNav`0" priority="31" />
       <Item value="TSource`0" priority="63" />
@@ -449,8 +449,8 @@
       <Item value="PartialView`0" priority="63" />
       <Item value="navItems" priority="31" />
       <Item value="in" priority="159" />
-      <Item value="Model" priority="312" />
-      <Item value="Html" priority="641" />
+      <Item value="Model" priority="344" />
+      <Item value="Html" priority="1219" />
       <Item value="navItem" priority="157" />
       <Item value="request" priority="159" />
       <Item value="RequestInfo" priority="28" />
@@ -494,22 +494,22 @@
       <Item value="Mvc" priority="80" />
       <Item value="HtmlHelperExtensions`0" priority="26" />
       <Item value="LinkExtensions`0" priority="49" />
-      <Item value="ProjectsController`0" priority="127" />
+      <Item value="ProjectsController`0" priority="223" />
       <Item value="RedirectToAction`0" priority="122" />
-      <Item value="project" priority="666" />
+      <Item value="project" priority="762" />
       <Item value="Project" priority="84" />
       <Item value="title" priority="63" />
       <Item value="ValidateRequest" priority="31" />
-      <Item value="projectId" priority="223" />
+      <Item value="projectId" priority="511" />
       <Item value="existingProject" priority="31" />
-      <Item value="ModelState" priority="95" />
+      <Item value="ModelState" priority="127" />
       <Item value="modelState" priority="31" />
       <Item value="error" priority="31" />
       <Item value="." priority="22" />
       <Item value="Shared" priority="22" />
-      <Item value="_Layout.cshtml" priority="60" />
-      <Item value="GameAction`0" priority="62" />
-      <Item value="action" priority="157" />
+      <Item value="_Layout.cshtml" priority="79" />
+      <Item value="GameAction`0" priority="94" />
+      <Item value="action" priority="315" />
       <Item value="li" priority="29" />
       <Item value="Authorize" priority="31" />
       <Item value="ActionFilterAttribute`0" priority="31" />
@@ -521,9 +521,9 @@
       <Item value="#endif" priority="31" />
       <Item value="Index" priority="32" />
       <Item value="Home" priority="32" />
-      <Item value="ProjectNavItemViewModel`0" priority="31" />
+      <Item value="ProjectNavItemViewModel`0" priority="63" />
       <Item value="context" priority="127" />
-      <Item value="base" priority="54" />
+      <Item value="base" priority="86" />
       <Item value="DefaultUserInitializer" priority="26" />
       <Item value="Triggers" priority="31" />
       <Item value="HashSet&lt;ActionTrigger&gt;" priority="28" />
@@ -565,16 +565,16 @@
       <Item value="ItExpr`0" priority="31" />
       <Item value="ChangePointsTrigger" priority="26" />
       <Item value="CreateGamer`0" priority="95" />
-      <Item value="ActionInvoker" priority="31" />
+      <Item value="ActionInvoker" priority="95" />
       <Item value="actions" priority="31" />
-      <Item value="Add" priority="32" />
+      <Item value="Add" priority="65" />
       <Item value="GetEnumerator`0" priority="31" />
       <Item value="triggers" priority="31" />
       <Item value="Gamification" priority="30" />
       <Item value="Utils" priority="26" />
       <Item value="actionTrigger" priority="63" />
-      <Item value="BaseNumericBasedConstraint`0" priority="31" />
-      <Item value="viewModel" priority="63" />
+      <Item value="BaseNumericBasedConstraint`0" priority="245" />
+      <Item value="viewModel" priority="504" />
       <Item value="BaseConstraintsTypes`0" priority="95" />
       <Item value="type" priority="31" />
       <Item value="BaseNumericConstrait" priority="16" />
@@ -590,7 +590,7 @@
       <Item value="Ajax" priority="31" />
       <Item value="ActionsController`0" priority="63" />
       <Item value="TriggersController`0" priority="95" />
-      <Item value="ConstraintsController`0" priority="85" />
+      <Item value="ConstraintsController`0" priority="117" />
       <Item value="HashSet&lt;BaseNumericBasedConstraint&gt;" priority="28" />
       <Item value="HiddenFor`2" priority="3" />
       <Item value="AchievementsTrigger`0" priority="90" />
@@ -606,7 +606,7 @@
       <Item value="TField`0" priority="63" />
       <Item value="SelectListItem`0" priority="95" />
       <Item value="SelectListItem" priority="28" />
-      <Item value="AutoMapper" priority="31" />
+      <Item value="AutoMapper" priority="95" />
       <Item value="Expression" priority="63" />
       <Item value="dest" priority="31" />
       <Item value="BuildSelectListItemFor`3" priority="31" />
@@ -625,6 +625,34 @@
       <Item value="struct" priority="31" />
       <Item value="enumValue" priority="31" />
       <Item value="TagBuilder" priority="28" />
+      <Item value="enumValues" priority="31" />
+      <Item value="constraintsQuantity" priority="31" />
+      <Item value="ConstraintViewModel`0" priority="346" />
+      <Item value="DataAnnotationsExtensions" priority="31" />
+      <Item value="DataSource`0" priority="95" />
+      <Item value="constraintViewModel" priority="256" />
+      <Item value="ConstraintTypes`0" priority="216" />
+      <Item value="readonly" priority="31" />
+      <Item value="ConstraintsIndexViewModel`0" priority="31" />
+      <Item value="numericConstraintsRepository" priority="31" />
+      <Item value="quantityTypes" priority="31" />
+      <Item value="Linq" priority="26" />
+      <Item value="CreateCollectionConstraint`0" priority="31" />
+      <Item value="CreateNumericConstraint`0" priority="26" />
+      <Item value="TConstraint`0" priority="63" />
+      <Item value="achievements" priority="32" />
+      <Item value="FillConstraint`2" priority="31" />
+      <Item value="GameActionViewModel`0" priority="154" />
+      <Item value="IMappingEngineRunner`0" priority="31" />
+      <Item value="actionViewModel" priority="191" />
+      <Item value="NullableDataSource" priority="28" />
+      <Item value="NullableDataSource`0" priority="63" />
+      <Item value="NumericSelectListItem`0" priority="95" />
+      <Item value="NumericSelectListItem" priority="57" />
+      <Item value="EnvironmentVariableTarget`0" priority="31" />
+      <Item value="_empty" priority="127" />
+      <Item value="Lazy&lt;NumericSelectListItem&gt;" priority="28" />
+      <Item value="dataSource" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
       <Item value="GetHashCode`0" priority="53" />
@@ -632,26 +660,27 @@
     <ItemStatistics item="Qualified:System.Type">
       <Item value="GetMember`0" priority="26" />
       <Item value="GetProperties`0" priority="22" />
-      <Item value="Assembly" priority="157" />
-      <Item value="IsAssignableFrom`0" priority="104" />
-      <Item value="IsAbstract" priority="103" />
+      <Item value="Assembly" priority="184" />
+      <Item value="IsAssignableFrom`0" priority="158" />
+      <Item value="IsAbstract" priority="130" />
       <Item value="MakeGenericType`0" priority="26" />
       <Item value="GetProperty`0" priority="53" />
       <Item value="Name" priority="80" />
       <Item value="GetMethod`0" priority="22" />
       <Item value="GetConstructor`0" priority="22" />
       <Item value="IsEnum" priority="26" />
+      <Item value="GetEnumValues`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.GamerStatus">
       <Item value="UserProjects" priority="26" />
-      <Item value="StatusName" priority="26" />
+      <Item value="StatusName" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Reflection.Assembly">
       <Item value="GetType`0" priority="53" />
-      <Item value="GetTypes`0" priority="49" />
+      <Item value="GetTypes`0" priority="76" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
-      <Item value="ToList`1" priority="54" />
+      <Item value="ToList`1" priority="82" />
       <Item value="Select`2" priority="26" />
       <Item value="Any`1" priority="26" />
       <Item value="Contains`1" priority="26" />
@@ -740,7 +769,7 @@
       <Item value="ConnectionString" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Lazy`1">
-      <Item value="Value" priority="27" />
+      <Item value="Value" priority="54" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Castle.Windsor.IWindsorContainer">
       <Item value="Resolve`0" priority="80" />
@@ -800,18 +829,19 @@
       <Item value="SaveChanges`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IComparableConstraints`1">
-      <Item value="Be" priority="161" />
+      <Item value="Be" priority="188" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:SharpTestsEx.IComparableBeConstraints`1">
       <Item value="LessThan`0" priority="26" />
       <Item value="GreaterThan`0" priority="27" />
-      <Item value="EqualTo`0" priority="107" />
+      <Item value="EqualTo`0" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:">
       <Item value="Id" priority="26" />
       <Item value="Set`1" priority="53" />
       <Item value="SaveChanges`0" priority="26" />
       <Item value="GetType`0" priority="26" />
+      <Item value="Project" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@NUnit.Framework.Assert">
       <Item value="That`0" priority="53" />
@@ -824,17 +854,18 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Project">
       <Item value="Levels" priority="243" />
-      <Item value="Achievements" priority="26" />
+      <Item value="Achievements" priority="80" />
       <Item value="Title" priority="184" />
       <Item value="Id" priority="292" />
       <Item value="User" priority="238" />
       <Item value="GameActions" priority="76" />
-      <Item value="Triggers" priority="53" />
+      <Item value="Triggers" priority="107" />
       <Item value="UserKey" priority="26" />
       <Item value="GamerKey" priority="22" />
       <Item value="UsePoints" priority="108" />
-      <Item value="NumericConstraints" priority="49" />
-      <Item value="CollectionConstraints" priority="49" />
+      <Item value="NumericConstraints" priority="130" />
+      <Item value="CollectionConstraints" priority="130" />
+      <Item value="Statuses" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
       <Item value="GetType`0" priority="26" />
@@ -913,7 +944,7 @@
       <Item value="Name" priority="49" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
-      <Item value="Add`0" priority="80" />
+      <Item value="Add`0" priority="107" />
       <Item value="Clear`0" priority="26" />
       <Item value="Concat`1" priority="26" />
       <Item value="Contains`0" priority="76" />
@@ -922,6 +953,7 @@
     <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
       <Item value="Add`0" priority="26" />
       <Item value="FirstOrDefault`1" priority="53" />
+      <Item value="Count" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.ActionTrigger">
       <Item value="TriggerOnGamer`0" priority="26" />
@@ -933,15 +965,17 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.GameAction">
       <Item value="Constraints" priority="26" />
-      <Item value="QtyBasedConstraints" priority="49" />
+      <Item value="QtyBasedConstraints" priority="76" />
       <Item value="PerformAction`0" priority="49" />
-      <Item value="TriggersToCall" priority="26" />
+      <Item value="TriggersToCall" priority="53" />
       <Item value="Description" priority="26" />
-      <Item value="Project" priority="26" />
+      <Item value="Project" priority="53" />
       <Item value="Id" priority="26" />
+      <Item value="StringCollectionConstraints" priority="26" />
+      <Item value="Title" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.ISet`1">
-      <Item value="Add`0" priority="134" />
+      <Item value="Add`0" priority="188" />
       <Item value="Clear`0" priority="53" />
       <Item value="Contains`0" priority="53" />
       <Item value="PositionOfFirstDifference`1" priority="26" />
@@ -980,12 +1014,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.BaseStringCollectionConstraint">
       <Item value="GetValuesToCompare`0" priority="26" />
-      <Item value="ValueToCompare" priority="53" />
-      <Item value="CollectionEqualityOperation" priority="49" />
+      <Item value="ValueToCompare" priority="134" />
+      <Item value="CollectionEqualityOperation" priority="76" />
       <Item value="CollectionEqualityOperationId" priority="49" />
       <Item value="Project" priority="26" />
       <Item value="Id" priority="26" />
-      <Item value="Description" priority="26" />
+      <Item value="Description" priority="76" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Moq.It">
       <Item value="Is`1" priority="53" />
@@ -1001,7 +1035,7 @@
       <Item value="GetResult`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Achievement">
-      <Item value="Name" priority="53" />
+      <Item value="Name" priority="80" />
       <Item value="Id" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Testing.DbIntegration.Entities.QuantityBasedConstraintsTests">
@@ -1009,7 +1043,7 @@
       <Item value="qtyBasedConstraintsRepository" priority="161" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.LevelBasedConstraint">
-      <Item value="ValueToCompare" priority="26" />
+      <Item value="ValueToCompare" priority="53" />
       <Item value="Description" priority="80" />
       <Item value="Id" priority="27" />
       <Item value="BooleanOperations" priority="26" />
@@ -1017,19 +1051,20 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.DataAccess.IRepository`1">
       <Item value="AddPhysically`0" priority="126" />
-      <Item value="Add`0" priority="72" />
+      <Item value="Add`0" priority="99" />
       <Item value="GetAll`0" priority="189" />
       <Item value="ClearContext`0" priority="107" />
       <Item value="FirstOrDefault`0" priority="27" />
-      <Item value="SaveChanges`0" priority="76" />
-      <Item value="GetById`0" priority="209" />
+      <Item value="SaveChanges`0" priority="103" />
+      <Item value="GetById`0" priority="429" />
       <Item value="BySpecWithQuery`0" priority="22" />
       <Item value="DeletePhysically`0" priority="26" />
       <Item value="Where`1" priority="26" />
       <Item value="StrictGetById`0" priority="22" />
+      <Item value="GetByIdIncluding`0" priority="49" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.PointsBasedConstraint">
-      <Item value="ValueToCompare" priority="26" />
+      <Item value="ValueToCompare" priority="49" />
       <Item value="Description" priority="80" />
       <Item value="BooleanOperation" priority="53" />
     </ItemStatistics>
@@ -1056,7 +1091,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.AchievementsConstraint">
       <Item value="CollectionEqualityOperation" priority="50" />
-      <Item value="ValueToCompare" priority="22" />
+      <Item value="ValueToCompare" priority="49" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.Entities.Constraints.StatusConstraint">
       <Item value="CollectionEqualityOperation" priority="22" />
@@ -1066,7 +1101,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="107" />
-      <Item value="Empty" priority="80" />
+      <Item value="Empty" priority="107" />
       <Item value="IsNullOrEmpty`0" priority="53" />
       <Item value="IsNullOrWhiteSpace`0" priority="22" />
     </ItemStatistics>
@@ -1121,6 +1156,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Array">
       <Item value="Cast`1" priority="26" />
+      <Item value="Length" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Web.Mvc.DependencyResolver">
       <Item value="SetResolver`0" priority="22" />
@@ -1222,14 +1258,18 @@
       <Item value="ActionLink`0" priority="76" />
       <Item value="Action`0" priority="22" />
       <Item value="ActionLink`1" priority="267" />
-      <Item value="ValidationSummary`0" priority="26" />
-      <Item value="BeginForm`1" priority="53" />
-      <Item value="TextBoxFor`2" priority="22" />
-      <Item value="ValidationMessageFor`2" priority="26" />
-      <Item value="LabelFor`2" priority="53" />
+      <Item value="ValidationSummary`0" priority="53" />
+      <Item value="BeginForm`1" priority="80" />
+      <Item value="TextBoxFor`2" priority="100" />
+      <Item value="ValidationMessageFor`2" priority="108" />
+      <Item value="LabelFor`2" priority="266" />
       <Item value="HiddenFor`2" priority="26" />
       <Item value="BuildSelectList`3" priority="49" />
       <Item value="DropDownListFor`2" priority="22" />
+      <Item value="BuildSelectForEnum`2" priority="80" />
+      <Item value="SelectListFor`1" priority="72" />
+      <Item value="SubmitButton`0" priority="26" />
+      <Item value="RadioButtonList`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.Controllers.ProjectsController">
       <Item value="usersRepository" priority="103" />
@@ -1237,15 +1277,15 @@
       <Item value="projectsRepository" priority="188" />
       <Item value="Redirect`0" priority="26" />
       <Item value="RedirectToAction`0" priority="22" />
-      <Item value="Show`0" priority="53" />
+      <Item value="Show`0" priority="80" />
       <Item value="User" priority="26" />
       <Item value="Save`0" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@AutoMapper.Mapper">
       <Item value="Map`2" priority="26" />
-      <Item value="Map`1" priority="99" />
+      <Item value="Map`1" priority="288" />
       <Item value="AssertConfigurationIsValid`0" priority="26" />
-      <Item value="CreateMap`2" priority="53" />
+      <Item value="CreateMap`2" priority="265" />
       <Item value="Engine" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Activator">
@@ -1260,10 +1300,12 @@
       <Item value="Id" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:AutoMapper.IMappingExpression`2">
-      <Item value="ForMember`0" priority="76" />
+      <Item value="ForMember`0" priority="558" />
+      <Item value="Include`2" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:AutoMapper.IMemberConfigurationExpression`1">
-      <Item value="MapFrom`1" priority="80" />
+      <Item value="MapFrom`1" priority="481" />
+      <Item value="Ignore`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Gamification.Web.AutoMapper.AutoMappingConfiguration">
       <Item value="ConfigureAutoMapper`0" priority="26" />
@@ -1279,7 +1321,7 @@
       <Item value="script" priority="11" />
       <Item value="type" priority="5" />
       <Item value="text/javascript" priority="11" />
-      <Item value="div" priority="23" />
+      <Item value="div" priority="30" />
       <Item value="id" priority="17" />
       <Item value="input" priority="5" />
       <Item value="text" priority="5" />
@@ -1294,14 +1336,16 @@
       <Item value="s" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="RazorTransitionCompletionContext">
-      <Item value="Html" priority="85" />
+      <Item value="Html" priority="237" />
       <Item value="navItem" priority="7" />
       <Item value="Url" priority="17" />
       <Item value="model" priority="7" />
       <Item value="Model" priority="15" />
       <Item value="foreach" priority="41" />
-      <Item value="action" priority="7" />
-      <Item value="using" priority="9" />
+      <Item value="action" priority="15" />
+      <Item value="using" priority="19" />
+      <Item value="ConstraintTypes`0" priority="46" />
+      <Item value="constraint" priority="9" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpRequestWrapper">
       <Item value="IsCurrentAction`0" priority="26" />
@@ -1341,6 +1385,9 @@
       <Item value="margin" priority="5" />
       <Item value="body" priority="5" />
       <Item value="article" priority="5" />
+      <Item value="ConstraintType" priority="0" />
+      <Item value="booleanOperations" priority="4" />
+      <Item value="collectionOperations" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MvcContrib.UrlHelperExtensions">
       <Item value="Action`1" priority="26" />
@@ -1359,7 +1406,7 @@
     <ItemStatistics item="Qualified:System.Web.Mvc.ModelStateDictionary">
       <Item value="AddModelError`0" priority="50" />
       <Item value="Add`0" priority="26" />
-      <Item value="IsValid" priority="53" />
+      <Item value="IsValid" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.UrlHelper">
       <Item value="Action`0" priority="26" />
@@ -1369,6 +1416,10 @@
       <Item value="RedirectToAction`0" priority="26" />
       <Item value="Show`0" priority="53" />
       <Item value="Add`0" priority="26" />
+      <Item value="projectsRepository" priority="49" />
+      <Item value="qtyBasedRepository" priority="26" />
+      <Item value="collectionConstraintRepository" priority="26" />
+      <Item value="triggersRepository" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.ActionExecutingContext">
       <Item value="RequestContext" priority="26" />
@@ -1390,19 +1441,37 @@
       <Item value="Seed`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContext">
-      <Item value="function" priority="76" />
-      <Item value="$" priority="89" />
+      <Item value="function" priority="98" />
+      <Item value="$" priority="109" />
       <Item value="return" priority="10" />
       <Item value="elementSelector" priority="10" />
-      <Item value="this" priority="65" />
+      <Item value="this" priority="109" />
       <Item value="true" priority="10" />
       <Item value="false" priority="10" />
       <Item value="Sys$_ScriptLoaderTask$_addScriptElementHandlers" priority="10" />
+      <Item value="if" priority="21" />
+      <Item value="onToggleFn" priority="32" />
+      <Item value="null" priority="10" />
+      <Item value="var" priority="10" />
+      <Item value="Html" priority="5" />
+      <Item value="ConstraintTypes`0" priority="5" />
+      <Item value="Val`1" priority="11" />
+      <Item value="PointsBasedConstraint" priority="5" />
+      <Item value="numericValues" priority="21" />
+      <Item value="else" priority="10" />
+      <Item value="console" priority="32" />
+      <Item value="selecVal" priority="10" />
+      <Item value="callOnToggle" priority="21" />
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContextQualified">
       <Item value="each" priority="8" />
       <Item value="remove" priority="9" />
       <Item value="submit" priority="9" />
+      <Item value="toggleBlocks" priority="8" />
+      <Item value="val" priority="9" />
+      <Item value="inArray" priority="8" />
+      <Item value="show" priority="8" />
+      <Item value="log" priority="27" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Guid">
       <Item value="NewGuid`0" priority="54" />
@@ -1416,7 +1485,7 @@
       <Item value="GameActions" priority="26" />
       <Item value="Project" priority="73" />
       <Item value="Id" priority="80" />
-      <Item value="Title" priority="103" />
+      <Item value="Title" priority="126" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests">
       <Item value="CallOnGamer_WhenProjectIsNotUsePoints_ShouldNotDoAnything`0" priority="26" />
@@ -1431,9 +1500,10 @@
       <Item value="GetResultProvider`0" priority="49" />
       <Item value="GetResult`0" priority="22" />
       <Item value="Project" priority="22" />
-      <Item value="Description" priority="26" />
-      <Item value="BooleanOperation" priority="22" />
-      <Item value="BooleanOperationId" priority="26" />
+      <Item value="Description" priority="80" />
+      <Item value="BooleanOperation" priority="45" />
+      <Item value="BooleanOperationId" priority="80" />
+      <Item value="ValueToCompare" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Moq.Protected.IProtectedMock`1">
       <Item value="Setup`0" priority="26" />
@@ -1460,9 +1530,15 @@
       <Item value="StringsConstraits" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.Controllers.ConstraintsController">
-      <Item value="numericConstraintsRepository" priority="53" />
-      <Item value="collectionConstraintsRepository" priority="26" />
+      <Item value="numericConstraintsRepository" priority="80" />
+      <Item value="collectionConstraintsRepository" priority="54" />
       <Item value="Show`0" priority="49" />
+      <Item value="projectsRepository" priority="80" />
+      <Item value="Save`0" priority="27" />
+      <Item value="RedirectToAction`0" priority="27" />
+      <Item value="CreateCollectionConstraint`0" priority="26" />
+      <Item value="achievementsRepository" priority="53" />
+      <Item value="statusesRepository" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Mvc.ActionExecutedContext">
       <Item value="Exception" priority="134" />
@@ -1501,6 +1577,43 @@
     <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.ViewModels.ActionTriggerViewModel">
       <Item value="TriggersTypes" priority="22" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.ViewModels.ConstraintViewModel">
+      <Item value="CollectionOperation" priority="82" />
+      <Item value="ValueToCompare" priority="53" />
+      <Item value="Description" priority="103" />
+      <Item value="BooleanOperation" priority="81" />
+      <Item value="Achievements" priority="99" />
+      <Item value="Statuses" priority="107" />
+      <Item value="ProjectId" priority="76" />
+      <Item value="ConstraintType" priority="160" />
+      <Item value="Points" priority="134" />
+      <Item value="Level" priority="104" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="Parse`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums.ConstraintTypes">
+      <Item value="Val`1" priority="175" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Gamification.Web.Areas.ProjectsControlPanel.ViewModels.Enums.ConstraintTypes">
+      <Item value="PointsBasedConstraint" priority="86" />
+      <Item value="LevelBasedConstraint" priority="26" />
+      <Item value="AchievementConstraint" priority="22" />
+      <Item value="StatusConstraint" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.ViewModels.GameActionViewModel">
+      <Item value="CollectionBasedConstrains" priority="126" />
+      <Item value="QtyBasedConstraints" priority="149" />
+      <Item value="Triggers" priority="122" />
+      <Item value="ProjectId" priority="49" />
+      <Item value="Title" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Gamification.Web.Utils.CommonViewModels.NullableDataSource">
+      <Item value="Add`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Gamification.Web.Utils.CommonViewModels.NumericSelectListItem">
+      <Item value="Empty" priority="26" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -1525,13 +1638,15 @@
     <Session>
       <Name>Session #2</Name>
       <Elements>
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.AndResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Web.AutoMappings.CommonAutoMapperTest" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Data.EF.EFRepositoryTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.EnumsConventionsTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GameActionTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.OrResultProviderTests" type="NUnitTestFixtureElement" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.ProjectTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
@@ -1541,13 +1656,14 @@
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.UserTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestFixtureElement" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Data.EF.EFRepositoryTests.Add_ShouldAddEntityToRepository" ParentId="Gamification.Testing.Integration.Data.EF.EFRepositoryTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Data.EF.EFRepositoryTests" MethodName="Add_ShouldAddEntityToRepository" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Web.AutoMappings.CommonAutoMapperTest.AllMappings_ShouldBeValid" ParentId="Gamification.Testing.Integration.Web.AutoMappings.CommonAutoMapperTest" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Web.AutoMappings.CommonAutoMapperTest" MethodName="AllMappings_ShouldBeValid" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.EnumsConventionsTests.AllEnums_ShouldBeDerivedFromByte" ParentId="Gamification.Testing.Unit.EnumsConventionsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.EnumsConventionsTests" MethodName="AllEnums_ShouldBeDerivedFromByte" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension.Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" ParentId="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.ResultProviders.BooleanOperationExtension" MethodName="Calculate_ShouldCalculateBooleanOperationForTwoDigitsRight" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests.CallOnGamer_WhenPointsOperationIsDecrease_ShouldDecreaseGamerPointsOnPointsValue" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests" MethodName="CallOnGamer_WhenPointsOperationIsDecrease_ShouldDecreaseGamerPointsOnPointsValue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests.CallOnGamer_WhenPointsOperationIsIncrease_ShouldIncreaseGamerPointsOnPointsValue" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangePointsTriggerTests" MethodName="CallOnGamer_WhenPointsOperationIsIncrease_ShouldIncreaseGamerPointsOnPointsValue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests.CallOnGamer_WhenProjectIsNotUsePoints_ShouldNotDoAnything" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" MethodName="CallOnGamer_WhenProjectIsNotUsePoints_ShouldNotDoAnything" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests.CallOnGamer_WhenProjectIsUsePointsAndGamerCanIncreaseLevel_ShouldIncreaseLevel" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" MethodName="CallOnGamer_WhenProjectIsUsePointsAndGamerCanIncreaseLevel_ShouldIncreaseLevel" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests.CallOnGamer_WhenProjectIsUsePointsAndGamerPointsIsLessThanNeddedCurrentLevel_ShouldDecreaseLevel" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" MethodName="CallOnGamer_WhenProjectIsUsePointsAndGamerPointsIsLessThanNeddedCurrentLevel_ShouldDecreaseLevel" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests.ConstraintsTypeEnum_ShouldContainsValuesEqualToConstraintsClasses" ParentId="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests" MethodName="ConstraintsTypeEnum_ShouldContainsValuesEqualToConstraintsClasses" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.CreateUser_WhenAlreadyExistUserWithSameEmail_ShouldReturnDublicateEmailResult" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="CreateUser_WhenAlreadyExistUserWithSameEmail_ShouldReturnDublicateEmailResult" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.CreateUser_WhenAlredyExistUserWithSameName_ShouldReturnDublicateUsernameResult" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="CreateUser_WhenAlredyExistUserWithSameName_ShouldReturnDublicateUsernameResult" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.CreateUser_WhenEmailIsNull_ShouldThrowArgumentNullException" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="CreateUser_WhenEmailIsNull_ShouldThrowArgumentNullException" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
@@ -1566,8 +1682,9 @@
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GameActionTests.PerformAction_WhenAnyOfQtyBasedConstraintsIsFail_ShouldNotPerfromAnyTrigger" ParentId="Gamification.Testing.Unit.Core.Entities.GameActionTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.GameActionTests" MethodName="PerformAction_WhenAnyOfQtyBasedConstraintsIsFail_ShouldNotPerfromAnyTrigger" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GameActionTests.PerformAction_WhenAnyOfQtyBasedConstraintsIsFail_ShouldReturnFailErrors" ParentId="Gamification.Testing.Unit.Core.Entities.GameActionTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.GameActionTests" MethodName="PerformAction_WhenAnyOfQtyBasedConstraintsIsFail_ShouldReturnFailErrors" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests.ResolveRepositoryTests" ParentId="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests" MethodName="ResolveRepositoryTests" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests.ToAddOrRemoveStatusTriggerTest" ParentId="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests" MethodName="ToAddOrRemoveStatusTriggerTest" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.ValidateUser_WhenPasswordHashNotEqualToExistingInDatabase_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="ValidateUser_WhenPasswordHashNotEqualToExistingInDatabase_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.ValidateUser_WhenUsernameAndPasswordHashExistInDatabase_ShouldReturnTrue" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="ValidateUser_WhenUsernameAndPasswordHashExistInDatabase_ShouldReturnTrue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.ValidateUser_WhenUserWasNotFoundedByUsername_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="ValidateUser_WhenUserWasNotFoundedByUsername_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
