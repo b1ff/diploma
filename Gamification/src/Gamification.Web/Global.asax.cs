@@ -59,6 +59,7 @@ namespace Gamification.Web
         private static void RegisterModelBinders()
         {
             ModelBinders.Binders[typeof(DataSource)] = new DataSourceModelBinder();
+            ModelBinders.Binders[typeof(NullableDataSource)] = new NullableDataSourceModelBinder();
             ModelBinders.Binders[typeof(FileViewModel)] = new FileViewModelModelBinder();
         }
     }

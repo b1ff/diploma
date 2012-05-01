@@ -3,7 +3,6 @@ using Gamification.Core.Domain;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Extensions;
-using Gamification.Core.ResultProviders;
 
 namespace Gamification.Core.Entities
 {

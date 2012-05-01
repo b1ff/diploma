@@ -13,7 +13,8 @@
     <ul> 
         @foreach (var action in Model.GameActions)
         {
-            <li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>
+            <li>@action.Title</li>
+            @*<li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>*@
         }
     </ul>
     @(Html.ActionLink<ActionsController>(x => x.Add(Model.Id), "Add Action"))

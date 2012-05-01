@@ -50,5 +50,11 @@ namespace Gamification.Web.Utils.CommonViewModels
         {
             return Value.GetHashCode();
         }
+
+        private static readonly Lazy<NumericSelectListItem> _empty = new Lazy<NumericSelectListItem>(() => new NumericSelectListItem(-1, string. Empty));
+        public static NumericSelectListItem Empty
+        {
+            get { return _empty.Value; }
+        }
     }
 }

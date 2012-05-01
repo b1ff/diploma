@@ -6,7 +6,7 @@
 <ul>
     @foreach (var navItem in Model)
     {
-        var projId = Request.GetIntParam("id");
+        var projId = Request.GetIntParam("projectId");
         
         <li>
             @if (!projId.HasValue || projId.Value != navItem.Id)
