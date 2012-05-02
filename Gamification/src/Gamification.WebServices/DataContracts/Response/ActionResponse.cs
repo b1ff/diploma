@@ -6,6 +6,12 @@ namespace Gamification.WebServices.DataContracts.Response
     [DataContract]
     public class ActionResponse : BaseResponseContract
     {
+        public ActionResponse()
+        {
+            AchievementChanges = new List<CharacteristicChange>();
+            StatusChanges = new List<CharacteristicChange>();
+        }
+
         [DataMember]
         public List<CharacteristicChange> AchievementChanges { get; set; }
 
