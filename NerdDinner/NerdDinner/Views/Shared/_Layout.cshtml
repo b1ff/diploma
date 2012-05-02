@@ -21,6 +21,11 @@
        }
    </script>
 
+    <script src="@Url.Content("~/Scripts/easyXDM.debug.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        easyXDM.DomHelper.requiresJSON("@Url.Content("~/Scripts/json2.js")");
+    </script>
+    <script src="@Url.Content("~/Scripts/gamification.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/yepnope.1.0.1-min.js")" type="text/javascript"></script>    
     <script src="@Url.Content("~/Scripts/date.format.js")" type="text/javascript"></script>
@@ -32,6 +37,22 @@
     <link rel="alternate" type="application/rss+xml" title="NerdDinner.com - Upcoming Dinners" href="@Url.Content("~/Services/RSS")" />
     <link rel="odata.service" title="NerdDinner.com OData Service" href="@Url.Content("~/Services/OData.svc")" />
     <link rel="odata.feed" title="NerdDinner.com OData Service - Dinners" href="@Url.Content("~/Services/OData.svc/Dinners")" />
+    <script type="text/javascript">
+
+        $(function () {
+            $.gamification.test(function (response) {
+                alert('УРААААААААААААААААААА ' + response);
+            });
+            
+            $.gamification.doAction({
+                'GamerKey': '1627aea5-8e0a-4371-9022-9b504344e724',
+                'GamerName': 'name',
+                'ActionId': 12
+            }, function () { alert('СУКА гДЕ ТЫ?!?!?') });
+        });
+        
+    </script>
+
     @RenderSection("HeadArea", required: false)
 </head>
 <body>
@@ -97,6 +118,6 @@
                 lang: 'en' /* 'en', 'de', 'nl', 'es', 'fr' */
             });
         </script>
-
+    </div>
 </body>
 </html>

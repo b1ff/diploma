@@ -16,7 +16,7 @@ using Gamification.WebServices.ServicesContracts;
 
 namespace Gamification.WebServices
 {
-   //[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class ActionsService : IActionsService
     {
         private readonly IRepository<Gamer> gamersRepository;
@@ -69,6 +69,12 @@ namespace Gamification.WebServices
             this.actionsRepository.SaveChanges();
 
             return CreateResponse(gamerSnapshot, gamer);
+        }
+
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        public string TestPost()
+        {
+            return "Success";
         }
 
         private ActionResponse CreateResponse(Gamer oldGamer, Gamer newGamer)

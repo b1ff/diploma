@@ -150,6 +150,9 @@
     <Content Include="App_Data\NerdDinner_log.ldf">
       <DependentUpon>NerdDinner.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\crossDomainAjax\cors\index.html" />
+    <Content Include="Content\crossDomainAjax\easyxdm.swf" />
+    <Content Include="Content\crossDomainAjax\name.html" />
     <Content Include="Content\Flair.css" />
     <Content Include="Content\images\ajax-loader.png" />
     <Content Include="Content\images\google.gif" />
@@ -300,6 +303,10 @@
     <Content Include="lib\DDay.iCal.dll" />
     <Content Include="Logs\readme.txt" />
     <Content Include="Scripts\date.format.js" />
+    <Content Include="Scripts\easyXDM.debug.js" />
+    <Content Include="Scripts\easyXDM.js" />
+    <Content Include="Scripts\easyXDM.min.js" />
+    <Content Include="Scripts\gamification.js" />
     <Content Include="Scripts\geo-polyfill.js" />
     <Content Include="Scripts\geo.js" />
     <Content Include="Scripts\jquery-1.5.2-vsdoc.js" />
@@ -310,6 +317,7 @@
     <Content Include="Scripts\jquery.cookie.js" />
     <Content Include="Scripts\jquery.mobile-1.0a4.1.js" />
     <Content Include="Scripts\jquery.mobile-1.0a4.1.min.js" />
+    <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\MSAjaxHistoryBundle.js" />

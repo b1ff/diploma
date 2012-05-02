@@ -11,7 +11,10 @@ namespace Gamification.WebServices.ServicesContracts
     [ServiceKnownType(typeof(ChangeAction))]
     public interface IActionsService
     {
-        [OperationContract()]
+        [OperationContract]
         ActionResponse DoAction(ActionRequest actionRequest);
+
+        [OperationContract]
+        string TestPost();
     }
 }
