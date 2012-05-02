@@ -3,7 +3,7 @@
 <section>
     @Html.ValidationSummary(false)
 
-    <a href="javascript:void(0)" id="addProjectLink">Add project</a>
+@*    <a href="javascript:void(0)" id="addProjectLink">Add project</a>
 
     <div id="addProjectDialog">
         @using (Html.BeginForm<ProjectsController>(x => x.Save(null, null)))
@@ -15,11 +15,11 @@
                 <input type="text" name="title" id="title"/>
             </div>
         }
-    </div>
+    </div>*@
 </section>
 
-<script type="text/javascript">
+@*<script type="text/javascript">
     $(function () {
         $('#addProjectDialog').submitDialog('Add project', '#addProjectLink');
     });
-</script>
+</script>*@

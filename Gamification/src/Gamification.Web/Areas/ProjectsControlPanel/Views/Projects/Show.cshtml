@@ -14,7 +14,7 @@
 		Project info
 	</h3>
     <p>
-    	<label>Customer key: </label><span>@Model.UserKey</span>
+    	<span class="label">Customer key: </span><span class="label label-info">@Model.UserKey</span>
     </p>
     <p>
     	<label>Gamer key: </label><span>@Model.GamerKey</span>
@@ -30,7 +30,7 @@
             @*<li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>*@
         }
     </ul>
-    @(Html.ActionLink<ActionsController>(x => x.Add(Model.Id), "Add Action"))
+    @(Html.ActionLink<ActionsController>(x => x.Add(Model.Id), "Add Action", new { @class = "btn" }))
 </section>
 
 <section>
@@ -42,7 +42,7 @@
             @*<li>@(Html.ActionLink<TriggersController>(x => x.Show(trigger.Id), trigger.Title) )</li>*@
         }
     </ul>
-    @(Html.ActionLink<TriggersController>(x => x.Add(Model.Id), "Add Trigger"))
+    @(Html.ActionLink<TriggersController>(x => x.Add(Model.Id), "Add Trigger", new { @class = "btn" }))
 </section>
 
 <section>
@@ -59,7 +59,7 @@
             @*<li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseStringConstraint), constraint.Description))</li>*@
         }
     </ul>
-    @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint"))
+    @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint", new { @class = "btn" }))
 </section>
 
 <section>
@@ -70,7 +70,7 @@
             <li>@status.StatusName</li>
         }
 	</ul>
-    <a href="javascript:void(0)" id="addStatusButton">Add status</a>
+    <a href="javascript:void(0)" id="addStatusButton" class="btn">Add status</a>
 </section>
 
 <section>
@@ -81,7 +81,7 @@
             <li><span>@achievement.Name</span> <img src="@Url.Path(achievement)" alt="@("Achievement" + achievement.Name)"/></li>
         }        
 	</ul>
-    <a href="javascript:void(0)" id="addAchievementButton">Add Achievement</a>
+    <a href="javascript:void(0)" id="addAchievementButton" class="btn">Add Achievement</a>
 </section>
   
 <section>
@@ -92,7 +92,7 @@
             Project have @Model.Levels.Count levels
         </p>
     }
-    <a href="javascript:void(0)" id="incializeLevelsButton">Initialize Levels</a>
+    <a href="javascript:void(0)" id="incializeLevelsButton" class="btn">Initialize Levels</a>
 </section>  
   
 <div id="addStatusDialog">

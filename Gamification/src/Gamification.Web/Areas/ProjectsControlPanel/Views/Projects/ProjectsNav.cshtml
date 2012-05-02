@@ -3,20 +3,40 @@
 <h3>
 	Your projects
 </h3>     
-<ul>
+<ul class="nav nav-tabs nav-stacked">
     @foreach (var navItem in Model)
     {
         var projId = Request.GetIntParam("projectId");
         
-        <li>
+        <li class="@(!projId.HasValue || projId.Value != navItem.Id ? string.Empty : "active")">
             @if (!projId.HasValue || projId.Value != navItem.Id)
             {
                 @(Html.ActionLink<ProjectsController>(x => x.Show(navItem.Id), navItem.ProjectName))
             }
             else
             {
-                <span>@navItem.ProjectName</span>
+                <a href="javascript:void(0)">@navItem.ProjectName</a>
             }
         </li>
     }
 </ul>
+
+<a href="javascript:void(0)" id="addProjectLink" class="btn btn-primary">Add project</a>
+
+<div id="addProjectDialog">
+    @using (Html.BeginForm<ProjectsController>(x => x.Save(null, null), FormMethod.Post, new { @class = "form-horizontal"}))
+    {
+         <div class="control-group">
+            <label class="control-label" for="title">Project title </label>
+            <div class="controls">
+                <input type="text" class="input-xlarge" id="title" name="title">
+            </div>
+        </div>
+    }
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#addProjectDialog').submitDialog('Add project', '#addProjectLink');
+    });
+</script>

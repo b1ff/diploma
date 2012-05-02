@@ -1,7 +1,6 @@
 ﻿/// <reference path="jquery-1.7.2-vsdoc.js" />
 
 (function ($) {
-
     function toggleBlock(elem) {
         $(elem).find('option').each(function () {
             var $this = $(this);
@@ -45,19 +44,31 @@
         $(me).dialog({
             title: title,
             buttons: {
-                'OK': function () {
-                    $(this).find('form').submit();
+                'OK': { 
+                      text: 'OK',
+                      click: function () {
+                        $(this).find('form').submit();
+                      },
+                        classes: 'ui-button-primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-focus'
                 },
-                'Cancel': function () {
-                    $(this).find('input[type=text]').val('');
-                    $(this).dialog('close');
-                }
-            }
+                  'Cancel': {
+                      text: 'Cancel',
+                      click: function () {
+                          $(this).find('input[type=text]').val('');
+                          $(this).dialog('close');
+                      },
+                      classes: 'ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only'
+                  }
+                      
+            },
+            open: function () {
+                //ui-dialog-buttonset
+            }  
         });
 
         $(openDialogElementSelector).click(function () {
             $(me).dialog('open');
         });
     };
-
+    
 })(jQuery);

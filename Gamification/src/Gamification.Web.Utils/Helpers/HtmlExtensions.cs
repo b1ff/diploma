@@ -21,6 +21,11 @@ namespace Gamification.Web.Utils.Helpers
             return MvcHtmlString.Empty;
         }
 
+        public static MvcHtmlString ActiveClassIf(this HtmlHelper html, bool condition)
+        {
+            return html.AddClassIfTrue(condition, "active");
+        }
+
         public static MvcHtmlString BuildSelectForEnum<TModel, TEnum>(this HtmlHelper<TModel> html, Expression<Func<TModel, TEnum>> accessor)
             where TEnum : struct where TModel : class
         {

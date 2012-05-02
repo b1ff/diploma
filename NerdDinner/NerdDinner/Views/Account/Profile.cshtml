@@ -1,6 +1,11 @@
 ﻿<script type="text/javascript">
     $(function () {
         $.gamification.getGamerData('@User.NerdUser().FriendlyName', "9a66fa30-06bb-42c9-aa74-85908661de9b", function (responseData) {
+
+            if (!responseData.Success) {
+                alert(responseData.Errors[0].Message);
+            }
+
             for (var key in responseData.Achievements) {
                 var currAchievement = responseData.Achievements[key];
                 $('#achievements').append(['<li>', currAchievement.Name, '<img src="', currAchievement.FileName, '"/></li>'].join(''));

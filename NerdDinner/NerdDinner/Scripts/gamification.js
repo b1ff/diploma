@@ -13,7 +13,6 @@
                 traditional: true,
                 data: method == 'GET' ? options : JSON.stringify(options),
                 success: function (responseData) {
-                    console.log(responseData);
                     if (responseFn != null)
                         responseFn(responseData);
                 },

@@ -10,7 +10,7 @@ section > nav {
     width: 200px;
     float: left;
     margin: 15px;
-    border: 1px solid #5c87b2;
+    /*border: 1px solid #5c87b2;*/
 }
 
     nav > h3 {
@@ -53,3 +53,4 @@ ul.imagesList {
         ul.imagesList > li > img {
             height: 50px;
         }
+       

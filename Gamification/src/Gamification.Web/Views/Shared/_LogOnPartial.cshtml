@@ -1,7 +1,29 @@
-﻿@if(Request.IsAuthenticated) {
-    <text>Welcome <strong>@(Html.ActionLink<AccountController>(x => x.ChangePassword(), User.Identity.Name))</strong>!
-    [ @(Html.ActionLink<AccountController>(x => x.LogOff(), "Log Off")) ]</text>
-}
-else {
-    @:[ @(Html.ActionLink<AccountController>(x => x.LogOn(), "Log On")) ]
-}
+﻿<div class="btn-group pull-right">
+    @if(Request.IsAuthenticated) {
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+            <i class="icon-user"></i>
+            @User.Identity.Name
+            <b class="caret"></b>
+        </a> 
+    
+        <ul class="dropdown-menu">
+    	    <li>@(Html.ActionLink<AccountController>(x => x.ChangePassword(), "Change Password"))</li>
+    	    <li>@(Html.ActionLink<AccountController>(x => x.LogOff(), "Log Off"))</li>
+        </ul>
+    }
+    else
+    {
+        <ul class="nav pull-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    Hello <strong>Guest</strong>
+                    <b class="caret"></b>
+                </a> 
+                <ul class="dropdown-menu">
+                    <li>@(Html.ActionLink<AccountController>(x => x.LogOn(), "Log On"))</li>
+                    <li>@(Html.ActionLink<AccountController>(x => x.Register(), "Register"))</li>
+                </ul>
+            </li>
+        </ul>
+    }
+</div>

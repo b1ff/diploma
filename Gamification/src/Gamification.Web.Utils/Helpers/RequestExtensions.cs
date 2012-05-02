@@ -13,7 +13,7 @@ namespace Gamification.Web.Utils.Helpers
             return new HttpRequestWrapper(request).IsCurrentAction(controllerName, actionName, routeParams);
         }
 
-        public static bool IsCurrentAction(this HttpRequestBase request, string controllerName, string actionName, object routeParams)
+        public static bool IsCurrentAction(this HttpRequestBase request, string controllerName, string actionName, object routeParams = null)
         {
             var currentState = new RequestInfo(request);
 
@@ -47,6 +47,26 @@ namespace Gamification.Web.Utils.Helpers
 
             const string idParamName = "id";
             return tryGetIdAtLast && paramName != idParamName ? request.GetIntParam(idParamName, false) : null;
+        }
+
+        public static string Controller(this HttpRequestBase request)
+        {
+            return request.RequestContext.RouteData.Values["controller"].SafeToString().ToLower();
+        }
+
+        public static string Area(this HttpRequestBase request)
+        {
+            return request.RequestContext.RouteData.DataTokens["Area"].SafeToString().ToLower();
+        }
+
+        public static bool IsCurrentArea(this HttpRequestBase request, string area)
+        {
+            return request.Area() == area.ToLower();
+        }
+
+        public static bool IsCurrentController(this HttpRequestBase request, string controller)
+        {
+            return request.Controller() == controller.ToLower();
         }
     }
 }
