@@ -12,7 +12,7 @@ using NerdDinner.Models;
 
 namespace NerdDinner.Controllers {
 
-	  [HandleErrorWithELMAH]
+    [HandleErrorWithELMAH]
     public class AccountController : Controller {
 
         // This constructor is used by the MVC framework to instantiate the controller using
@@ -108,6 +108,7 @@ namespace NerdDinner.Controllers {
                     if (createStatus == MembershipCreateStatus.Success)
                     {
                         FormsAuth.SignIn(model.UserName, false /* createPersistentCookie */);
+                        TempData["IsJustRegistered"] = true;
                         return RedirectToAction("Index", "Home");
                     }
                     else
@@ -156,6 +157,11 @@ namespace NerdDinner.Controllers {
 
         public ActionResult ChangePasswordSuccess() {
 
+            return View();
+        }
+
+        public ActionResult Profile()
+        {
             return View();
         }
 

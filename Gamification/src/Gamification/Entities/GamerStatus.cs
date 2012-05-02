@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 
 namespace Gamification.Core.Entities
 {
+    [Serializable]
     public class GamerStatus : BaseEntity
     {
         public GamerStatus()

@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Gamification.Core.Entities
 {
+    [Serializable]
     public class Level : BaseEntity
     {
         public Level()

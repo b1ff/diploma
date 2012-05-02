@@ -1,0 +1,18 @@
+﻿<script type="text/javascript">
+    $(function () {
+        $.gamification.getGamerData('@User.NerdUser().FriendlyName', "9a66fa30-06bb-42c9-aa74-85908661de9b", function (responseData) {
+            for (var key in responseData.Achievements) {
+                var currAchievement = responseData.Achievements[key];
+                $('#achievements').append(['<li>', currAchievement.Name, '<img src="', currAchievement.FileName, '"/></li>'].join(''));
+            }
+        });
+    })
+</script>
+
+<div>
+    <h1>
+    	You achievements
+    </h1>
+    <ul id="achievements">    	
+    </ul>
+</div>

@@ -1,20 +1,19 @@
-﻿/// <reference path="easyXDM.debug.js" />
-
-
-// incapsulate work with easyXDM
+﻿// incapsulate work with easyXDM
 (function ($) {
 
     $.gamification = new (function () {
-        var sendPostRequest = function (url, options, responseFn, errorFn) {
+        var sendRequest = function (url, options, responseFn, errorFn, method) {
+            method = method == null ? "POST" : method;
             var requestParams = {
                 url: url,
-                type: "POST",
+                type: method,
                 dataType: "json",
                 contentType: 'text/json',
                 crossDomain: true,
                 traditional: true,
-                data: JSON.stringify(options),
+                data: method == 'GET' ? options : JSON.stringify(options),
                 success: function (responseData) {
+                    console.log(responseData);
                     if (responseFn != null)
                         responseFn(responseData);
                 },
@@ -34,11 +33,27 @@
                 "ActionId": ''
             };
             $.extend(requestParams, data);
-            sendPostRequest('http://dell:999/ActionsService.svc/DoAction', requestParams, responseFn);
+            sendRequest('http://dell:999/ActionsService.svc/DoAction', requestParams, responseFn);
         };
 
         this.test = function (responseFn) {
-            sendPostRequest('http://dell:999/ActionsService.svc/TestPost', null, responseFn);
+            sendRequest('http://dell:999/ActionsService.svc/TestPost', null, responseFn);
+        };
+
+        this.getGamerData = function (gamerName, gamerKey, responseFn) {
+
+            var transformAchievementsUrls = function (responseData) {
+                for (var key in responseData.Achievements) {
+                    var imageUrl = responseData.Achievements[key].FileName;
+                    imageUrl = 'http://gamify.com/Storage/Achievements/' + imageUrl;
+                    responseData.Achievements[key].FileName = imageUrl;
+                }
+
+                responseFn(responseData);
+            };
+
+            sendRequest('http://dell:999/GamersService.svc/GamerData',
+                { "GamerKey": gamerKey, "GamerName": gamerName }, transformAchievementsUrls, null, 'GET');
         };
     });
 })(jQuery);

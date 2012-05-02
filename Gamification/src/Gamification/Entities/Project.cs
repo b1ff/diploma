@@ -5,6 +5,7 @@ using Gamification.Core.Entities.Triggers;
 
 namespace Gamification.Core.Entities
 {
+    [Serializable]
     public class Project : BaseEntity
     {
         public Project()
@@ -34,16 +35,40 @@ namespace Gamification.Core.Entities
         public ISet<Level> Levels { get; set; }
 
         public ISet<Achievement> Achievements { get; set; }
+        
+        [NonSerialized]
+        private ISet<GameAction> gameActions;
+        public ISet<GameAction> GameActions
+        {
+            get { return gameActions; }
+            set { gameActions = value; }
+        }
 
-        public ISet<GameAction> GameActions { get; set; }
+        public ISet<GamerStatus> Statuses { get; set; }
 
-        public ISet<GamerStatus> Statuses { get; set; } 
+        [NonSerialized]
+        private ISet<ActionTrigger> triggers;
+        public ISet<ActionTrigger> Triggers
+        {
+            get { return triggers; }
+            set { triggers = value; }
+        }
 
-        public ISet<ActionTrigger> Triggers { get; set; }
+        [NonSerialized]
+        private ISet<BaseNumericBasedConstraint> numericConstraints;
+        public ISet<BaseNumericBasedConstraint> NumericConstraints
+        {
+            get { return numericConstraints; }
+            set { numericConstraints = value; }
+        }
 
-        public ISet<BaseNumericBasedConstraint> NumericConstraints { get; set; }
-
-        public ISet<BaseStringCollectionConstraint> CollectionConstraints { get; set; }
+        [NonSerialized]
+        private ISet<BaseStringCollectionConstraint> collectionConstraints;
+        public ISet<BaseStringCollectionConstraint> CollectionConstraints
+        {
+            get { return collectionConstraints; }
+            set { collectionConstraints = value; }
+        }
 
         public bool UseLevels { get; set; }
 

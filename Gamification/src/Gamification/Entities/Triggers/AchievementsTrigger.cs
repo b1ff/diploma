@@ -4,7 +4,7 @@ namespace Gamification.Core.Entities.Triggers
 {
     public class AchievementsTrigger : ActionTrigger
     {
-        public Achievement Achievement { get; set; }
+        public virtual Achievement Achievement { get; set; }
 
         public AssignUnassign ActionWithAchievement
         {

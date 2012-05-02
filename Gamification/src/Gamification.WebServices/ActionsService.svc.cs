@@ -12,6 +12,8 @@ using Gamification.Core.Specifications;
 using Gamification.WebServices.DataContracts;
 using Gamification.WebServices.DataContracts.Requests;
 using Gamification.WebServices.DataContracts.Response;
+using Gamification.WebServices.DataContracts.Response.BasicResponses;
+using Gamification.WebServices.Helpers;
 using Gamification.WebServices.ServicesContracts;
 
 namespace Gamification.WebServices
@@ -39,14 +41,15 @@ namespace Gamification.WebServices
             var project = this.projectsRepository.FirstOrDefault(x => x.GamerKey == actionRequest.GamerKey, x => x.Levels);
             if (project == null)
             {
-                return ResponseWithErrors(new ErrorContract(ErrorTypes.WrongKey, "Project not found"));
+                return ResponseHelper.WrongProject();
             }
 
             var gamer = this.gamersRepository.FirstBySpec(new GamerByNameSpec(actionRequest.GamerName), 
                 x => x.Project, x => x.Achievements, x => x.CurrentLevel, x => x.GamerStatuses);
             if (gamer == null)
             {
-                gamer = CreateGamer(actionRequest.GamerName, project);
+                gamer = EntityHelpers.CreateGamer(actionRequest.GamerName, project);
+                this.gamersRepository.Add(gamer);
             }
 
             var action = this.actionsRepository.QueryIncluding(x => x.TriggersToCall, x => x.QtyBasedConstraints, x => x.StringCollectionConstraints)
@@ -54,7 +57,7 @@ namespace Gamification.WebServices
 
             if (action == null)
             {
-                return ResponseWithErrors(
+                return ResponseHelper.ResponseWithErrors(
                     new ErrorContract(ErrorTypes.Unexpected, "Action not found"));
             }
 
@@ -63,11 +66,10 @@ namespace Gamification.WebServices
             if (errors.IsNotEmpty())
             {
                 var errorContracts = Mapper.Map<IEnumerable<ErrorContract>>(errors);
-                return ResponseWithErrors(errorContracts.ToArray());
+                return ResponseHelper.ResponseWithErrors(errorContracts.ToArray());
             }
 
             this.actionsRepository.SaveChanges();
-
             return CreateResponse(gamerSnapshot, gamer);
         }
 
@@ -106,6 +108,11 @@ namespace Gamification.WebServices
             IEnumerable<Achievement> achievements2, 
             ChangeAction action)
         {
+            if (achievements1 == null)
+                return Enumerable.Empty<CharacteristicChange>();
+            if (achievements2 == null)
+                achievements2 = Enumerable.Empty<Achievement>();
+
             var achievementsDiff = achievements1.Where(x => !achievements2.Contains(x)).ToList();
             if (achievementsDiff.IsNotEmpty())
             {
@@ -120,6 +127,11 @@ namespace Gamification.WebServices
             IEnumerable<GamerStatus> statuses2,
             ChangeAction action)
         {
+            if (statuses1 == null)
+                return Enumerable.Empty<CharacteristicChange>();
+            if (statuses2 == null)
+                statuses2 = Enumerable.Empty<GamerStatus>();
+
             var statusesDiff = statuses1.Where(x => !statuses2.Contains(x)).ToList();
             if (statusesDiff.IsNotEmpty())
             {
@@ -127,26 +139,6 @@ namespace Gamification.WebServices
             }
 
             return Enumerable.Empty<CharacteristicChange>();
-        }
-
-        private Gamer CreateGamer(string gamerName, Project project)
-        {
-            var gamer = new Gamer();
-            gamer.UniqueKey = gamerName;
-            gamer.Project = project;
-            if (project.UseLevels)
-            {
-                gamer.CurrentLevel = project.Levels.Min();
-            }
-
-            return gamer;
-        }
-
-        private static ActionResponse ResponseWithErrors(params ErrorContract[] errorContracts)
-        {
-            var response = new ActionResponse();
-            response.Errors.Add(errorContracts);
-            return response;
         }
     }
 }

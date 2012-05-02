@@ -32,6 +32,27 @@
                 onMapLoaded();
             }
         }, 10);
+
+
+        @if (TempData["IsJustRegistered"] != null && (bool)TempData["IsJustRegistered"] == true)
+        {
+            <text>
+                $.gamification.doAction({
+                        'ActionId': 1,
+                        'GamerKey': "9a66fa30-06bb-42c9-aa74-85908661de9b",
+                        'GamerName': '@User.Identity.Name'
+                    }, function(reponseData) {
+                        var achievements = '';  
+                        for (var key in reponseData.AchievementChanges) {
+                            var currentAchievement = reponseData.AchievementChanges[key];
+                            if (currentAchievement.ChangeAction === 0)
+                                achievements += currentAchievement.Name;
+                        }
+
+                        alert('Congratulation you have first achievement: ' + achievements)
+                    });
+            </text>
+        }
     });
 
     function onMapLoaded() {

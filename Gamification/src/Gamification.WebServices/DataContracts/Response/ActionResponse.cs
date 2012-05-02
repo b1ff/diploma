@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Gamification.WebServices.DataContracts.Response.BasicResponses;
 
 namespace Gamification.WebServices.DataContracts.Response
 {

@@ -10,11 +10,23 @@
 
 
 <section>
+	<h3>
+		Project info
+	</h3>
+    <p>
+    	<label>Customer key: </label><span>@Model.UserKey</span>
+    </p>
+    <p>
+    	<label>Gamer key: </label><span>@Model.GamerKey</span>
+    </p>
+</section>
+
+<section>
     <h3>Actions</h3>
     <ul> 
         @foreach (var action in Model.GameActions)
         {
-            <li>@action.Title</li>
+            <li><span>@action.Title</span> - <span>@action.Id</span></li>
             @*<li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>*@
         }
     </ul>

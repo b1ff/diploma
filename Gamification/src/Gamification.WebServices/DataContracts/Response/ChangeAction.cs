@@ -5,10 +5,10 @@ namespace Gamification.WebServices.DataContracts.Response
     [DataContract]
     public enum ChangeAction
     {
-        [EnumMember]
+        [EnumMember(Value = "Assign")]
         Assign,
 
-        [EnumMember]
+        [EnumMember(Value = "Unassign")]
         Unassign
     }
 }

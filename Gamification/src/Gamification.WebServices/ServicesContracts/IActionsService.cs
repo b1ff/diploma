@@ -2,6 +2,7 @@
 using Gamification.WebServices.DataContracts;
 using Gamification.WebServices.DataContracts.Requests;
 using Gamification.WebServices.DataContracts.Response;
+using Gamification.WebServices.DataContracts.Response.BasicResponses;
 
 namespace Gamification.WebServices.ServicesContracts
 {

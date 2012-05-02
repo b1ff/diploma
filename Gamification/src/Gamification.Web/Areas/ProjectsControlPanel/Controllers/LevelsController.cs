@@ -30,6 +30,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
                 var level = new Level();
                 level.Project = project;
                 level.NeededPoints = i * pointsStep;
+                level.LevelNumber = i + 1;
                 this.levelsRepository.Add(level);
             }
 

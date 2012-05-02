@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Collections.Generic;
+using System.Web;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
 using Gamification.Data.EF.Contexts;

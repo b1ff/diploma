@@ -1,5 +1,8 @@
+using System;
+
 namespace Gamification.Core.Entities
 {
+    [Serializable]
     public class Achievement : BaseEntity
     {
         public Project Project { get; set; }

@@ -1,5 +1,8 @@
-﻿namespace Gamification.Core.Entities
+﻿using System;
+
+namespace Gamification.Core.Entities
 {
+    [Serializable]
     public abstract class BaseEntity
     {
         public virtual int Id { get; protected set; }
