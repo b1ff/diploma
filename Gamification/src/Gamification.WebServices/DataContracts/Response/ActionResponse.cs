@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace Gamification.Services.DataContracts.Response
+namespace Gamification.WebServices.DataContracts.Response
 {
     [DataContract]
     public class ActionResponse : BaseResponseContract

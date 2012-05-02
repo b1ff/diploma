@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Gamification.Services.DataContracts.Requests
+namespace Gamification.WebServices.DataContracts.Requests
 {
     [DataContract]
     public class ActionRequest : BaseUserContract

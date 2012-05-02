@@ -38,6 +38,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,6 +79,8 @@
     <Compile Include="Extensions\ReflectionExtensions.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Guard.cs" />
+    <Compile Include="ProjectSettings\AutoConfigurator.cs" />
+    <Compile Include="ProjectSettings\IConfiguration.cs" />
     <Compile Include="ResultProviders\AndResultProvider.cs" />
     <Compile Include="ResultProviders\BaseFromTwoResultsProviders.cs" />
     <Compile Include="ResultProviders\BaseGamerDependResultProvider.cs" />

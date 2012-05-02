@@ -1,8 +1,10 @@
-﻿using System.Web;
+﻿using System.Reflection;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using Castle.MicroKernel.Registration;
 using CommonServiceLocator.WindsorAdapter;
+using Gamification.Core.ProjectSettings;
 using Gamification.IOC;
 using Gamification.Web.AutoMapper;
 using Gamification.Web.ControllerFactory;
@@ -40,14 +42,16 @@ namespace Gamification.Web
         protected void Application_Start()
         {
             var container = ComponentRegistrator.BuildWebContainer();
+            var webAssembly = typeof(HomeController).Assembly;
             container.Register(
-                AllTypes.FromAssembly(typeof(HomeController).Assembly).BasedOn<Controller>().LifestyleTransient());
+                AllTypes.FromAssembly(webAssembly).BasedOn<Controller>().LifestyleTransient());
             container.Register(
                 Component.For<UrlHelper>().UsingFactoryMethod(x => new UrlHelper(x.Resolve<HttpContextBase>().Request.RequestContext)).LifestylePerWebRequest());
 
             ServiceLocator.SetLocatorProvider(() => new WindsorServiceLocator(container));
             ControllerBuilder.Current.SetControllerFactory(new CastleControllerFactory(container));
-            AutoMappingConfiguration.ConfigureAutoMapper();
+
+            AutoConfigurator.PerformAllConfiguration(webAssembly);
 
             RegisterModelBinders();
 

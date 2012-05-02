@@ -36,7 +36,7 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 
         public ActionResult Add(int projectId)
         {
-            var project = this.projectsRepository.GetByIdIncluding(projectId,
+            var project = this.projectsRepository.GetById(projectId,
                 x => x.CollectionConstraints, x => x.NumericConstraints, x => x.Triggers);
             var viewModel = Mapper.Map<GameActionViewModel>(project);
             return View(viewModel);

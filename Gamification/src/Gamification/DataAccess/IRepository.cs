@@ -11,9 +11,8 @@ namespace Gamification.Core.DataAccess
         where TEntity : BaseEntity
     {
         IQueryable<TEntity> QueryIncluding(params Expression<Func<TEntity, object>>[] includes);
-        TEntity GetById(int id);
-        TEntity GetByIdIncluding(int id, params Expression<Func<TEntity, object>>[] includes);
-        TEntity StrictGetById(int id);
+        TEntity GetById(int id, params Expression<Func<TEntity, object>>[] includes);
+        TEntity StrictGetById(int id, params Expression<Func<TEntity, object>>[] includes);
         IQueryable<TEntity> BySpec(Specification<TEntity> spec, params Expression<Func<TEntity, object>>[] includes); 
         IEnumerable<TEntity> BySpecWihoutQuery(Specification<TEntity> spec);
         TEntity FirstBySpec(Specification<TEntity> spec, params Expression<Func<TEntity, object>>[] includes); 
@@ -21,8 +20,8 @@ namespace Gamification.Core.DataAccess
         TEntity AddPhysically(TEntity entity);
         void Delete(TEntity entity);
         void DeletePhysically(TEntity entity);
-        TEntity FirstOrDefault(Expression<Func<TEntity, bool>> condition);
-        TEntity SingleOrDefault(Expression<Func<TEntity, bool>> condition);
+        TEntity FirstOrDefault(Expression<Func<TEntity, bool>> condition, params Expression<Func<TEntity, object>>[] includes);
+        TEntity SingleOrDefault(Expression<Func<TEntity, bool>> condition, params Expression<Func<TEntity, object>>[] includes);
         void SaveChanges();
         void ClearContext();
     }

@@ -30,5 +30,23 @@ namespace Gamification.Core.Extensions
         {
             return dictionary.ContainsKey(key) ? dictionary[key] : value;
         }
+
+        public static void Add<TElement>(this ICollection<TElement> elements, IEnumerable<TElement> elementsToAdd)
+        {
+            foreach (var element in elementsToAdd)
+            {
+                elements.Add(element);
+            }
+        }
+
+        public static IEnumerable<TElem> GetDiff<TElem>(this IEnumerable<TElem> elems1, IEnumerable<TElem> elems2)
+        {
+            if (elems1 == null)
+                return elems2;
+            if (elems2 == null)
+                return elems1;
+
+            return elems1.Where(x => !elems2.Contains(x)).Union(elems2.Where(x => !elems1.Contains(x)));
+        }
     }
 }

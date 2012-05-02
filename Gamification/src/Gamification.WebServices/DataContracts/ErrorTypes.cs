@@ -1,11 +1,17 @@
-namespace Gamification.Services.DataContracts
+using System.Runtime.Serialization;
+
+namespace Gamification.WebServices.DataContracts
 {
+    [DataContract]
     public enum ErrorTypes
     {
+        [EnumMember]
         Constraint,
 
-        Authorize,
+        [EnumMember]
+        WrongKey,
 
+        [EnumMember]
         Unexpected
     }
 }

@@ -1,10 +1,20 @@
 using System.Runtime.Serialization;
 
-namespace Gamification.Services.DataContracts.Response
+namespace Gamification.WebServices.DataContracts.Response
 {
     [DataContract]
     public class NumericCharacteristicChange
     {
+        public NumericCharacteristicChange()
+        {
+        }
+
+        public NumericCharacteristicChange(double changeQuantity, NumberOperation changeOperation)
+        {
+            ChangeQuantity = changeQuantity;
+            ChangeOperation = changeOperation;
+        }
+
         [DataMember]
         public double ChangeQuantity { get; set; }
 

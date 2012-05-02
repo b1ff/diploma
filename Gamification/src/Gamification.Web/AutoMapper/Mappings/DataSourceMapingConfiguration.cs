@@ -7,23 +7,25 @@ using Gamification.Core.Entities;
 using Gamification.Core.Entities.Constraints;
 using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Extensions;
+using Gamification.Core.ProjectSettings;
 using Gamification.Web.Utils.CommonViewModels;
+using IConfiguration = Gamification.Core.ProjectSettings.IConfiguration;
 
 namespace Gamification.Web.AutoMapper.Mappings
 {
-    public class DataSourceMapingConfiguration : IAutomapperConfiguration
+    public class DataSourceMapingConfiguration : IConfiguration
     {
-        public void BuildMappings()
+        public void Configure()
         {
-            BuildSelectMappingFor<Project>(x => x.Id, x => x.Title);
-            BuildSelectMappingFor<Achievement>(x => x.Id, x => x.Name);
-            BuildSelectMappingFor<GamerStatus>(x => x.Id, x => x.StatusName);
-            BuildSelectMappingFor<ActionTrigger>(x => x.Id, x => x.Title);
-            BuildSelectMappingFor<BaseStringCollectionConstraint>(x => x.Id, x => x.Description);
-            BuildSelectMappingFor<BaseNumericBasedConstraint>(x => x.Id, x => x.Description);
+            BuildDataSourceMappingFor<Project>(x => x.Id, x => x.Title);
+            BuildDataSourceMappingFor<Achievement>(x => x.Id, x => x.Name);
+            BuildDataSourceMappingFor<GamerStatus>(x => x.Id, x => x.StatusName);
+            BuildDataSourceMappingFor<ActionTrigger>(x => x.Id, x => x.Title);
+            BuildDataSourceMappingFor<BaseStringCollectionConstraint>(x => x.Id, x => x.Description);
+            BuildDataSourceMappingFor<BaseNumericBasedConstraint>(x => x.Id, x => x.Description);
         }
 
-        private static void BuildSelectMappingFor<T>(
+        private static void BuildDataSourceMappingFor<T>(
             Expression<Func<T, int>> valExpr, Expression<Func<T, object>> textExpr)
         {
             // todo: add mapping for nullable datasource.

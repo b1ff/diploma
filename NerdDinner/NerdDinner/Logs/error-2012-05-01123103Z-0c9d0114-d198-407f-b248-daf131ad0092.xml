@@ -1,0 +1,197 @@
+﻿<error errorId="0c9d0114-d198-407f-b248-daf131ad0092" host="DELL" type="System.ArgumentException" message="The parameters dictionary contains a null entry for parameter 'latitude' of non-nullable type 'System.Single' for method 'System.Web.Mvc.ActionResult SearchByLocation(Single, Single)' in 'NerdDinner.Controllers.SearchController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.&#xD;&#xA;Parameter name: parameters" source="System.Web.Mvc" detail="System.ArgumentException: The parameters dictionary contains a null entry for parameter 'latitude' of non-nullable type 'System.Single' for method 'System.Web.Mvc.ActionResult SearchByLocation(Single, Single)' in 'NerdDinner.Controllers.SearchController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.&#xD;&#xA;Parameter name: parameters&#xD;&#xA;   at System.Web.Mvc.ActionDescriptor.ExtractParameterFromDictionary(ParameterInfo parameterInfo, IDictionary`2 parameters, MethodInfo methodInfo)&#xD;&#xA;   at System.Web.Mvc.ReflectedActionDescriptor.&lt;&gt;c__DisplayClass1.&lt;Execute&gt;b__0(ParameterInfo parameterInfo)&#xD;&#xA;   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()&#xD;&#xA;   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)&#xD;&#xA;   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)&#xD;&#xA;   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;InvokeActionMethodWithFilters&gt;b__12()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.&lt;&gt;c__DisplayClass15.&lt;&gt;c__DisplayClass17.&lt;InvokeActionMethodWithFilters&gt;b__14()&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)&#xD;&#xA;   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)&#xD;&#xA;   at System.Web.Mvc.Controller.ExecuteCore()&#xD;&#xA;   at System.Web.Mvc.ControllerBase.Execute(RequestContext requestContext)&#xD;&#xA;   at System.Web.Mvc.ControllerBase.System.Web.Mvc.IController.Execute(RequestContext requestContext)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClass6.&lt;&gt;c__DisplayClassb.&lt;BeginProcessRequest&gt;b__5()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass1.&lt;MakeVoidDelegate&gt;b__0()&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.&lt;&gt;c__DisplayClass8`1.&lt;BeginSynchronous&gt;b__7(IAsyncResult _)&#xD;&#xA;   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.End()&#xD;&#xA;   at System.Web.Mvc.MvcHandler.&lt;&gt;c__DisplayClasse.&lt;EndProcessRequest&gt;b__d()&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.&lt;GetCallInAppTrustThunk&gt;b__0(Action f)&#xD;&#xA;   at System.Web.Mvc.SecurityUtil.ProcessInApplicationTrust(Action action)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)&#xD;&#xA;   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" user="https://www.google.com/accounts/o8/id?id=AItOawkK-NLoXqAUJlnOlI4EKtQlHOGDGanLS-U" time="2012-05-01T12:31:03.0289678Z">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:Keep-Alive&#xD;&#xA;HTTP_CONTENT_LENGTH:43&#xD;&#xA;HTTP_CONTENT_TYPE:application/x-www-form-urlencoded&#xD;&#xA;HTTP_ACCEPT:application/json, text/javascript, */*; q=0.01&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip, deflate&#xD;&#xA;HTTP_ACCEPT_LANGUAGE:ru-RU,ru;q=0.9,en;q=0.8&#xD;&#xA;HTTP_COOKIE:openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid; .ASPXAUTH=0BB6281B63742BD3EDBF825E8430090B0305840743931B931FFEA55EC7D71FEE285B4C54C564880A3058691395F6D3D5A4070E3007B23369754FA4BCDEA99A04FA00D81088596924E7BB92EED3812B01BB6B70231CD68B23DFDFC0761E44C6D3AE89E90F3E659603B04D9D4EF747387A397C1E6B328E2CE86071719DD9844D992ED8CB02F98DB9E42EFCFE7E0395490B794B6C77C91CA077A3A50A3D29CCF1C83CA7043891F11D89A4047DB2A736FBC8545853207C46E225BA03A696218D53DDE9AC15598C5CEFD87BA8C4D6EAB401320AF8264587513AD369D7DC04B69ABD38C5854997B474D26F3ECA4B96852D181A7AE564C57FD27929C41DCE5A3AA32C0CC6CD61C330EB6366E34E6C72074DECD06594209F2556E249B885CE061F7A84E6235232DA; __utma=111872281.517823081.1335868175.1335868175.1335873528.2; __utmb=111872281.15.10.1335873528; __utmc=111872281; __utmz=111872281.1335868175.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&#xD;&#xA;HTTP_HOST:localhost:50799&#xD;&#xA;HTTP_REFERER:http://localhost:50799/&#xD;&#xA;HTTP_USER_AGENT:Opera/9.80 (Windows NT 6.1; WOW64; U; ru) Presto/2.10.229 Version/11.62&#xD;&#xA;HTTP_X_REQUESTED_WITH:XMLHttpRequest&#xD;&#xA;HTTP_CONTENT_TRANSFER_ENCODING:binary&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: Keep-Alive&#xD;&#xA;Content-Length: 43&#xD;&#xA;Content-Type: application/x-www-form-urlencoded&#xD;&#xA;Accept: application/json, text/javascript, */*; q=0.01&#xD;&#xA;Accept-Encoding: gzip, deflate&#xD;&#xA;Accept-Language: ru-RU,ru;q=0.9,en;q=0.8&#xD;&#xA;Cookie: openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid; .ASPXAUTH=0BB6281B63742BD3EDBF825E8430090B0305840743931B931FFEA55EC7D71FEE285B4C54C564880A3058691395F6D3D5A4070E3007B23369754FA4BCDEA99A04FA00D81088596924E7BB92EED3812B01BB6B70231CD68B23DFDFC0761E44C6D3AE89E90F3E659603B04D9D4EF747387A397C1E6B328E2CE86071719DD9844D992ED8CB02F98DB9E42EFCFE7E0395490B794B6C77C91CA077A3A50A3D29CCF1C83CA7043891F11D89A4047DB2A736FBC8545853207C46E225BA03A696218D53DDE9AC15598C5CEFD87BA8C4D6EAB401320AF8264587513AD369D7DC04B69ABD38C5854997B474D26F3ECA4B96852D181A7AE564C57FD27929C41DCE5A3AA32C0CC6CD61C330EB6366E34E6C72074DECD06594209F2556E249B885CE061F7A84E6235232DA; __utma=111872281.517823081.1335868175.1335868175.1335873528.2; __utmb=111872281.15.10.1335873528; __utmc=111872281; __utmz=111872281.1335868175.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)&#xD;&#xA;Host: localhost:50799&#xD;&#xA;Referer: http://localhost:50799/&#xD;&#xA;User-Agent: Opera/9.80 (Windows NT 6.1; WOW64; U; ru) Presto/2.10.229 Version/11.62&#xD;&#xA;X-Requested-With: XMLHttpRequest&#xD;&#xA;Content-Transfer-Encoding: binary&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="D:\Projects\nerddinner-70027\Branches\VS2010-MVC3-Razor\NerdDinner\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="Nerd" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="https://www.google.com/accounts/o8/id?id=AItOawkK-NLoXqAUJlnOlI4EKtQlHOGDGanLS-U" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="Dell\Evgeniy" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="https://www.google.com/accounts/o8/id?id=AItOawkK-NLoXqAUJlnOlI4EKtQlHOGDGanLS-U" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="43" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="" />
+    </item>
+    <item name="HTTPS">
+      <value string="" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="127.0.0.1" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/Search/SearchByLocation" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="D:\Projects\nerddinner-70027\Branches\VS2010-MVC3-Razor\NerdDinner\Search\SearchByLocation" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="127.0.0.1" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="127.0.0.1" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="POST" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/Search/SearchByLocation" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="localhost" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="50799" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="0" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="" />
+    </item>
+    <item name="URL">
+      <value string="/Search/SearchByLocation" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="Keep-Alive" />
+    </item>
+    <item name="HTTP_CONTENT_LENGTH">
+      <value string="43" />
+    </item>
+    <item name="HTTP_CONTENT_TYPE">
+      <value string="application/x-www-form-urlencoded" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="application/json, text/javascript, */*; q=0.01" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip, deflate" />
+    </item>
+    <item name="HTTP_ACCEPT_LANGUAGE">
+      <value string="ru-RU,ru;q=0.9,en;q=0.8" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="openid_identifier=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid; .ASPXAUTH=0BB6281B63742BD3EDBF825E8430090B0305840743931B931FFEA55EC7D71FEE285B4C54C564880A3058691395F6D3D5A4070E3007B23369754FA4BCDEA99A04FA00D81088596924E7BB92EED3812B01BB6B70231CD68B23DFDFC0761E44C6D3AE89E90F3E659603B04D9D4EF747387A397C1E6B328E2CE86071719DD9844D992ED8CB02F98DB9E42EFCFE7E0395490B794B6C77C91CA077A3A50A3D29CCF1C83CA7043891F11D89A4047DB2A736FBC8545853207C46E225BA03A696218D53DDE9AC15598C5CEFD87BA8C4D6EAB401320AF8264587513AD369D7DC04B69ABD38C5854997B474D26F3ECA4B96852D181A7AE564C57FD27929C41DCE5A3AA32C0CC6CD61C330EB6366E34E6C72074DECD06594209F2556E249B885CE061F7A84E6235232DA; __utma=111872281.517823081.1335868175.1335868175.1335873528.2; __utmb=111872281.15.10.1335873528; __utmc=111872281; __utmz=111872281.1335868175.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="localhost:50799" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="http://localhost:50799/" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Opera/9.80 (Windows NT 6.1; WOW64; U; ru) Presto/2.10.229 Version/11.62" />
+    </item>
+    <item name="HTTP_X_REQUESTED_WITH">
+      <value string="XMLHttpRequest" />
+    </item>
+    <item name="HTTP_CONTENT_TRANSFER_ENCODING">
+      <value string="binary" />
+    </item>
+  </serverVariables>
+  <form>
+    <item name="latitude">
+      <value string="43.74999999999998" />
+    </item>
+    <item name="longitude">
+      <value string="-99.71" />
+    </item>
+  </form>
+  <cookies>
+    <item name="openid_identifier">
+      <value string="https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid" />
+    </item>
+    <item name=".ASPXAUTH">
+      <value string="0BB6281B63742BD3EDBF825E8430090B0305840743931B931FFEA55EC7D71FEE285B4C54C564880A3058691395F6D3D5A4070E3007B23369754FA4BCDEA99A04FA00D81088596924E7BB92EED3812B01BB6B70231CD68B23DFDFC0761E44C6D3AE89E90F3E659603B04D9D4EF747387A397C1E6B328E2CE86071719DD9844D992ED8CB02F98DB9E42EFCFE7E0395490B794B6C77C91CA077A3A50A3D29CCF1C83CA7043891F11D89A4047DB2A736FBC8545853207C46E225BA03A696218D53DDE9AC15598C5CEFD87BA8C4D6EAB401320AF8264587513AD369D7DC04B69ABD38C5854997B474D26F3ECA4B96852D181A7AE564C57FD27929C41DCE5A3AA32C0CC6CD61C330EB6366E34E6C72074DECD06594209F2556E249B885CE061F7A84E6235232DA" />
+    </item>
+    <item name="__utma">
+      <value string="111872281.517823081.1335868175.1335868175.1335873528.2" />
+    </item>
+    <item name="__utmb">
+      <value string="111872281.15.10.1335873528" />
+    </item>
+    <item name="__utmc">
+      <value string="111872281" />
+    </item>
+    <item name="__utmz">
+      <value string="111872281.1335868175.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)" />
+    </item>
+  </cookies>
+</error>

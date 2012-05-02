@@ -9,7 +9,6 @@ using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
 using Gamification.Core.Exceptions;
 using Gamification.Core.Extensions;
-using Gamification.Core.Specifications;
 using Gamification.Data.EF.Contexts;
 using LinqSpecs;
 
@@ -46,20 +45,15 @@ namespace Gamification.Data.EF.Repositories
             return query;
         }
 
-        public TEntity GetById(int id)
+        public TEntity GetById(int id, params Expression<Func<TEntity, object>>[] includes)
         {
-            var entity = EntityPersister.FirstOrDefault(x => x.Id == id);
+            var entity = QueryIncluding(includes).FirstOrDefault(x => x.Id == id);
             return entity;
         }
 
-        public TEntity GetByIdIncluding(int id, params Expression<Func<TEntity, object>>[] includes)
+        public TEntity StrictGetById(int id, params Expression<Func<TEntity, object>>[] includes)
         {
-            return QueryIncluding(includes).FirstOrDefault(x => x.Id == id);
-        }
-
-        public TEntity StrictGetById(int id)
-        {
-            var entity = this.GetById(id);
+            var entity = this.GetById(id, includes);
             if (entity == null)
                 throw new EntityNotFoundException(typeof(TEntity).Name);
             return entity;
@@ -103,14 +97,14 @@ namespace Gamification.Data.EF.Repositories
             this.SaveChanges();
         }
 
-        public TEntity FirstOrDefault(Expression<Func<TEntity, bool>> condition)
+        public TEntity FirstOrDefault(Expression<Func<TEntity, bool>> condition, params Expression<Func<TEntity, object>>[] includes)
         {
-            return GetAll().FirstOrDefault(condition);
+            return QueryIncluding(includes).FirstOrDefault(condition);
         }
 
-        public TEntity SingleOrDefault(Expression<Func<TEntity, bool>> condition)
+        public TEntity SingleOrDefault(Expression<Func<TEntity, bool>> condition, params Expression<Func<TEntity, object>>[] includes)
         {
-            return GetAll().SingleOrDefault(condition);
+            return QueryIncluding(includes).SingleOrDefault(condition);
         }
 
         public void SaveChanges()

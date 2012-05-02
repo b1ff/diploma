@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
 using Gamification.Core.Entities;
 using Gamification.Core.Entities.Constraints;
+using Gamification.Core.ProjectSettings;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
+using IConfiguration = Gamification.Core.ProjectSettings.IConfiguration;
 
 namespace Gamification.Web.AutoMapper.Mappings.ViewModels
 {
-    public class ConstraintViewModelConfiguration : IAutomapperConfiguration
+    public class ConstraintViewModelConfiguration : IConfiguration
     {
-        public void BuildMappings()
+        public void Configure()
         {
             Mapper.CreateMap<Project, ConstraintViewModel>()
                 .ForMember(x => x.Achievements, opt => opt.MapFrom(x => x.Achievements))

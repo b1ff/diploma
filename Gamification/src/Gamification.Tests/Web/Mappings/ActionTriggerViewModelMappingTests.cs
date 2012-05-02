@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using Gamification.Core.Entities.Triggers;
 using Gamification.Core.Enums;
+using Gamification.Core.ProjectSettings;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
-using Gamification.Web.AutoMapper;
+using Gamification.Web.Controllers;
 using Gamification.Web.Utils.CommonViewModels;
 using NUnit.Framework;
 using SharpTestsEx;
@@ -15,7 +16,7 @@ namespace Gamification.Testing.Unit.Web.Mappings
         [TestFixtureSetUp]
         public void TestFixtureSetUp()
         {
-            AutoMappingConfiguration.ConfigureAutoMapper();
+            AutoConfigurator.PerformAllConfiguration(typeof(HomeController).Assembly);
         }
         
         [Test]

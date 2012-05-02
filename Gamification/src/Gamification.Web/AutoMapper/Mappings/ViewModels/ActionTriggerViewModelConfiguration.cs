@@ -1,13 +1,15 @@
 ﻿using AutoMapper;
 using Gamification.Core.Entities;
 using Gamification.Core.Entities.Triggers;
+using Gamification.Core.ProjectSettings;
 using Gamification.Web.Areas.ProjectsControlPanel.ViewModels;
+using IConfiguration = Gamification.Core.ProjectSettings.IConfiguration;
 
 namespace Gamification.Web.AutoMapper.Mappings.ViewModels
 {
-    public class ActionTriggerViewModelConfiguration : IAutomapperConfiguration
+    public class ActionTriggerViewModelConfiguration : IConfiguration
     {
-        public void BuildMappings()
+        public void Configure()
         {
             Mapper.CreateMap<Project, ActionTriggerViewModel>()
                 .ForMember(x => x.Statuses, opt => opt.MapFrom(x => x.Statuses))

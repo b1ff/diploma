@@ -1,15 +1,24 @@
 using System.Runtime.Serialization;
-using Gamification.Core.Enums;
 
-namespace Gamification.Services.DataContracts.Response
+namespace Gamification.WebServices.DataContracts.Response
 {
     [DataContract]
     public class CharacteristicChange
     {
+        public CharacteristicChange()
+        {
+        }
+
+        public CharacteristicChange(string name, ChangeAction changeAction)
+        {
+            Name = name;
+            ChangeAction = changeAction;
+        }
+
         [DataMember]
         public string Name { get; set; }
 
         [DataMember]
-        public AssignUnassign ChangeAction { get; set; }
+        public ChangeAction ChangeAction { get; set; }
     }
 }

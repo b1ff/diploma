@@ -94,6 +94,7 @@
     <Compile Include="Areas\ProjectsControlPanel\Controllers\AchievementsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ActionsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ConstraintsController.cs" />
+    <Compile Include="Areas\ProjectsControlPanel\Controllers\LevelsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\ProjectsController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\StatusesController.cs" />
     <Compile Include="Areas\ProjectsControlPanel\Controllers\TriggersController.cs" />
@@ -105,9 +106,7 @@
     <Compile Include="Areas\ProjectsControlPanel\ViewModels\Enums\TriggersTypes.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ViewModels\GameActionViewModel.cs" />
     <Compile Include="Areas\ProjectsControlPanel\ViewModels\ProjectNavItemViewModel.cs" />
-    <Compile Include="AutoMapper\AutoMappingConfiguration.cs" />
     <Compile Include="AutoMapper\Extensions\MappingExtensions.cs" />
-    <Compile Include="AutoMapper\IAutomapperConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\ViewModels\ConstraintViewModelConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\ViewModels\GameActionViewModelConfiguration.cs" />
     <Compile Include="AutoMapper\Mappings\ViewModels\ProjectsNavMappingConfiguration.cs" />

@@ -46,8 +46,8 @@ namespace Gamification.Web.Areas.ProjectsControlPanel.Controllers
 
         public ActionResult Show(int id)
         {
-            var project = this.projectsRepository.GetByIdIncluding(
-                id, x => x.Triggers, x => x.GameActions, x => x.Statuses, x => x.Achievements, x => x.CollectionConstraints, x =>x.NumericConstraints);
+            var project = this.projectsRepository.StrictGetById(
+                id, x => x.Triggers, x => x.GameActions, x => x.Statuses, x => x.Achievements, x => x.CollectionConstraints, x =>x.NumericConstraints, x => x.Levels);
             var currentUser = this.usersRepository.GetCurrentUser();
             if (!currentUser.Projects.Contains(project))
             {

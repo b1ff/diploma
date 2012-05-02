@@ -1,4 +1,5 @@
-﻿@model Project
+﻿@using Gamification.Core.Extensions
+@model Project
 
 @{
     ViewBag.Title = "Project";
@@ -70,7 +71,18 @@
 	</ul>
     <a href="javascript:void(0)" id="addAchievementButton">Add Achievement</a>
 </section>
-    
+  
+<section>
+	<h3>Levels</h3>
+    @if (Model.Levels.IsNotEmpty())
+    {
+        <p>
+            Project have @Model.Levels.Count levels
+        </p>
+    }
+    <a href="javascript:void(0)" id="incializeLevelsButton">Initialize Levels</a>
+</section>  
+  
 <div id="addStatusDialog">
     @using (Html.BeginForm<StatusesController>(x => x.Save(Model.Id, null)))
     {
@@ -85,7 +97,7 @@
 
 <div id="addAchievementDialog">
 	@using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data" }))
- {
+    {
         <div class="editor-label">
         	<label for="title">Title: </label>
         </div>
@@ -102,10 +114,30 @@
     }
 </div>
 
+<div id="initializeLevelsDialog">
+	@using (Html.BeginForm<LevelsController>(x => x.InitializeLevels(Model.Id, 0, 0)))
+    {
+        <div class="editor-label">
+        	<label for="levelsCount">Levels Count: </label>
+        </div>
+        <div class="editor-field">
+        	<input type="text" name="levelsCount" id="levelsCount"/>
+        </div>
+     
+        <div class="editor-label">
+        	<label for="pointsStep">Points Step</label>
+        </div>
+        <div class="editor-field">
+        	<input type="text" name="pointsStep" id="pointsStep"/>
+        </div>
+    }
+</div>
+
 
 <script type="text/javascript">
     $(function () {
         $('#addStatusDialog').submitDialog('Add Status', '#addStatusButton');
         $('#addAchievementDialog').submitDialog('Add Achievement', '#addAchievementButton')
+        $('#initializeLevelsDialog').submitDialog('Initialize Levels', '#incializeLevelsButton');
     });
 </script>
