@@ -1,151 +1,313 @@
 ﻿@using Gamification.Core.Extensions
+@using Gamification.Web.Areas.ProjectsControlPanel.ViewModels.ViewModelHelpers
 @model Project
-
 @{
     ViewBag.Title = "Project";
     Layout = "~/Areas/ProjectsControlPanel/Views/Shared/_Layout.cshtml";
 }
-
 <h2>@Model.Title</h2>
-
-
-<section>
-	<h3>
-		Project info
-	</h3>
-    <p>
-    	<span class="label">Customer key: </span><span class="label label-info">@Model.UserKey</span>
-    </p>
-    <p>
-    	<label>Gamer key: </label><span>@Model.GamerKey</span>
-    </p>
-</section>
-
-<section>
-    <h3>Actions</h3>
-    <ul> 
-        @foreach (var action in Model.GameActions)
-        {
-            <li><span>@action.Title</span> - <span>@action.Id</span></li>
-            @*<li>@(Html.ActionLink<ActionsController>(x => x.Show(action.Id), action.Description))</li>*@
-        }
+<div id="tabs" class="tabbable">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#info" data-toggle="tab">Project Info</a> </li>
+        <li><a href="#actions" data-toggle="tab">Actions</a> </li>
+        <li><a href="#triggers" data-toggle="tab">Triggers</a> </li>
+        <li><a href="#constraints" data-toggle="tab">Constraints</a> </li>
+        <li><a href="#statuses" data-toggle="tab">Statuses</a> </li>
+        <li><a href="#achievements" data-toggle="tab">Achievements</a> </li>
+        <li><a href="#levels" data-toggle="tab">Levels</a> </li>
     </ul>
-    @(Html.ActionLink<ActionsController>(x => x.Add(Model.Id), "Add Action", new { @class = "btn" }))
-</section>
+    <div class="tab-content">
+        <section class="tab-pane active" id="info">
+            <div class="page-header">
+            	<h2>Project info <small>Basic information about project</small></h2>
+            </div>
+	        
+            <p class="clearfix">
+    	        <span class="label">Customer key: </span><span class="label label-info label_guid">@Model.UserKey</span>
+            </p>
+            <p class="clearfix">
+    	        <span class="label">Gamer key: </span><span class="label label-info label_guid">@Model.GamerKey</span>
+            </p>
+            <div class="project-info clearfix">
+            	<h3>Gamers: </h3> <span class="badge badge-success">@Model.Gamers.Count</span>
+            </div>
+            <div class="project-info clearfix">
+            	<h3>
+            		Actions:
+            	</h3>
+            	<span class="badge badge-success">
+            		@Model.GameActions.Count
+            	</span>
+            </div>
+            <div class="project-info clearfix">
+            	<h3>Triggers:</h3>
+            	<span class="badge badge-success">
+            		@Model.Triggers.Count
+            	</span>
+            </div>
+            <div class="project-info clearfix">
+            	<h3>
+            		Constraints:
+            	</h3>
+            	<span class="badge badge-success">
+            		@(Model.NumericConstraints.Count + Model.CollectionConstraints.Count)
+            	</span>
+            </div>
+            <div class="project-info clearfix">
+            	<h3>
+            		Statuses:
+            	</h3>
+            	<span class="badge badge-success">
+            		@Model.Statuses.Count
+            	</span>
+            </div>
+            <div class="project-info clearfix">
+            	<h3>
+            		Achievements:
+            	</h3>
+            	<span class="badge badge-success">
+            		@Model.Achievements.Count
+            	</span>
+            </div>
+            <div class="project-info clearfix">
+            	<h3>
+            		Levels:
+            	</h3>
+            	<span class="badge badge-success">
+            		@Model.Levels.Count
+            	</span>
+            </div>
+        </section>
+        <section class="tab-pane" id="actions">
+            <div class="page-header">
+                <h2>Actions & Events<small>The things that make a game from your project</small></h2>
+            </div>
+                <table class="table table-striped table-bordered ">
+                <thead>
+                	<tr>
+                		<th>Action ID</th>
+                		<th>Name</th>
+                		<th>Triggers</th>
+                	</tr>
+                </thead>
+                <tbody>
+                    @foreach (var action in Model.GameActions)
+                    {
+                        <tr>
+                            <td>@action.Id</td>
+                            <td>@action.Title</td>
+                            <td>@action.TriggersToCall.JoinToString(x => x.Title)</td>
+                        </tr>
+                    }
+                </tbody>
+                </table>
+            @(Html.ActionLink<ActionsController>(x => x.Add(Model.Id), "Add Action", new { @class = "btn btn-inverse" }))
+        </section>
+        <section class="tab-pane" id="triggers">
+            <div class="page-header">
+                <h2>Triggers <small>To make changes of players characteristics</small></h2>
+            </div>
+            <table class="table table-striped table-bordered">
+                <thead>
+                	<tr>
+                		<th>Type</th>
+                		<th>Title</th>
+                		<th>Actions Quantity</th>
+                	</tr>
+                </thead>
+                <tbody>
+                    @foreach (var trigger in Model.Triggers)
+                    {
+                        <tr>
+                        	<td>@trigger.TriggerTypeName()</td>
+                        	<td>
+                        		@trigger.Title
+                        	</td>
+                        	<td>
+                        		@trigger.GameActions.Count
+                        	</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            @(Html.ActionLink<TriggersController>(x => x.Add(Model.Id), "Add Trigger", new { @class = "btn btn-inverse" }))
+        </section>
+        <section class="tab-pane" id="constraints">
+            <div class="page-header">
+                <h2>Constraints <small>Conditions which should be followed for performing action</small></h2>
+            </div>
+            <table class="table table-striped table-bordered">
+                <thead>
+            	    <tr>
+                        <th>Description</th>
+            	    	<th>Constraint type</th>
+            	    	<th>Condition</th>
+            	    	<th>Value</th>
+            	    </tr>
+                </thead>
+                <tbody>
+                @foreach (var constraint in Model.NumericConstraints)
+                {
+                    <tr>
+                        <td>@constraint.Description</td>
+                        <td>@constraint.ConstraintType()</td>
+                        <td>@constraint.BooleanOperation.ToString()</td>
+                        <td>@constraint.ValueToCompare</td>                        
+                    </tr>
+                }
+                @foreach (var constraint in Model.CollectionConstraints)
+                {
+                    <tr>
+                        <td>@constraint.Description</td>
+                        <td>@constraint.ConstraintType()</td>
+                        <td>@constraint.CollectionEqualityOperation.ToString()</td>
+                        <td>@constraint.ValueToCompare</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+            @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint", new { @class = "btn btn-inverse" }))
+        </section>
+        <section class="tab-pane" id="statuses">
+            <div class="page-header">
+	            <h2>Statuses <small>Make a names for your players</small></h2>
+            </div>
+            <table class="table table-striped table-bordered">
+	            <thead>
+            	    <tr>
+                        <th>Name</th>
+            	        <th>Gamers quantity</th>
+            	    </tr>
+                </thead>
+                <tbody>
+                @foreach (var status in Model.Statuses)
+                {
+                    <tr>
+                        <td>@status.StatusName</td>
+                        <td>@status.Gamers.Count</td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+            <a href="javascript:void(0)" id="addStatusButton" class="btn btn-inverse">Add status</a>
+        </section>
+        <section class="tab-pane" id="achievements">
+            <div class="page-header">
+    	        <h2>Achievement <small>Make a badges for players</small></h2>
+            </div>
+            
+	         <table class="table table-striped table-bordered">
+	            <thead>
+            	    <tr>
+                        <th>Image</th>
+            	        <th>Title</th>
+            	    </tr>
+                </thead>
+                <tbody>
+                @foreach (var achievement in Model.Achievements)
+                {
+                    <tr>
+                        <td>
+                        	<img src="@Url.Path(achievement)" alt="@("Achievement" + achievement.Name)" class="achievement"/>
+                        </td>
+                        <td>
+                        	@achievement.Name
+                        </td>
+                    </tr>
+                }        
+	            </tbody>
+             </table>
+            <a href="javascript:void(0)" id="addAchievementButton" class="btn btn-inverse">Add Achievement</a>
+        </section>
+        <section class="tab-pane" id="levels">
+            <div class="page-header">
+	            <h2>Levels <small>Rate your players</small></h2>
+            </div>
 
-<section>
-    <h3>Triggers</h3>
-    <ul>
-        @foreach (var trigger in Model.Triggers)
+            @if (Model.Levels.IsNotEmpty())
+            {
+                <table class="table table-striped table-bordered">
+	                <thead>
+            	        <tr>
+                            <th>Number</th>
+            	            <th>Required points</th>
+            	        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var level in Model.Levels)
+                        {
+                            <tr>
+                        	    <td>
+                        		    @level.LevelNumber
+                        	    </td>
+                        	    <td>
+                        		    @level.NeededPoints
+                        	    </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            <a href="javascript:void(0)" id="incializeLevelsButton" class="btn btn-inverse">Initialize Levels</a>
+        </section>
+    </div>
+    <div id="addStatusDialog">
+        @using (Html.BeginForm<StatusesController>(x => x.Save(Model.Id, null)))
         {
-            <li>@trigger.Title</li>
-            @*<li>@(Html.ActionLink<TriggersController>(x => x.Show(trigger.Id), trigger.Title) )</li>*@
+            <div class="editor-label">
+                <label for="title">
+                    Status name:
+                </label>
+            </div>
+            <div class="editor-field">
+                <input type="text" name="statusTitle" id="statusTitle" />
+            </div>
         }
-    </ul>
-    @(Html.ActionLink<TriggersController>(x => x.Add(Model.Id), "Add Trigger", new { @class = "btn" }))
-</section>
-
-<section>
-    <h3>Constraints</h3>
-    <ul>
-        @foreach (var constraint in Model.NumericConstraints)
+    </div>
+    <div id="addAchievementDialog">
+        @using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
-            <li>@constraint.Description</li>
-            @*<li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseNumericConstrait), constraint.Description))</li>*@
-        }
-        @foreach (var constraint in Model.CollectionConstraints)
-        {
-            <li>@constraint.Description</li>
-            @*<li>@(Html.ActionLink<ConstraintsController>(x => x.Show(constraint.Id, BaseConstraintsTypes.BaseStringConstraint), constraint.Description))</li>*@
-        }
-    </ul>
-    @(Html.ActionLink<ConstraintsController>(x => x.Add(Model.Id), "Add Constraint", new { @class = "btn" }))
-</section>
-
-<section>
-	<h3>Statuses</h3>
-	<ul>
-        @foreach (var status in Model.Statuses)
-        {
-            <li>@status.StatusName</li>
-        }
-	</ul>
-    <a href="javascript:void(0)" id="addStatusButton" class="btn">Add status</a>
-</section>
-
-<section>
-	<h3>Achievement</h3>
-	<ul class="imagesList">
-        @foreach (var achievement in Model.Achievements)
-        {
-            <li><span>@achievement.Name</span> <img src="@Url.Path(achievement)" alt="@("Achievement" + achievement.Name)"/></li>
-        }        
-	</ul>
-    <a href="javascript:void(0)" id="addAchievementButton" class="btn">Add Achievement</a>
-</section>
-  
-<section>
-	<h3>Levels</h3>
-    @if (Model.Levels.IsNotEmpty())
-    {
-        <p>
-            Project have @Model.Levels.Count levels
-        </p>
-    }
-    <a href="javascript:void(0)" id="incializeLevelsButton" class="btn">Initialize Levels</a>
-</section>  
-  
-<div id="addStatusDialog">
-    @using (Html.BeginForm<StatusesController>(x => x.Save(Model.Id, null)))
-    {
-        <div class="editor-label">
-            <label for="title">Status name: </label>
-        </div>
-        <div class="editor-field">
-            <input type="text" name="statusTitle" id="statusTitle"/>
-        </div>
-    }
-</div>
-
-<div id="addAchievementDialog">
-	@using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
-        <div class="editor-label">
-        	<label for="title">Title: </label>
-        </div>
-        <div class="editor-field">
-        	<input type="text" name="achievementTitle" id="achievementTitle"/>
-        </div>
+            <div class="editor-label">
+                <label for="title">
+                    Title:
+                </label>
+            </div>
+            <div class="editor-field">
+                <input type="text" name="achievementTitle" id="achievementTitle" />
+            </div>
      
-        <div class="editor-label">
-        	<label for="achievementImage">Image: </label>
-        </div>
-        <div class="editor-field">
-        	<input type="file" name="achievementImage" id="achievementImage" />
-        </div>
-    }
-</div>
-
-<div id="initializeLevelsDialog">
-	@using (Html.BeginForm<LevelsController>(x => x.InitializeLevels(Model.Id, 0, 0)))
-    {
-        <div class="editor-label">
-        	<label for="levelsCount">Levels Count: </label>
-        </div>
-        <div class="editor-field">
-        	<input type="text" name="levelsCount" id="levelsCount"/>
-        </div>
+            <div class="editor-label">
+                <label for="achievementImage">
+                    Image:
+                </label>
+            </div>
+            <div class="editor-field">
+                <input type="file" name="achievementImage" id="achievementImage" />
+            </div>
+        }
+    </div>
+    <div id="initializeLevelsDialog">
+        @using (Html.BeginForm<LevelsController>(x => x.InitializeLevels(Model.Id, 0, 0)))
+        {
+            <div class="editor-label">
+                <label for="levelsCount">
+                    Levels Count:
+                </label>
+            </div>
+            <div class="editor-field">
+                <input type="text" name="levelsCount" id="levelsCount" />
+            </div>
      
-        <div class="editor-label">
-        	<label for="pointsStep">Points Step</label>
-        </div>
-        <div class="editor-field">
-        	<input type="text" name="pointsStep" id="pointsStep"/>
-        </div>
-    }
+            <div class="editor-label">
+                <label for="pointsStep">
+                    Points Step</label>
+            </div>
+            <div class="editor-field">
+                <input type="text" name="pointsStep" id="pointsStep" />
+            </div>
+        }
+    </div>
 </div>
-
-
 <script type="text/javascript">
     $(function () {
         $('#addStatusDialog').submitDialog('Add Status', '#addStatusButton');

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using LinqSpecs;
 
@@ -47,6 +48,11 @@ namespace Gamification.Core.Extensions
                 return elems1;
 
             return elems1.Where(x => !elems2.Contains(x)).Union(elems2.Where(x => !elems1.Contains(x)));
+        }
+
+        public static string JoinToString<TElem>(this IEnumerable<TElem> collection, Func<TElem, string> fieldToJoin)
+        {
+            return string.Join(", ", collection.Select(fieldToJoin));
         }
     }
 }

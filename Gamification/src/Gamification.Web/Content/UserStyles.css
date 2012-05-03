@@ -10,7 +10,6 @@ section > nav {
     width: 200px;
     float: left;
     margin: 15px;
-    /*border: 1px solid #5c87b2;*/
 }
 
     nav > h3 {
@@ -26,31 +25,24 @@ section#main > article {
     width: 78%;
 }
 
-ul.imagesList {
-    list-style: none;
+#info span.label {
+    display:block; 
+    width: 100px; 
+    height: 13px;
+    float: left;
 }
 
-    ul.imagesList > li {
-        vertical-align: middle;
-        height: 50px;
-        margin-bottom: 10px;
-        width: 300px;
-    }
-    
-    ul.imagesList > li:hover {
-        background-color: #5C87B2;
-        color: white;
-    }
-        ul.imagesList > li > * {
-            float: left;
-        }
+.label_guid {
+    width: 214px !important;
+}
 
-        ul.imagesList > li > span {
-            margin: 15px;
-            display: block;
-            width: 110px;
-        }
-        ul.imagesList > li > img {
-            height: 50px;
-        }
-       
+img.achievement {
+    height: 50px;
+}
+
+div.project-info h3 {
+    display: block;
+    float: left;
+    line-height: 20px;
+    width: 130px;
+}

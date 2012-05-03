@@ -1,73 +1,73 @@
 <Configuration>
   <RecentFiles>
     <RecentFiles>
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/f:Web.config" caret="1235" fromTop="18" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:BaseEntity.cs" caret="75" fromTop="4" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GamerStatus.cs" caret="111" fromTop="5" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Gamer.cs" caret="240" fromTop="0" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IUsersRepository.cs" caret="185" fromTop="8" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:CollectionBasedConstraintsTests.cs" caret="344" fromTop="10" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:BaseFixtures/f:BaseIntegrationFixture.cs" caret="449" fromTop="14" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:AchievementTriggerTests.cs" caret="935" fromTop="21" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="2003" fromTop="30" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Repositories/f:UsersRepository.cs" caret="1056" fromTop="25" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IAchievementsRepository.cs" caret="119" fromTop="5" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/f:GamersService.svc.cs" caret="645" fromTop="5" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Shared/f:_LoginStatus.cshtml" caret="7" fromTop="0" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Models/f:NerdIdentity.cs" caret="784" fromTop="34" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Helpers/f:PrincipalHelpers.cs" caret="181" fromTop="7" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Entities/f:GamerTests.cs" caret="580" fromTop="17" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Level.cs" caret="482" fromTop="21" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:User.cs" caret="197" fromTop="8" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="2023" fromTop="37" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:Helpers/f:HtmlExtensions.cs" caret="856" fromTop="25" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Controllers/f:ProjectsController.cs" caret="472" fromTop="14" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Account/f:Register.cshtml" caret="725" fromTop="0" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Content/f:Site.css" caret="4631" fromTop="30" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:bootstrap.js" caret="17250" fromTop="22" />
+      <File id="73ECF8E2-AF35-47DE-9D2E-CFBC1D8BF99D/d:Helpers/f:RequestExtensions.cs" caret="2787" fromTop="28" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Home/f:Index.cshtml" caret="0" fromTop="0" />
       <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Achievement.cs" caret="95" fromTop="5" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/d:DataContracts/d:Response/f:ChangeAction.cs" caret="188" fromTop="7" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/d:DataContracts/d:Response/d:BasicResponses/f:CharacteristicChange.cs" caret="399" fromTop="14" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/f:ActionsService.svc.cs" caret="5674" fromTop="27" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="1464" fromTop="16" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:ActionTrigger.cs" caret="668" fromTop="23" />
       <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AchievementsTrigger.cs" caret="659" fromTop="20" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Scripts/f:gamification.js" caret="379" fromTop="10" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/f:Web.config" caret="5806" fromTop="6" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Home/f:Index.cshtml" caret="1226" fromTop="3" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Account/f:Profile.cshtml" caret="125" fromTop="2" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:ActionTrigger.cs" caret="668" fromTop="23" />
+      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:GameAction.cs" caret="1464" fromTop="16" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Account/f:Profile.cshtml" caret="586" fromTop="11" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Helpers/f:PrincipalHelpers.cs" caret="181" fromTop="7" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Shared/f:_LoginStatus.cshtml" caret="0" fromTop="0" />
+      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/f:GamersService.svc.cs" caret="990" fromTop="13" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Controllers/f:HomeController.cs" caret="864" fromTop="19" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Controllers/f:AccountController.cs" caret="5931" fromTop="29" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Models/f:NerdIdentity.cs" caret="784" fromTop="34" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/f:Web.config" caret="6513" fromTop="22" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Content/d:themes/d:bootstrap/f:jquery.ui.1.8.16.ie.css" caret="294" fromTop="6" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Shared/f:_Layout.cshtml" caret="1838" fromTop="22" />
+      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Scripts/f:gamification.js" caret="0" fromTop="0" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:jquery-ui-1.8.19.js" caret="213013" fromTop="42" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Content/f:UserStyles.css" caret="407" fromTop="20" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="1474" fromTop="26" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_Layout.cshtml" caret="1551" fromTop="4" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="32" fromTop="0" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:ProjectsNav.cshtml" caret="392" fromTop="11" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="356" fromTop="17" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Index.cshtml" caret="80" fromTop="4" />
     </RecentFiles>
     <RecentEdits>
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Level.cs" caret="156" fromTop="6" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Level.cs" caret="482" fromTop="21" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:User.cs" caret="197" fromTop="8" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="1238" fromTop="23" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="1820" fromTop="25" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="1521" fromTop="21" />
-      <File id="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3/d:Core/d:Entities/f:GamerTests.cs" caret="740" fromTop="19" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Project.cs" caret="2023" fromTop="37" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/f:ActionsService.svc.cs" caret="3207" fromTop="33" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Scripts/f:gamification.js" caret="316" fromTop="7" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Scripts/f:gamification.js" caret="322" fromTop="8" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/f:Achievement.cs" caret="136" fromTop="7" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IUsersRepository.cs" caret="0" fromTop="0" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:DataAccess/f:IUsersRepository.cs" caret="188" fromTop="10" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:AchievementTriggerTests.cs" caret="404" fromTop="6" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:AchievementTriggerTests.cs" caret="1459" fromTop="27" />
-      <File id="C38A9C18-632F-41ED-BD58-78D2FC1316F7/d:Entities/f:AchievementTriggerTests.cs" caret="1285" fromTop="27" />
-      <File id="1BB43DAB-5363-498F-A72A-D24F1421AD4C/d:Entities/d:Triggers/f:AchievementsTrigger.cs" caret="168" fromTop="6" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Contexts/f:EfDbContext.cs" caret="2003" fromTop="30" />
-      <File id="F5B46435-5C62-4ECC-9B9E-E408F21105D2/d:Repositories/f:UsersRepository.cs" caret="1063" fromTop="26" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/f:ActionsService.svc.cs" caret="5438" fromTop="22" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/f:ActionsService.svc.cs" caret="6210" fromTop="41" />
-      <File id="8B01ABF4-930E-4D99-A573-6CB2027F3DF8/d:DataContracts/d:Response/f:ChangeAction.cs" caret="188" fromTop="7" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Home/f:Index.cshtml" caret="1703" fromTop="20" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Home/f:Index.cshtml" caret="1991" fromTop="24" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/f:Web.config" caret="6707" fromTop="39" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Scripts/f:gamification.js" caret="623" fromTop="15" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Account/f:Profile.cshtml" caret="627" fromTop="11" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Account/f:Profile.cshtml" caret="441" fromTop="5" />
-      <File id="67C8B33C-A6AE-421F-BF79-3FB8F37A64C0/d:Views/d:Account/f:Profile.cshtml" caret="125" fromTop="2" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_Layout.cshtml" caret="322" fromTop="7" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_Layout.cshtml" caret="1564" fromTop="24" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="2259" fromTop="36" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="2097" fromTop="31" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="1973" fromTop="33" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="2088" fromTop="38" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="1311" fromTop="23" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Content/f:UserStyles.css" caret="1064" fromTop="33" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="1750" fromTop="26" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="71" fromTop="0" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_Layout.cshtml" caret="928" fromTop="13" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Scripts/f:userscripts.js" caret="1474" fromTop="26" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="1097" fromTop="8" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="1097" fromTop="21" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:ProjectsNav.cshtml" caret="1199" fromTop="31" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_Layout.cshtml" caret="1551" fromTop="24" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:ProjectsNav.cshtml" caret="1204" fromTop="34" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="36" fromTop="1" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="1076" fromTop="26" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="679" fromTop="18" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="271" fromTop="7" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:ProjectsNav.cshtml" caret="747" fromTop="23" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="897" fromTop="17" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="1289" fromTop="29" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="2063" fromTop="36" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="2303" fromTop="17" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="2691" fromTop="28" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="2960" fromTop="39" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Show.cshtml" caret="390" fromTop="19" />
+      <File id="F3368622-97A1-4844-94AF-AC24A0AFF192/d:Areas/d:ProjectsControlPanel/d:Views/d:Projects/f:Index.cshtml" caret="80" fromTop="4" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
     <ItemStatistics item="CSharpCodeCompletionContext">
-      <Item value="public" priority="9401" />
+      <Item value="public" priority="9593" />
       <Item value="virtual" priority="351" />
       <Item value="int" priority="1725" />
       <Item value="UserProject`0" priority="159" />
@@ -76,7 +76,7 @@
       <Item value="Gamer`0" priority="447" />
       <Item value="x" priority="5375" />
       <Item value="Guid`0" priority="63" />
-      <Item value="new" priority="5055" />
+      <Item value="new" priority="5087" />
       <Item value="HashSet&lt;Gamer&gt;" priority="57" />
       <Item value="long" priority="95" />
       <Item value="double" priority="481" />
@@ -84,18 +84,18 @@
       <Item value="GetHashCode`0" priority="127" />
       <Item value="Gamers" priority="31" />
       <Item value="ISet" priority="255" />
-      <Item value="this" priority="4533" />
-      <Item value="string" priority="2644" />
+      <Item value="this" priority="4693" />
+      <Item value="string" priority="2868" />
       <Item value="private" priority="767" />
-      <Item value="static" priority="1503" />
+      <Item value="static" priority="1663" />
       <Item value="var" priority="5567" />
-      <Item value="return" priority="4927" />
+      <Item value="return" priority="5119" />
       <Item value="BaseEntity`0" priority="383" />
       <Item value="GetEntitiesTypes`0" priority="31" />
       <Item value="TEntity`0" priority="894" />
       <Item value="EntityFrameworkDbContext`0" priority="63" />
       <Item value="connectionString" priority="63" />
-      <Item value="bool" priority="1183" />
+      <Item value="bool" priority="1279" />
       <Item value="EntityFrameworkRepository`0" priority="31" />
       <Item value="dbContext" priority="255" />
       <Item value="IObjectSet" priority="31" />
@@ -170,11 +170,11 @@
       <Item value="UnlockedActions" priority="31" />
       <Item value="HashSet&lt;GameAction&gt;" priority="57" />
       <Item value="BooleanOperation" priority="97" />
-      <Item value="object" priority="348" />
+      <Item value="object" priority="377" />
       <Item value="PropertyToCompare" priority="127" />
       <Item value="as" priority="95" />
       <Item value="null" priority="1599" />
-      <Item value="if" priority="2495" />
+      <Item value="if" priority="2525" />
       <Item value="value" priority="223" />
       <Item value="IBooleanOperable`0" priority="58" />
       <Item value="IBooleanResultProvider`0" priority="380" />
@@ -356,7 +356,7 @@
       <Item value="user" priority="703" />
       <Item value="IWindsorContainer`0" priority="95" />
       <Item value="BaseGetContainer`0" priority="63" />
-      <Item value="HttpContext`0" priority="31" />
+      <Item value="HttpContext`0" priority="63" />
       <Item value="serviceType" priority="63" />
       <Item value="DependencyResolver`0" priority="31" />
       <Item value="CastleDependencyResolver" priority="28" />
@@ -403,7 +403,7 @@
       <Item value="query" priority="63" />
       <Item value="spec" priority="95" />
       <Item value="Specification" priority="127" />
-      <Item value="User" priority="217" />
+      <Item value="User" priority="247" />
       <Item value="Username" priority="63" />
       <Item value="Password" priority="32" />
       <Item value="usersRepository" priority="187" />
@@ -450,11 +450,11 @@
       <Item value="navItems" priority="31" />
       <Item value="in" priority="159" />
       <Item value="Model" priority="438" />
-      <Item value="Html" priority="1281" />
+      <Item value="Html" priority="1375" />
       <Item value="navItem" priority="157" />
-      <Item value="request" priority="351" />
+      <Item value="request" priority="544" />
       <Item value="RequestInfo" priority="28" />
-      <Item value="Request" priority="90" />
+      <Item value="Request" priority="186" />
       <Item value="controllerName" priority="31" />
       <Item value="actionName" priority="31" />
       <Item value="routeParams" priority="63" />
@@ -463,10 +463,10 @@
       <Item value="paramValue" priority="95" />
       <Item value="formParam" priority="63" />
       <Item value="tryGetIdInTheLast" priority="63" />
-      <Item value="condition" priority="31" />
+      <Item value="condition" priority="63" />
       <Item value="MvcHtmlString" priority="28" />
       <Item value="className" priority="63" />
-      <Item value="MvcHtmlString`0" priority="95" />
+      <Item value="MvcHtmlString`0" priority="127" />
       <Item value="projId" priority="31" />
       <Item value="Areas" priority="45" />
       <Item value="ProjectsControlPanel" priority="45" />
@@ -510,7 +510,7 @@
       <Item value="_Layout.cshtml" priority="79" />
       <Item value="GameAction`0" priority="158" />
       <Item value="action" priority="409" />
-      <Item value="li" priority="29" />
+      <Item value="li" priority="59" />
       <Item value="Authorize" priority="31" />
       <Item value="ActionFilterAttribute`0" priority="31" />
       <Item value="filterContext" priority="287" />
@@ -527,7 +527,7 @@
       <Item value="DefaultUserInitializer" priority="26" />
       <Item value="Triggers" priority="31" />
       <Item value="HashSet&lt;ActionTrigger&gt;" priority="28" />
-      <Item value="AccountController`0" priority="63" />
+      <Item value="AccountController`0" priority="127" />
       <Item value="projectsRepository" priority="31" />
       <Item value="jquery-ui-1.8.11.min.js" priority="22" />
       <Item value="jquery.validate.min.js" priority="22" />
@@ -535,7 +535,7 @@
       <Item value="jquery-1.7.2.min.js" priority="22" />
       <Item value="jquery-ui-1.8.19.min.js" priority="22" />
       <Item value="themes" priority="45" />
-      <Item value="jquery.ui.all.css" priority="22" />
+      <Item value="jquery.ui.all.css" priority="45" />
       <Item value="HttpNotFound`0" priority="31" />
       <Item value="ICollection" priority="31" />
       <Item value="databaseGeneratedOption" priority="31" />
@@ -598,7 +598,7 @@
       <Item value="ActionWithAchievementId" priority="90" />
       <Item value="ActionWithAchievement" priority="26" />
       <Item value="Assign" priority="50" />
-      <Item value="HtmlHelper`0" priority="63" />
+      <Item value="HtmlHelper`0" priority="95" />
       <Item value="ExpressionHelper`0" priority="31" />
       <Item value="Expression`0" priority="31" />
       <Item value="Func" priority="127" />
@@ -689,7 +689,7 @@
       <Item value="ActionRequest`0" priority="31" />
       <Item value="levelsCount" priority="30" />
       <Item value="pointsStep" priority="63" />
-      <Item value="i" priority="63" />
+      <Item value="i" priority="93" />
       <Item value="TElement`0" priority="58" />
       <Item value="elements" priority="31" />
       <Item value="elementsToAdd" priority="62" />
@@ -798,6 +798,21 @@
       <Item value="triggerFromDb" priority="31" />
       <Item value="newRepo" priority="31" />
       <Item value="Value" priority="61" />
+      <Item value="bootstrap.css" priority="22" />
+      <Item value="bootstrap-responsive.css" priority="22" />
+      <Item value="HttpRequest`0" priority="31" />
+      <Item value="HttpRequestBase`0" priority="95" />
+      <Item value="html" priority="31" />
+      <Item value="area" priority="31" />
+      <Item value="bootstrap.js" priority="22" />
+      <Item value="a" priority="29" />
+      <Item value="strong" priority="29" />
+      <Item value="controller" priority="31" />
+      <Item value="bootstrap" priority="22" />
+      <Item value="jquery-ui-1.8.16.custom.css" priority="22" />
+      <Item value="jquery-ui-1.8.16.custom.min.js" priority="45" />
+      <Item value="ul" priority="29" />
+      <Item value="FormMethod`0" priority="31" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Int32">
       <Item value="GetHashCode`0" priority="53" />
@@ -1034,7 +1049,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Object">
       <Item value="GetType`0" priority="26" />
-      <Item value="SafeToString`0" priority="26" />
+      <Item value="SafeToString`0" priority="82" />
+      <Item value="ToString`0" priority="53" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
       <Item value="GetValue`0" priority="26" />
@@ -1203,6 +1219,7 @@
       <Item value="Should`0" priority="26" />
       <Item value="GetHash`0" priority="135" />
       <Item value="GetHashCode`0" priority="26" />
+      <Item value="ToLower`0" priority="134" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Core.ResultProviders.StringCollectionResultProvider">
       <Item value="GetResult`0" priority="26" />
@@ -1278,7 +1295,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="134" />
-      <Item value="Empty" priority="107" />
+      <Item value="Empty" priority="217" />
       <Item value="IsNullOrEmpty`0" priority="53" />
       <Item value="IsNullOrWhiteSpace`0" priority="22" />
     </ItemStatistics>
@@ -1312,11 +1329,11 @@
       <Item value="User" priority="157" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Security.Principal.IPrincipal">
-      <Item value="Identity" priority="215" />
+      <Item value="Identity" priority="243" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Security.Principal.IIdentity">
       <Item value="IsAuthenticated" priority="107" />
-      <Item value="Name" priority="53" />
+      <Item value="Name" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Data.EF.Services.CurrentUserService">
       <Item value="userRepository" priority="26" />
@@ -1420,9 +1437,10 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Web.Controllers.AccountController">
       <Item value="simpleMembership" priority="53" />
-      <Item value="LogOff`0" priority="26" />
+      <Item value="LogOff`0" priority="49" />
       <Item value="LogOn`0" priority="22" />
-      <Item value="ChangePassword`0" priority="26" />
+      <Item value="ChangePassword`0" priority="49" />
+      <Item value="Register`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Web.Models.RegisterModel">
       <Item value="UserName" priority="53" />
@@ -1435,7 +1453,7 @@
     <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
       <Item value="ActionLink`0" priority="104" />
       <Item value="Action`0" priority="22" />
-      <Item value="ActionLink`1" priority="267" />
+      <Item value="ActionLink`1" priority="322" />
       <Item value="ValidationSummary`0" priority="53" />
       <Item value="BeginForm`1" priority="107" />
       <Item value="TextBoxFor`2" priority="100" />
@@ -1448,6 +1466,7 @@
       <Item value="SelectListFor`1" priority="72" />
       <Item value="SubmitButton`0" priority="26" />
       <Item value="RadioButtonList`0" priority="26" />
+      <Item value="ActiveClassIf`0" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Gamification.Web.Areas.ProjectsControlPanel.Controllers.ProjectsController">
       <Item value="usersRepository" priority="103" />
@@ -1489,38 +1508,46 @@
       <Item value="ConfigureAutoMapper`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="HtmlCodeCompletionContext">
-      <Item value="ul" priority="30" />
-      <Item value="li" priority="34" />
-      <Item value="a" priority="24" />
-      <Item value="href" priority="23" />
+      <Item value="ul" priority="44" />
+      <Item value="li" priority="66" />
+      <Item value="a" priority="53" />
+      <Item value="href" priority="35" />
       <Item value="section" priority="24" />
       <Item value="h3" priority="17" />
       <Item value="Index.cshtml" priority="5" />
       <Item value="script" priority="11" />
       <Item value="type" priority="5" />
       <Item value="text/javascript" priority="11" />
-      <Item value="div" priority="42" />
-      <Item value="id" priority="35" />
+      <Item value="div" priority="48" />
+      <Item value="id" priority="41" />
       <Item value="input" priority="5" />
       <Item value="text" priority="19" />
       <Item value="name" priority="17" />
-      <Item value="label" priority="5" />
+      <Item value="label" priority="18" />
       <Item value="for" priority="5" />
-      <Item value="class" priority="23" />
-      <Item value="editor-label" priority="17" />
+      <Item value="class" priority="109" />
+      <Item value="editor-label" priority="41" />
       <Item value="editor-field" priority="5" />
       <Item value="form" priority="5" />
       <Item value="addProjectDialog" priority="5" />
       <Item value="s" priority="6" />
-      <Item value="style" priority="5" />
+      <Item value="style" priority="11" />
       <Item value="textarea" priority="6" />
       <Item value="levelsCount" priority="5" />
       <Item value="pointsStep" priority="6" />
-      <Item value="span" priority="11" />
+      <Item value="span" priority="23" />
       <Item value="p" priority="5" />
+      <Item value="dropdown" priority="5" />
+      <Item value="strong" priority="14" />
+      <Item value="brand" priority="5" />
+      <Item value="_Layout.cshtml" priority="5" />
+      <Item value="i" priority="7" />
+      <Item value="large" priority="5" />
+      <Item value="line-height" priority="6" />
+      <Item value="width" priority="6" />
     </ItemStatistics>
     <ItemStatistics item="RazorTransitionCompletionContext">
-      <Item value="Html" priority="245" />
+      <Item value="Html" priority="253" />
       <Item value="navItem" priority="7" />
       <Item value="Url" priority="53" />
       <Item value="model" priority="7" />
@@ -1530,22 +1557,29 @@
       <Item value="using" priority="27" />
       <Item value="ConstraintTypes`0" priority="46" />
       <Item value="constraint" priority="9" />
-      <Item value="User" priority="29" />
+      <Item value="User" priority="37" />
+      <Item value="if" priority="7" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpRequestWrapper">
       <Item value="IsCurrentAction`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
-      <Item value="RequestContext" priority="53" />
+      <Item value="RequestContext" priority="161" />
       <Item value="Form" priority="22" />
       <Item value="GetIntParam`0" priority="49" />
+      <Item value="Area`0" priority="49" />
+      <Item value="Controller`0" priority="54" />
+      <Item value="IsCurrentAction`0" priority="104" />
+      <Item value="IsCurrentArea`0" priority="22" />
+      <Item value="IsCurrentController`0" priority="22" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Routing.RequestContext">
-      <Item value="RouteData" priority="26" />
+      <Item value="RouteData" priority="80" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Web.Routing.RouteData">
-      <Item value="Values" priority="49" />
+      <Item value="Values" priority="76" />
       <Item value="SafeToString`0" priority="22" />
+      <Item value="DataTokens" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Int32">
       <Item value="TryParse`0" priority="53" />
@@ -1565,9 +1599,9 @@
       <Item value="addProjectLink" priority="4" />
       <Item value="addProjectDialog" priority="3" />
       <Item value="section" priority="11" />
-      <Item value="width" priority="5" />
-      <Item value="float" priority="11" />
-      <Item value="margin" priority="5" />
+      <Item value="width" priority="6" />
+      <Item value="float" priority="17" />
+      <Item value="margin" priority="11" />
       <Item value="body" priority="5" />
       <Item value="article" priority="5" />
       <Item value="ConstraintType" priority="0" />
@@ -1577,6 +1611,8 @@
       <Item value="background-color" priority="5" />
       <Item value="yellow" priority="6" />
       <Item value="incializeLevelsButton" priority="3" />
+      <Item value="color" priority="5" />
+      <Item value="line-height" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@MvcContrib.UrlHelperExtensions">
       <Item value="Action`1" priority="26" />
@@ -1631,7 +1667,7 @@
       <Item value="Seed`0" priority="26" />
     </ItemStatistics>
     <ItemStatistics item="JavaScriptSpecificContext">
-      <Item value="function" priority="263" />
+      <Item value="function" priority="285" />
       <Item value="$" priority="199" />
       <Item value="return" priority="10" />
       <Item value="elementSelector" priority="10" />
@@ -1981,6 +2017,12 @@
     <ItemStatistics item="Qualified:Gamification.Testing.Integration.Entities.AchievementTriggerTests">
       <Item value="Container" priority="26" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper">
+      <Item value="AddClassIfTrue`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.FormMethod">
+      <Item value="Post" priority="26" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -2035,8 +2077,6 @@
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests.CallOnGamer_WhenProjectIsUsePointsAndGamerCanIncreaseLevel_ShouldIncreaseLevel" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" MethodName="CallOnGamer_WhenProjectIsUsePointsAndGamerCanIncreaseLevel_ShouldIncreaseLevel" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests.CallOnGamer_WhenProjectIsUsePointsAndGamerPointsIsLessThanNeddedCurrentLevel_ShouldDecreaseLevel" ParentId="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.Triggers.ChangeLevelTriggerTests" MethodName="CallOnGamer_WhenProjectIsUsePointsAndGamerPointsIsLessThanNeddedCurrentLevel_ShouldDecreaseLevel" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GamerTests.Clone_ShoulCopyAllGamerProperties" ParentId="Gamification.Testing.Unit.Core.Entities.GamerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.GamerTests" MethodName="Clone_ShoulCopyAllGamerProperties" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.AchievementTriggerTests.CollectionBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.AchievementTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.AchievementTriggerTests.CollectionBasedConstraintsTests.WhenSaveDifferentTypesOfCollectionBasedConstraints_ShouldGetFromDatabaseRightType" ParentId="Gamification.Testing.Integration.Entities.AchievementTriggerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" MethodName="WhenSaveDifferentTypesOfCollectionBasedConstraints_ShouldGetFromDatabaseRightType" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests.ConstraintsTypeEnum_ShouldContainsValuesEqualToConstraintsClasses" ParentId="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Conventions.ConstraintsTypesTests" MethodName="ConstraintsTypeEnum_ShouldContainsValuesEqualToConstraintsClasses" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.CreateUser_WhenAlreadyExistUserWithSameEmail_ShouldReturnDublicateEmailResult" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="CreateUser_WhenAlreadyExistUserWithSameEmail_ShouldReturnDublicateEmailResult" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.CreateUser_WhenAlredyExistUserWithSameName_ShouldReturnDublicateUsernameResult" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="CreateUser_WhenAlredyExistUserWithSameName_ShouldReturnDublicateUsernameResult" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
@@ -2059,8 +2099,8 @@
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Core.Entities.GameActionTests.PerformAction_WhenAnyOfQtyBasedConstraintsIsFail_ShouldReturnFailErrors" ParentId="Gamification.Testing.Unit.Core.Entities.GameActionTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Core.Entities.GameActionTests" MethodName="PerformAction_WhenAnyOfQtyBasedConstraintsIsFail_ShouldReturnFailErrors" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests.ResolveRepositoryTests" ParentId="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.ConfigurationTest.WindsorContainerInitializerTests" MethodName="ResolveRepositoryTests" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.WebServices.DataContractsSerializationTest.SerializeAllDataContractsTest" ParentId="Gamification.Testing.Unit.WebServices.DataContractsSerializationTest" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.WebServices.DataContractsSerializationTest" MethodName="SerializeAllDataContractsTest" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
-        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.QuantityBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
+        <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests.ShouldSaveEnumValuesToDb" ParentId="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" type="NUnitTestElement" TypeName="Gamification.Testing.Integration.Entities.CollectionBasedConstraintsTests" MethodName="ShouldSaveEnumValuesToDb" Project="C38A9C18-632F-41ED-BD58-78D2FC1316F7" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests.ToAddOrRemoveStatusTriggerTest" ParentId="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Mappings.ActionTriggerViewModelMappingTests" MethodName="ToAddOrRemoveStatusTriggerTest" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.ValidateUser_WhenPasswordHashNotEqualToExistingInDatabase_ShouldReturnFalse" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="ValidateUser_WhenPasswordHashNotEqualToExistingInDatabase_ShouldReturnFalse" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />
         <UnitTestElement Provider="nUnit" Id="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests.ValidateUser_WhenUsernameAndPasswordHashExistInDatabase_ShouldReturnTrue" ParentId="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" type="NUnitTestElement" TypeName="Gamification.Testing.Unit.Web.Utils.SimpleMembershipTests" MethodName="ValidateUser_WhenUsernameAndPasswordHashExistInDatabase_ShouldReturnTrue" Project="0AB7FE17-0607-4E60-AE3F-9B48480EEFA3" />

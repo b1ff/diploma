@@ -19,7 +19,7 @@ namespace Gamification.Core.Entities
 
         public string Description { get; set; }
 
-        public IList<ActionTrigger> TriggersToCall { get; protected set; }
+        public virtual IList<ActionTrigger> TriggersToCall { get; protected set; }
 
         public bool IsMultiple { get; set; }
 

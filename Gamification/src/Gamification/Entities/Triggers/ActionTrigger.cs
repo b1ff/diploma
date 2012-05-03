@@ -27,7 +27,7 @@ namespace Gamification.Core.Entities.Triggers
 
         public IList<ActionTrigger> ChildTriggers { get; set; }
 
-        public IList<GameAction> GameActions { get; set; }
+        public virtual IList<GameAction> GameActions { get; set; }
 
         public Project Project { get; set; }
 
