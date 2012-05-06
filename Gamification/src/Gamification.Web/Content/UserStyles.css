@@ -27,22 +27,27 @@ section#main > article {
 
 #info span.label {
     display:block; 
-    width: 100px; 
+    width: 122px; 
     height: 13px;
     float: left;
+    margin-right: 15px;
 }
 
 .label_guid {
-    width: 214px !important;
+    width: 214px !important;    
 }
 
 img.achievement {
     height: 50px;
 }
 
-div.project-info h3 {
-    display: block;
-    float: left;
-    line-height: 20px;
-    width: 130px;
+div.project-info {
+    margin-bottom: 5px;
 }
+    div.project-info h3 {
+        display: block;
+        float: left;
+        line-height: 20px;
+        width: 130px;
+        margin-right: 15px;
+    }

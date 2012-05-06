@@ -3,6 +3,7 @@ using System.ServiceModel.Web;
 using AutoMapper;
 using Gamification.Core.DataAccess;
 using Gamification.Core.Entities;
+using Gamification.WebServices.DataContracts;
 using Gamification.WebServices.DataContracts.Response;
 using Gamification.WebServices.Helpers;
 using Gamification.WebServices.ServicesContracts;
@@ -34,6 +35,9 @@ namespace Gamification.WebServices
             if (gamer == null)
             {
                 gamer = EntityHelpers.CreateGamer(GamerName, project);
+                if (gamer == null)
+                    return new GamerDataContract().WithErrors(new ErrorContract(ErrorTypes.Unexpected, "Gamer name cannot be empty"));
+
                 this.gamersRepository.Add(gamer);
             }
 

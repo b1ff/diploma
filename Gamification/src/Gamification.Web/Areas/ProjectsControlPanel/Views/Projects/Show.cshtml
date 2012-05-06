@@ -80,7 +80,7 @@
         </section>
         <section class="tab-pane" id="actions">
             <div class="page-header">
-                <h2>Actions & Events<small>The things that make a game from your project</small></h2>
+                <h2>Actions & Events<small> The things that make a game from your project</small></h2>
             </div>
                 <table class="table table-striped table-bordered ">
                 <thead>
@@ -252,58 +252,49 @@
         </section>
     </div>
     <div id="addStatusDialog">
-        @using (Html.BeginForm<StatusesController>(x => x.Save(Model.Id, null)))
+        @using (Html.BeginForm<StatusesController>(x => x.Save(Model.Id, null), FormMethod.Post, new { @class = "form-horizontal" }))
         {
-            <div class="editor-label">
-                <label for="title">
-                    Status name:
-                </label>
-            </div>
-            <div class="editor-field">
-                <input type="text" name="statusTitle" id="statusTitle" />
+            <div class="control-group">
+                <label class="control-label" for="statusTitle">Status name: </label>
+                <div class="controls">
+                    <input type="text" name="statusTitle" id="statusTitle" />
+                </div>
             </div>
         }
     </div>
     <div id="addAchievementDialog">
-        @using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data" }))
+        @using (Html.BeginForm<AchievementsController>(x => x.Save(Model.Id, null, null), FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal" }))
         {
-            <div class="editor-label">
-                <label for="title">
-                    Title:
-                </label>
+            <div class="control-group">
+                <label class="control-label" for="achievementTitle">Title: </label>
+                <div class="controls">
+                    <input type="text" name="achievementTitle" id="achievementTitle" />
+                </div>
             </div>
-            <div class="editor-field">
-                <input type="text" name="achievementTitle" id="achievementTitle" />
-            </div>
-     
-            <div class="editor-label">
-                <label for="achievementImage">
-                    Image:
-                </label>
-            </div>
-            <div class="editor-field">
-                <input type="file" name="achievementImage" id="achievementImage" />
+            
+            <div class="control-group">
+                <label class="control-label" for="achievementImage">Image: </label>
+                <div class="controls">
+                    <input type="file" name="achievementImage" id="achievementImage" />
+                </div>
             </div>
         }
     </div>
     <div id="initializeLevelsDialog">
-        @using (Html.BeginForm<LevelsController>(x => x.InitializeLevels(Model.Id, 0, 0)))
+        @using (Html.BeginForm<LevelsController>(x => x.InitializeLevels(Model.Id, 0, 0), FormMethod.Post, new { @class = "form-horizontal"}))
         {
-            <div class="editor-label">
-                <label for="levelsCount">
-                    Levels Count:
-                </label>
+            <div class="control-group">
+                <label class="control-label" for="levelsCount">Levels Count: </label>
+                <div class="controls">
+                    <input type="text" name="levelsCount" id="levelsCount" />
+                </div>
             </div>
-            <div class="editor-field">
-                <input type="text" name="levelsCount" id="levelsCount" />
-            </div>
-     
-            <div class="editor-label">
-                <label for="pointsStep">
-                    Points Step</label>
-            </div>
-            <div class="editor-field">
-                <input type="text" name="pointsStep" id="pointsStep" />
+            
+            <div class="control-group">
+                <label class="control-label" for="pointsStep">Points Step: </label>
+                <div class="controls">
+                    <input type="text" name="pointsStep" id="pointsStep" />
+                </div>
             </div>
         }
     </div>
