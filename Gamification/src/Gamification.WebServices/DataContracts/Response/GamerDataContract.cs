@@ -13,6 +13,9 @@ namespace Gamification.WebServices.DataContracts.Response
         public int Level { get; set; }
 
         [DataMember]
+        public int PercentageToNextLevel { get; set; }
+
+        [DataMember]
         public List<AchievementContract> Achievements { get; set; }
 
         [DataMember]

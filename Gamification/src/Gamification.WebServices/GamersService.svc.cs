@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.ServiceModel.Web;
 using AutoMapper;
 using Gamification.Core.DataAccess;
@@ -43,6 +44,18 @@ namespace Gamification.WebServices
 
             this.gamersRepository.SaveChanges();
             var response = Mapper.Map<GamerDataContract>(gamer);
+            var nextLevel = project.Levels.FirstOrDefault(x => x.LevelNumber == gamer.CurrentLevel.LevelNumber + 1);
+            if (nextLevel == null)
+            {
+                response.PercentageToNextLevel = 100;
+            }
+            else
+            {
+                var pointsToNextLevel = nextLevel.NeededPoints - gamer.CurrentLevel.NeededPoints;
+                var gamerPointsToNextLevel = gamer.Points - gamer.CurrentLevel.NeededPoints;
+                response.PercentageToNextLevel = (int)(((double)gamerPointsToNextLevel / pointsToNextLevel) * 100);
+            }
+
             response.Success = true;
             return response;
         }

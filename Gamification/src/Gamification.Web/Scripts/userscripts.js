@@ -49,7 +49,7 @@
                       click: function () {
                         $(this).find('form').submit();
                       },
-                        classes: 'ui-button-primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-focus'
+                      classes: 'ui-button-primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-focus'
                 },
                   'Cancel': {
                       text: 'Cancel',

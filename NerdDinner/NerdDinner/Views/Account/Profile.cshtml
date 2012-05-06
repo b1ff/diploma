@@ -1,23 +1,112 @@
-﻿<script type="text/javascript">
-    $(function () {
-        $.gamification.getGamerData('@User.NerdUser().FriendlyName', "9a66fa30-06bb-42c9-aa74-85908661de9b", function (responseData) {
+﻿@section HeadArea{
+    <script type="text/javascript" src="@Url.Content("~/Scripts/knockout.js")"></script>
 
-            if (!responseData.Success) {
-                alert(responseData.Errors[0].Message);
-            }
+    <script type="text/javascript">
+        $(function () {
+            $.gamification.getGamerData('@User.NerdUser().FriendlyName', "9a66fa30-06bb-42c9-aa74-85908661de9b", function (responseData) {
 
-            for (var key in responseData.Achievements) {
-                var currAchievement = responseData.Achievements[key];
-                $('#achievements').append(['<li>', currAchievement.Name, '<img src="', currAchievement.FileName, '"/></li>'].join(''));
-            }
-        });
-    })
-</script>
+                if (!responseData.Success) {
+                    alert(responseData.Errors[0].Message);
+                }
+
+                responseData.Status = responseData.Statuses.join('');
+                ko.applyBindings(responseData);
+            });
+        })
+    </script>
+
+    <style type="text/css">
+    	div.progress 
+    	{
+    	    width: 300px;
+    	    border: 1px solid black;
+    	    height: 15px;
+    	}
+    	    div.progress > div 
+    	    {
+    	        height: 15px;
+    	        background-color: #9EC739;
+    	    }
+    	
+    	div.stat 
+    	{
+    	    padding: 5px;
+    	}
+    	    div.stat > label 
+    	    {
+    	        font-size: 15px;
+    	        margin-right: 10px;
+    	        width: 150px;
+    	        display: block;
+    	    }
+    	    
+    	    div.stat * 
+    	    {
+    	        float: left;
+    	    }
+    	    
+    	    div.stat > h1 
+    	    {
+    	        width: 100%;
+    	        margin-top: 15px;
+    	    }
+    	    
+    	ul.achievementsList 
+    	{
+    	    margin: 5px;
+    	}
+    	
+    	    ul.achievementsList > li * 
+    	    {
+    	        float: left;
+    	    }
+    	
+    	    ul.achievementsList > li img 
+    	    {
+    	        height: 40px;
+    	        margin: 5px;
+    	    }
+    	
+    	    ul.achievementsList > li span 
+    	    {
+    	        display: block;
+    	        text-align: center;
+    	        padding: 15px;
+    	        font-style: italic;
+    	    }
+    </style>
+}
 
 <div>
-    <h1>
-    	You achievements
-    </h1>
-    <ul id="achievements">    	
-    </ul>
+    <div>
+        <h1>You stats</h1>
+        <div class="stat clearfix">
+        	<label>Points: </label>
+            <span data-bind="text: Points"></span>
+        </div>
+        <div class="stat clearfix">
+        	<label>Level: </label>
+        	<span data-bind="text: Level"></span>
+        </div>
+        <div class="stat withProgress clearfix">
+        	<label>Next level: </label>
+        	<div class="progress">
+        		<div data-bind="style : { width: PercentageToNextLevel + '%' }"></div>
+        	</div>
+        </div>
+        <div class="stat clearfix">
+        	<label>Status: </label>
+        	<span data-bind="text : Status"></span>
+        </div>
+    </div>
+
+    <div class="stat">
+        <h1>You achievements</h1>
+        <ul data-bind="foreach: Achievements" class="achievementsList">
+            <li class="clearfix">
+                <img data-bind="attr : { src: FileName, alt: Name }"/>
+                <span data-bind="text: Name"></span>
+            </li>
+        </ul>
+    </div>
 </div>

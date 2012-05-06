@@ -312,6 +312,8 @@
     <Content Include="Scripts\jquery.cookie.js" />
     <Content Include="Scripts\jquery.mobile-1.0a4.1.js" />
     <Content Include="Scripts\jquery.mobile-1.0a4.1.min.js" />
+    <Content Include="Scripts\knockout.debug.js" />
+    <Content Include="Scripts\knockout.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\MSAjaxHistoryBundle.js" />

@@ -14,7 +14,7 @@ namespace Gamification.WebServices.Helpers
             var gamer = new Gamer();
             gamer.UniqueKey = gamerName;
             gamer.Project = project;
-            if (project.UseLevels)
+            if (project.Levels.IsNotEmpty())
             {
                 gamer.CurrentLevel = project.Levels.Min();
             }
